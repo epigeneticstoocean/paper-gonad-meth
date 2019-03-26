@@ -8,7 +8,7 @@
 # - RMBlast with the isb 2.6.0 patch
 # - Tandem Repeat Finder v4.09
 
-#
+# The user needs to set the following three variables.
 #################
 # Set working directory
 wd=""
@@ -18,8 +18,6 @@ repeat_masker=""
 
 # Set CPUs. If not set, will default to 4.
 cpus=""
-
-
 ################
 
 # Test to see if variables are set
