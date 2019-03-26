@@ -1,0 +1,159 @@
+---
+title: "52-OAKL-mk"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Download files from `gannet`
+
+```{bash}
+wget -r -l1 --no-parent -A_dedup.sorted.bam http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/ #Download files from gannet. They will be stored in the same directory structure as they are online.
+```
+
+
+
+```{r}
+file.list_10=list('/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_1_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_2_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_3_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_4_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_5_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_6_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_7_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_8_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_9_dedup.sorted.bam',
+                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_10_dedup.sorted.bam'
+)
+```
+
+
+
+
+
+```{r}
+library(methylKit)
+```
+
+
+
+```{r, eval = FALSE}
+myobj_10 = processBismarkAln(location = file.list_10, sample.id = list("1","2","3","4","5","6","7","8","9","10"), assembly = "v001", read.context="CpG", mincov=2, treatment = c(0,0,0,0,0,1,1,1,1,1))
+```
+
+```{r, eval = FALSE}
+save(myobj_10, file = "analyses/myobj_52")
+```
+
+
+available at http://gannet.fish.washington.edu/seashell/snaps/myobj_52
+
+```{bash}
+#zip ../analyses/myobj_07_3x.zip ../analyses/myobj_07_3x
+```
+
+
+
+```{r}
+#load("analyses/myobj_52")
+```
+
+
+
+
+
+```{r}
+getMethylationStats(myobj_10[[2]],plot=FALSE,both.strands=FALSE)
+```
+
+```{r}
+getMethylationStats(myobj_10
+                    [[8]],plot=TRUE,both.strands=FALSE)
+```
+
+```{r}
+getCoverageStats(myobj_10[[5]],plot=TRUE,both.strands=FALSE)
+```
+
+
+```{r}
+filtered.myobj=filterByCoverage(myobj_10,lo.count=5,lo.perc=NULL,
+                                      hi.count=NULL,hi.perc=99.9)
+meth_filter=unite(filtered.myobj, destrand=TRUE)
+clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
+PCASamples(meth_filter)
+```
+
+
+
+
+```{r}
+myDiff=calculateDiffMeth(meth_filter,mc.cores=4)
+```
+
+
+
+
+```{r}
+# get hyper methylated bases
+myDiff50p.hyper=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff50p.hypo=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+```
+
+
+
+---
+# Taking the DMLs to a bed
+
+```{r}
+library(readr)
+#myDiff25p <- read_csv("../analyses/myDiff50p.csv")
+
+```
+
+
+```{r}
+head(myDiff50p)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+
+
+```{r}
+dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>%
+  mutate_if(is.numeric, as.integer)
+write_delim(dml52, "analyses/dml52.bed",  delim = '\t', col_names = FALSE)
+```
+
+
+```{r}
+head(dml52)
+```
+
+
+http://gannet.fish.washington.edu/seashell/snaps/dml52.bed
