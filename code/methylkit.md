@@ -438,53 +438,6 @@ head 2018-11-29-Methylation-Information-Cov3.bed #Confirm formatting was retaine
 
 ## DMLs
 
-### `destrand = FALSE`
-
-#### 3x coverage
-
-```{r}
-DMLPlus10222018 <- filter(diffMethStats50Cov3, strand == "+") %>% mutate(start = start -1, end = end + 1) %>% select(chr, start, end, strand, meth.diff) #Save + strand of DMLs as a new object
-DMLMinus10222018 <- filter(diffMethStats50Cov3, strand == "-") %>% mutate(start = start -2) %>% select(chr, start, end, strand, meth.diff) #Save - strand of DMLs as a new object
-```
-
-```{r}
-DML10222018 <- bind_rows(DMLPlus10222018, DMLMinus10222018) %>% arrange(chr, start) %>% mutate_if(is.numeric, as.integer) #Join + and - strand information to be saved as a BED file, and avoid writing information in scientific notation
-```
-
-```{r}
-write_delim(DML10222018, "2018-11-07-DML-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-#### 5x coverage
-
-```{r}
-DML5xPlus03132019 <- filter(diffMethStats50Cov5, strand == "+") %>% mutate(start = start -1, end = end + 1) %>% select(chr, start, end, strand, meth.diff) #Save + strand of DMLs as a new object
-DML5xMinus03132019 <- filter(diffMethStats50Cov5, strand == "-") %>% mutate(start = start -2) %>% select(chr, start, end, strand, meth.diff) #Save - strand of DMLs as a new object
-```
-
-```{r}
-DML5x03132019 <- bind_rows(DML5xPlus03132019, DML5xMinus03132019) %>% arrange(chr, start) %>% mutate_if(is.numeric, as.integer) #Join + and - strand information to be saved as a BED file, and avoid writing information in scientific notation
-```
-
-```{r}
-write_delim(DML5x03132019, "2019-03-13-DML-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-#### 10x coverage
-
-```{r}
-DML10xPlus03132019 <- filter(diffMethStats50Cov10, strand == "+") %>% mutate(start = start -1, end = end + 1) %>% select(chr, start, end, strand, meth.diff) #Save + strand of DMLs as a new object
-DML10xMinus03132019 <- filter(diffMethStats50Cov10, strand == "-") %>% mutate(start = start -2) %>% select(chr, start, end, strand, meth.diff) #Save - strand of DMLs as a new object
-```
-
-```{r}
-DML10x03132019 <- bind_rows(DML10xPlus03132019, DML10xMinus03132019) %>% arrange(chr, start) %>% mutate_if(is.numeric, as.integer) #Join + and - strand information to be saved as a BED file, and avoid writing information in scientific notation
-```
-
-```{r}
-write_delim(DML10x03132019, "2019-03-13-DML-10x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
 ### `destrand = TRUE`
 
 #### 5x coverage
@@ -499,40 +452,4 @@ head(DML5xDestrand03132019) #Confirm changes
 
 ```{r}
 write_delim(DML5xDestrand03132019, "2019-03-13-DML-Destrand-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-#### 10x coverage
-
-```{r}
-DML10xDestrand03132019 <- mutate(diffMethStats50Cov10Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
-```
-
-```{r}
-head(DML10xDestrand03132019) #Confirm changes
-```
-
-```{r}
-write_delim(DML10xDestrand03132019, "2019-03-13-DML-Destrand-10x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-## DMRs
-
-### 100 bp windows
-
-```{r}
-DMR10222018 <- select(diffMethStats50Tiles100, chr, start, end, meth.diff) %>% mutate(start = start -1) %>% mutate_if(is.numeric, as.integer)  %>% mutate(TYPE ="DMR")  %>% select(chr, start, end, TYPE, meth.diff) #Reformat object so it can be saved as a BEDfile.
-```
-
-```{r}
-write_delim(DMR10222018, "2018-11-07-DMR-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
-```
-
-### 1000 bp windows
-
-```{r}
-DMR03072019 <- select(diffMethStats50Tiles1000, chr, start, end, meth.diff) %>% mutate(start = start -1) %>% mutate_if(is.numeric, as.integer)  %>% mutate(TYPE ="DMR")  %>% select(chr, start, end, TYPE, meth.diff) #Reformat object so it can be saved as a BEDfile.
-```
-
-```{r}
-write_delim(DMR03072019, "2019-03-07-1000bp-DMR-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
