@@ -1,7 +1,8 @@
 #!/bin/env bash
 
 # A script for identifying transposable elements in the Crassostrea virginica genome
-# This script was designed to run with the following software:
+# This script was designed to run on Ubuntu 16.04 LTS with the following software:
+# - md5sum
 # - RepeatMasker 4.0.7
 # - RepBase RepeatMasker Edition 20170127
 # - RMBlast with the isb 2.6.0 patch
@@ -36,15 +37,25 @@ wget "${fasta_url}" \
 --directory-prefix="${wd}"
 
 # Generate checksum
+echo "Generating MD5 checksum..."
 dl_md5=$(md5sum "${wd}"/"${fasta}" | awk '{ print $1 }')
+echo ""
+echo "Checksum: ${dl_md5}"
+echo ""
 
 #Compare cheksums
-diff <(echo "${fasta_md5}") <(echo "${dl_md5}") \
+echo "Comparing original checksum to downloaded file checksum..."
+echo ""
+diff <(echo "${fasta_md5}") <(echo "${dl_md5}")
+&& echo "Checksums match!"\
 || echo "Checksums do not match. Try re-downloading file and then re-running script." exit 1
 
 # Run RepeatMasker
 cd "${wd}"
 
+echo ""
+echo "Running RepeatMasker. This may take awhile."
+echo ""
 "${repeat_masker}" \
 "${fasta}" \
 -species "all" \
@@ -53,3 +64,4 @@ cd "${wd}"
 -excln \
 1> stdout.txt \
 2> stderr.txt
+echo "All done! Check stderr.txt for any problems."
