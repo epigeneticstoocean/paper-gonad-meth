@@ -44,8 +44,8 @@ echo ""
 #Compare cheksums
 echo "Comparing original checksum to downloaded file checksum..."
 echo ""
-diff <(echo "${fasta_md5}") <(echo "${dl_md5}")
-&& echo "Checksums match!"\
+diff <(echo "${fasta_md5}") <(echo "${dl_md5}") \
+&& echo "Checksums match!" \
 || echo "Checksums do not match. Try re-downloading file and then re-running script." exit 1
 
 # Run RepeatMasker
