@@ -3,9 +3,6 @@ title: "52-OAKL-mk"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # Obtain session information
 
@@ -16,22 +13,31 @@ sessionInfo()
 # Download files from `gannet`
 
 ```{bash}
-wget -r -l1 --no-parent -A_dedup.sorted.bam http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/ #Download files from gannet. They will be stored in the same directory structure as they are online.
+#just to make sure you know where you are :)
+pwd
+```
+
+
+```{bash}
+wget -r \
+--no-directories --no-parent \
+-P ../data/ \
+-A _dedup.sorted.bam http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/ #Download files from gannet.
 ```
 
 
 
 ```{r}
-file.list_10=list('/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_1_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_2_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_3_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_4_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_5_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_6_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_7_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_8_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_9_dedup.sorted.bam',
-                 '/Users/sr320/Desktop/gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/zr2096_10_dedup.sorted.bam'
+file.list_10=list('../data/zr2096_1_dedup.sorted.bam',
+                 '../data/zr2096_2_dedup.sorted.bam',
+                 '../data/zr2096_3_dedup.sorted.bam',
+                 '../data/zr2096_4_dedup.sorted.bam',
+                 '../data/zr2096_5_dedup.sorted.bam',
+                 '../data/zr2096_6_dedup.sorted.bam',
+                 '../data/zr2096_7_dedup.sorted.bam',
+                 '../data/zr2096_8_dedup.sorted.bam',
+                 '../data/zr2096_9_dedup.sorted.bam',
+                 '../data/zr2096_10_dedup.sorted.bam'
 )
 ```
 
