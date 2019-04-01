@@ -69,7 +69,7 @@ available at http://gannet.fish.washington.edu/seashell/snaps/myobj_52
 
 
 ```{r}
-#load("analyses/myobj_52")
+#load("../analyses/myobj_52")
 ```
 
 
