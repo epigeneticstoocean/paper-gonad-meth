@@ -42,6 +42,28 @@ file.list_10=list('../data/zr2096_1_dedup.sorted.bam',
 )
 ```
 
+```{r}
+install.packages("devtools")
+library(devtools)
+install_github("al2na/methylKit", build_vignettes=FALSE, 
+  repos=BiocManager::repositories(),
+  dependencies=TRUE)
+```
+
+
+```{r}
+install.packages("devtools")
+
+library(devtools)
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("methylKit")
+
+install_github("al2na/methylKit", build_vignettes=FALSE, 
+               repos=BiocInstaller::biocinstallRepos(),
+               dependencies=TRUE)
+
+```
 
 
 
