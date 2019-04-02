@@ -22,6 +22,7 @@ pwd
 wget -r \
 --no-directories --no-parent \
 -P ../data/ \
+--quiet \
 -A _dedup.sorted.bam http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-11-07-Bismark-Mox/ #Download files from gannet.
 ```
 
