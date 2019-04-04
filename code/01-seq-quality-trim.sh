@@ -32,3 +32,8 @@ TrimGalore-0.4.5/trim_galore \
 /home/sam/Downloads/zr2096/Raw_data/zr2096_9_s1_R1.fastq.gz \
 /home/sam/Downloads/zr2096/Raw_data/zr2096_9_s1_R2.fastq.gz \
 2> stderr.log
+
+
+
+
+## TRIMMED FILES: http://owl.fish.washington.edu/Athaliana/20180411_trimgalore_10bp_Cvirginica_MBD/20180411_fastqc_trim_10bp_Cvirginica_MBD/
