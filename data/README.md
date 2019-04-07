@@ -1,8 +1,6 @@
 # data
 
-Raw data used for [analyses](https://github.com/RobertsLab/yaamini-virginica/tree/master/analyses). Repository contents and relevant metadata below.
-
-**[OysterTissueInfoSheet_GonadTestRoberts_20171002.xlsx]()**:
+**[OysterTissueInfoSheet_GonadTestRoberts_20171002.xlsx](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/data/OysterTissueInfoSheet_GonadTestRoberts_20171002.xlsx)**:
 
 Adult *Crassostrea virginica* oysters were reared at two separate pCO<sub>2</sub> levels to see if this drove differential methylation in gonad tissue. 
 
@@ -15,7 +13,7 @@ DNA from tissue samples were then [extracted and quantified](http://onsnetwork.o
 
 Original sequences from ZymoResearch [here](http://owl.fish.washington.edu/nightingales/C_virginica/). Sam then looked at [FASTQC results](http://owl.fish.washington.edu/Athaliana/20180409_fastqc_Cvirginica_MBD/) and [trimmed files](http://owl.fish.washington.edu/Athaliana/20180411_trimgalore_10bp_Cvirginica_MBD/). The trimmed files were used in all downstream anaylses.
 
-**[mapping-efficiency.csv](https://github.com/)**:
+**[mapping-efficiency.csv](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/data/mapping-efficiency.csv)**:
 
 Mapping efficiency output from `bismark`:
 
