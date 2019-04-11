@@ -69,7 +69,11 @@ treatmentSpecification <- c(rep(0, times = 5), rep(1, times = 5)) #Specify which
 ```
 
 ```{r}
-processedFilesCov5 <- processBismarkAln(location = analysisFiles, sample.id = sample.IDs, assembly = "v3", read.context = "CpG", mincov = 5, treatment = treatmentSpecification) #Process files for CpG methylation using 5x coverage. First 5 files were from ambient conditions, and the second from high pCO2 conditions.
+processedFiles <- processBismarkAln(location = analysisFiles, sample.id = sample.IDs, assembly = "v3", read.context = "CpG", mincov = 2, treatment = treatmentSpecification) #Process files for CpG methylation. Use 2x coverage for faster processing. Coverage will be adjusted later. First 5 files were from ambient conditions, and the second from high pCO2 conditions.
+```
+
+```{r}
+processedFilteredFilesCov5 <- filterByCoverage(processedFiles, lo.count = 5, lo.perc = NULL, hi.count = 100, hi.perc = NULL) #filter processed files using lo.count and hi.count coverage thresholds. Coverage should be no less than 5 and should not exceed 100.
 ```
 
 # Differentially methylated loci
@@ -85,23 +89,23 @@ head(fileName) #Confirm dataframe creation
 ```
 
 ```{r}
-fileName$actualFileName3 <- paste(fileName$nameBase, "-5xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for 5x coverage + specific sample's percent CpG methylation plot
-fileName$actualFileName4 <- paste(fileName$nameBase2, "-5xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for 5x coverage + specific sample's percent CpG coverage plot
+fileName$actualFileName7 <- paste(fileName$nameBase, "-Filtered", "-5xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for filtered + 5x coverage + specific sample's percent CpG methylation plot
+fileName$actualFileName8 <- paste(fileName$nameBase2, "-Filtered", "-5xCoverage", "-Sample", fileName$sample.ID, ".jpeg", sep = "") #Create a new column for the full filename for filtered + 5x coverage + specific sample's percent CpG coverage plot
 head(fileName) #Confirm column creation
 ```
 
 ```{r}
 for(i in 1:nFiles) { #For each data file
-  jpeg(filename = fileName$actualFileName3[i], height = 1000, width = 1000) #Save file with designated name
-  getMethylationStats(processedFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get %CpG methylation information
+  jpeg(filename = fileName$actualFileName7[i], height = 1000, width = 1000) #Save file with designated name
+  getMethylationStats(processedFilteredFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get %CpG methylation information
   dev.off() #Turn off plotting device
 } #Plot and save %CpG methylation information
 ```
 
 ```{r}
 for(i in 1:nFiles) { #For each data file
-  jpeg(filename = fileName$actualFileName4[i], height = 1000, width = 1000) #Save file with designated name
-  getCoverageStats(processedFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get CpG coverage information
+  jpeg(filename = fileName$actualFileName8[i], height = 1000, width = 1000) #Save file with designated name
+  getCoverageStats(processedFilteredFilesCov5[[i]], plot = TRUE, both.strands = FALSE) #Get CpG coverage information
   dev.off() #Turn off plotting device
 } #Plot and save CpG coverage information
 ```
@@ -109,48 +113,48 @@ for(i in 1:nFiles) { #For each data file
 ## Obtain clustering information
 
 ```{r}
-methylationInformationCov5Destrand <- unite(processedFilesCov5, destrand = TRUE) #Combine all processed files into a single table. Include destrand = TRUE to remove all strand information.
-head(methylationInformationCov5Destrand) #Confirm unite
+methylationInformationFilteredCov5Destrand <- unite(processedFilteredFilesCov5, destrand = TRUE) #Combine all processed files into a single table
+head(methylationInformationFilteredCov5Destrand) #Confirm unite
 ```
 
 ```{r}
-clusteringInformationCov5Destrand <- clusterSamples(methylationInformationCov5Destrand, dist = "correlation", method = "ward", plot = FALSE) #Save cluster information as a new object
+clusteringInformationFilteredCov5Destrand <- clusterSamples(methylationInformationFilteredCov5Destrand, dist = "correlation", method = "ward", plot = FALSE) #Save cluster information as a new object
 ```
 
 ```{r}
-jpeg(filename = "2018-10-25-Loci-Analysis/2019-03-14-Full-Sample-Pearson-Correlation-Plot-Cov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
-getCorrelation(methylationInformationCov5Destrand, plot = TRUE) #Understand correlation between methylation patterns in different samples
+jpeg(filename = "2018-10-25-Loci-Analysis/2019-04-05-Full-Sample-Pearson-Correlation-Plot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+getCorrelation(methylationInformationFilteredCov5Destrand, plot = TRUE) #Understand correlation between methylation patterns in different samples
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "2018-10-25-Loci-Analysis/2019-03-14-Full-Sample-CpG-Methylation-Clustering-Cov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
-clusterSamples(methylationInformationCov5Destrand, dist = "correlation", method = "ward", plot = TRUE) #Cluster samples based on correlation coefficients
+jpeg(filename = "2018-10-25-Loci-Analysis/2019-04-05-Full-Sample-CpG-Methylation-Clustering-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+clusterSamples(methylationInformationFilteredCov5Destrand, dist = "correlation", method = "ward", plot = TRUE) #Cluster samples based on correlation coefficients
 dev.off()
 ```
 
 ```{r}
-jpeg(filename = "2018-10-25-Loci-Analysis/2019-03-14-Full-Sample-Methylation-PCA-Cov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
-PCASamples(methylationInformationCov5Destrand) #Run a PCA analysis on percent methylation for all samples
+jpeg(filename = "2018-10-25-Loci-Analysis/2019-04-05-Full-Sample-Methylation-PCA-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+PCASamples(methylationInformationFilteredCov5Destrand) #Run a PCA analysis on percent methylation for all samples
 dev.off() #Turn off plotting device
 ```
 
 ```{r}
-jpeg(filename = "2018-10-25-Loci-Analysis/2019-03-14-Full-Sample-Methylation-Screeplot-Cov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
-PCASamples(methylationInformationCov5Destrand, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot
+jpeg(filename = "2018-10-25-Loci-Analysis/2019-04-05-Full-Sample-Methylation-Screeplot-FilteredCov5Destrand.jpeg", height = 1000, width = 1000) #Save file with designated name
+PCASamples(methylationInformationFilteredCov5Destrand, screeplot = TRUE) #Run the PCA analysis and plot variances against PC number in a screeplot
 dev.off()
 ```
 
 ## Obtain differentially methylated loci
 
 ```{r}
-differentialMethylationStatsCov5Destrand <- calculateDiffMeth(methylationInformationCov5Destrand) #Calculate differential methylation statistics based on treatment indication from processBismarkAln
-diffMethStats50Cov5Destrand <- getMethylDiff(differentialMethylationStatsCov5Destrand, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different and set a 10% FDR
-head(diffMethStats50Cov5Destrand) #Confirm creation
+differentialMethylationStatsFilteredCov5Destrand <- calculateDiffMeth(methylationInformationFilteredCov5Destrand) #Calculate differential methylation statistics based on treatment indication from processBismarkAln
+diffMethStats50FilteredCov5Destrand <- getMethylDiff(differentialMethylationStatsFilteredCov5Destrand, difference = 50, qvalue = 0.01) #Identify loci that are at least 50% different
+head(diffMethStats50FilteredCov5Destrand) #Confirm creation
 ```
 
 ```{r}
-write.csv(diffMethStats50Cov5Destrand, "2018-10-25-Loci-Analysis/2019-03-13-Differentially-Methylated-Loci-Destrand-50-Cov5.csv") #Save table as .csv
+write.csv(diffMethStats50FilteredCov5Destrand, "2018-10-25-Loci-Analysis/2019-04-05-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5.csv") #Save table as .csv
 ```
 
 # Create BEDfiles
@@ -169,13 +173,13 @@ library(tidyverse) #Load package
 ## 5x Destranded DMLs
 
 ```{r}
-DML5xDestrand03132019 <- mutate(diffMethStats50Cov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
+DML5xFilteredDestrand04052019 <- mutate(diffMethStats50FilteredCov5Destrand, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% mutate_if(is.numeric, as.integer) #Save as a BED file, and avoid writing information in scientific notation
 ```
 
 ```{r}
-head(DML5xDestrand03132019) #Confirm changes
+head(DML5xFilteredDestrand04052019) #Confirm changes
 ```
 
 ```{r}
-write_delim(DML5xDestrand03132019, "2019-03-13-DML-Destrand-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
+write_delim(DML5xFilteredDestrand04052019, "2019-04-05-DML-Destrand-5x-Locations.bed",  delim = '\t', col_names = FALSE) #Save data as a BED file
 ```
