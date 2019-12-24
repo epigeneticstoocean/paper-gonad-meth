@@ -1,0 +1,81 @@
+"","GO.BP","n"
+"1","",38
+"2"," antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]",4
+"3"," branching involved in blood vessel morphogenesis [GO:0001569]",9
+"4"," cell differentiation [GO:0030154]",7
+"5"," cell migration [GO:0016477]",1
+"6"," cellular calcium ion homeostasis [GO:0006874]",47
+"7"," cellular response to oxidative stress [GO:0034599]",1
+"8"," centrosome cycle [GO:0007098]",9
+"9"," centrosome duplication [GO:0051298]",7
+"10"," ciliary basal body organization [GO:0032053]",16
+"11"," cilium assembly [GO:0060271]",1
+"12"," COPII-coated vesicle cargo loading [GO:0090110]",4
+"13"," cortical actin cytoskeleton organization [GO:0030866]",1
+"14"," cytoskeleton organization [GO:0007010]",2
+"15"," DNA repair [GO:0006281]",5
+"16"," DNA replication checkpoint [GO:0000076]",4
+"17"," dTDP biosynthetic process [GO:0006233]",2
+"18"," dTTP biosynthetic process [GO:0006235]",2
+"19"," epithelial cilium movement involved in determination of left/right asymmetry [GO:0060287]",1
+"20"," establishment of cell polarity [GO:0030010]",10
+"21"," exocytosis [GO:0006887]",10
+"22"," extracellular matrix organization [GO:0030198]",9
+"23"," fat cell differentiation [GO:0045444]",7
+"24"," fructose biosynthetic process [GO:0046370]",1
+"25"," fructose metabolic process [GO:0006000]",1
+"26"," germ cell development [GO:0007281]",3
+"27"," histone arginine methylation [GO:0034969]",1
+"28"," histone H3-R17 methylation [GO:0034971]",1
+"29"," intracellular signal transduction [GO:0035556]",6
+"30"," ion transmembrane transport [GO:0034220]",47
+"31"," meiotic cell cycle [GO:0051321]",3
+"32"," microtubule cytoskeleton organization [GO:0000226]",2
+"33"," multicellular organism development [GO:0007275]",2
+"34"," negative regulation of cell migration [GO:0030336]",12
+"35"," negative regulation of Rho-dependent protein serine/threonine kinase activity [GO:2000299]",2
+"36"," neuron apoptotic process [GO:0051402]",1
+"37"," neuron differentiation [GO:0030182]",1
+"38"," peptide catabolic process [GO:0043171]",1
+"39"," peptidyl-arginine methylation",2
+"40"," positive regulation of dendritic spine development [GO:0060999]",5
+"41"," positive regulation of intracellular protein transport [GO:0090316]",1
+"42"," positive regulation of rRNA processing [GO:2000234]",1
+"43"," protein heterotrimerization [GO:0070208]",9
+"44"," receptor-mediated endocytosis [GO:0006898]",6
+"45"," regulation of ARF protein signal transduction [GO:0032012]",1
+"46"," regulation of cell adhesion [GO:0030155]",1
+"47"," regulation of cellular response to heat [GO:1900034]",2
+"48"," regulation of translation [GO:0006417]",2
+"49"," rRNA (guanine-N7)-methylation [GO:0070476]",1
+"50","3'-UTR-mediated mRNA stabilization [GO:0070935]",3
+"51","activation of protein kinase B activity [GO:0032148]",7
+"52","angiogenesis [GO:0001525]",8
+"53","antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]",4
+"54","attachment of GPI anchor to protein [GO:0016255]",1
+"55","blood vessel morphogenesis [GO:0048514]",9
+"56","brain morphogenesis [GO:0048854]",1
+"57","calcium ion export across plasma membrane [GO:1990034]",47
+"58","cell adhesion [GO:0007155]",9
+"59","cell differentiation [GO:0030154]",1
+"60","cell projection organization [GO:0030030]",1
+"61","cellular response to DNA damage stimulus [GO:0006974]",4
+"62","cellular response to growth factor stimulus [GO:0071363]",2
+"63","centriole replication [GO:0007099]",7
+"64","centriole-centriole cohesion [GO:0010457]",9
+"65","chaperone-mediated protein folding [GO:0061077]",2
+"66","chemical synaptic transmission [GO:0007268]",10
+"67","chromatin organization [GO:0006325]",1
+"68","chromatin remodeling [GO:0006338]",1
+"69","cytoplasmic microtubule organization [GO:0031122]",2
+"70","establishment of epithelial cell polarity [GO:0090162]",1
+"71","flagellated sperm motility [GO:0030317]",1
+"72","germ cell development [GO:0007281]",2
+"73","histone arginine methylation [GO:0034969]",1
+"74","membrane organization [GO:0061024]",6
+"75","modulation of excitatory postsynaptic potential [GO:0098815]",5
+"76","negative regulation of actin filament depolymerization [GO:0030835]",3
+"77","polyamine biosynthetic process [GO:0006596]",1
+"78","protein dephosphorylation [GO:0006470]",1
+"79","protein transport to vacuole involved in ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway [GO:0043328]",1
+"80","receptor-mediated endocytosis [GO:0006898]",5

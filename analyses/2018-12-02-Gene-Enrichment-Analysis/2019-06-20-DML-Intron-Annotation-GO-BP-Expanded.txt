@@ -1,0 +1,853 @@
+GO-BP
+adult walking behavior [GO:0007628]	 autophagy [GO:0006914]	 bile acid metabolic process [GO:0008206]	 cellular response to low-density lipoprotein particle stimulus [GO:0071404]	 cellular response to steroid hormone stimulus [GO:0071383]	 cholesterol efflux [GO:0033344]	 cholesterol homeostasis [GO:0042632]	 cholesterol metabolic process [GO:0008203]	 cholesterol transport [GO:0030301]	 endocytosis [GO:0006897]	 establishment of protein localization to membrane [GO:0090150]	 intracellular cholesterol transport [GO:0032367]	 low-density lipoprotein particle clearance [GO:0034383]	 lysosomal transport [GO:0007041]	 membrane raft organization [GO:0031579]	 negative regulation of cell death [GO:0060548]	 negative regulation of macroautophagy [GO:0016242]	 protein glycosylation [GO:0006486]	 response to cadmium ion [GO:0046686]	 response to drug [GO:0042493]	 viral entry into host cell [GO:0046718]
+NA
+NA
+fat cell differentiation [GO:0045444]	 positive regulation of sequestering of triglyceride [GO:0010890]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+blastocyst growth [GO:0001832]	 blastocyst hatching [GO:0001835]	 cellular response to lipopolysaccharide [GO:0071222]	 endodermal cell fate commitment [GO:0001711]	 histone H2B ubiquitination [GO:0033523]	 histone H3-K4 trimethylation [GO:0080182]	 histone monoubiquitination [GO:0010390]	 inner cell mass cell differentiation [GO:0001826]	 interleukin-6-mediated signaling pathway [GO:0070102]	 negative regulation of mRNA polyadenylation [GO:1900364]	 negative regulation of myeloid cell differentiation [GO:0045638]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 positive regulation of histone H2B ubiquitination [GO:2001168]	 positive regulation of histone H3-K4 methylation [GO:0051571]	 positive regulation of histone H3-K79 methylation [GO:2001162]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 positive regulation of transcription elongation from RNA polymerase II promoter [GO:0032968]	 protein ubiquitination [GO:0016567]	 receptor signaling pathway via JAK-STAT [GO:0007259]	 regulation of genetic imprinting [GO:2000653]	 regulation of histone H3-K4 methylation [GO:0051569]	 stem cell population maintenance [GO:0019827]	 transcription by RNA polymerase II [GO:0006366]	 transcription elongation from RNA polymerase II promoter [GO:0006368]	 trophectodermal cell differentiation [GO:0001829]	 Wnt signaling pathway [GO:0016055]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+NA
+NA
+modulation of excitatory postsynaptic potential [GO:0098815]	 negative regulation of cell migration [GO:0030336]	 positive regulation of dendritic spine development [GO:0060999]	 positive regulation of dendritic spine maintenance [GO:1902952]	 positive regulation of filopodium assembly [GO:0051491]	 regulation of postsynaptic density protein 95 clustering [GO:1902897]	 regulation of transcription
+modulation of excitatory postsynaptic potential [GO:0098815]	 negative regulation of cell migration [GO:0030336]	 positive regulation of dendritic spine development [GO:0060999]	 positive regulation of dendritic spine maintenance [GO:1902952]	 positive regulation of filopodium assembly [GO:0051491]	 regulation of postsynaptic density protein 95 clustering [GO:1902897]	 regulation of transcription
+modulation of excitatory postsynaptic potential [GO:0098815]	 negative regulation of cell migration [GO:0030336]	 positive regulation of dendritic spine development [GO:0060999]	 positive regulation of dendritic spine maintenance [GO:1902952]	 positive regulation of filopodium assembly [GO:0051491]	 regulation of postsynaptic density protein 95 clustering [GO:1902897]	 regulation of transcription
+modulation of excitatory postsynaptic potential [GO:0098815]	 negative regulation of cell migration [GO:0030336]	 positive regulation of dendritic spine development [GO:0060999]	 positive regulation of dendritic spine maintenance [GO:1902952]	 positive regulation of filopodium assembly [GO:0051491]	 regulation of postsynaptic density protein 95 clustering [GO:1902897]	 regulation of transcription
+modulation of excitatory postsynaptic potential [GO:0098815]	 negative regulation of cell migration [GO:0030336]	 positive regulation of dendritic spine development [GO:0060999]	 positive regulation of dendritic spine maintenance [GO:1902952]	 positive regulation of filopodium assembly [GO:0051491]	 regulation of postsynaptic density protein 95 clustering [GO:1902897]	 regulation of transcription
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+calcium ion import across plasma membrane [GO:0098703]	 calcium ion transmembrane import into cytosol [GO:0097553]	 calcium ion transmembrane transport [GO:0070588]	 calcium ion transport [GO:0006816]	 calcium-mediated signaling using intracellular calcium source [GO:0035584]	 cellular response to calcium ion [GO:0071277]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to purine-containing compound [GO:0071415]	 cellular response to temperature stimulus [GO:0071502]	 dendritic cell chemotaxis [GO:0002407]	 dendritic cell differentiation [GO:0097028]	 neutrophil degranulation [GO:0043312]	 protein homotetramerization [GO:0051289]	 regulation of actin cytoskeleton reorganization [GO:2000249]	 regulation of filopodium assembly [GO:0051489]	 release of sequestered calcium ion into cytosol [GO:0051209]	 response to purine-containing compound [GO:0014074]	 temperature homeostasis [GO:0001659]	 zinc ion transmembrane transport [GO:0071577]
+NA
+NA
+NA
+cellular response to DNA damage stimulus [GO:0006974]	 DNA repair [GO:0006281]	 DNA replication checkpoint [GO:0000076]	 DNA replication initiation [GO:0006270]	 DNA replication preinitiation complex assembly [GO:0071163]	 GINS complex assembly [GO:0071165]	 positive regulation of chromatin binding [GO:0035563]	 positive regulation of peptidyl-serine phosphorylation [GO:0033138]	 positive regulation of protein kinase activity [GO:0045860]	 protein localization to chromatin [GO:0071168]	 regulation of DNA-dependent DNA replication initiation [GO:0030174]
+cellular response to DNA damage stimulus [GO:0006974]	 DNA repair [GO:0006281]	 DNA replication checkpoint [GO:0000076]	 DNA replication initiation [GO:0006270]	 DNA replication preinitiation complex assembly [GO:0071163]	 GINS complex assembly [GO:0071165]	 positive regulation of chromatin binding [GO:0035563]	 positive regulation of peptidyl-serine phosphorylation [GO:0033138]	 positive regulation of protein kinase activity [GO:0045860]	 protein localization to chromatin [GO:0071168]	 regulation of DNA-dependent DNA replication initiation [GO:0030174]
+cellular response to DNA damage stimulus [GO:0006974]	 DNA repair [GO:0006281]	 DNA replication checkpoint [GO:0000076]	 DNA replication initiation [GO:0006270]	 DNA replication preinitiation complex assembly [GO:0071163]	 GINS complex assembly [GO:0071165]	 positive regulation of chromatin binding [GO:0035563]	 positive regulation of peptidyl-serine phosphorylation [GO:0033138]	 positive regulation of protein kinase activity [GO:0045860]	 protein localization to chromatin [GO:0071168]	 regulation of DNA-dependent DNA replication initiation [GO:0030174]
+cellular response to DNA damage stimulus [GO:0006974]	 DNA repair [GO:0006281]	 DNA replication checkpoint [GO:0000076]	 DNA replication initiation [GO:0006270]	 DNA replication preinitiation complex assembly [GO:0071163]	 GINS complex assembly [GO:0071165]	 positive regulation of chromatin binding [GO:0035563]	 positive regulation of peptidyl-serine phosphorylation [GO:0033138]	 positive regulation of protein kinase activity [GO:0045860]	 protein localization to chromatin [GO:0071168]	 regulation of DNA-dependent DNA replication initiation [GO:0030174]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+NA
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+NA
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+NA
+NA
+NA
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+NA
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+NA
+NA
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+NA
+NA
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+NA
+auditory receptor cell stereocilium organization [GO:0060088]	 cell adhesion [GO:0007155]	 cellular response to chemokine [GO:1990869]	 cellular response to mechanical stimulus [GO:0071260]	 chemotaxis [GO:0006935]	 establishment of protein localization [GO:0045184]	 negative regulation of cell adhesion [GO:0007162]	 negative regulation of establishment of T cell polarity [GO:1903904]	 negative regulation of protein localization to cell leading edge [GO:1905872]	 negative regulation of Rho guanyl-nucleotide exchange factor activity [GO:2001107]	 negative regulation of Rho protein signal transduction [GO:0035024]	 negative regulation of T cell migration [GO:2000405]	 negative regulation of T cell proliferation [GO:0042130]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of filopodium assembly [GO:0051491]	 positive regulation of myoblast differentiation [GO:0045663]	 positive regulation of myoblast fusion [GO:1901741]	 positive regulation of neutrophil chemotaxis [GO:0090023]	 positive regulation of neutrophil extravasation [GO:2000391]	 protein homooligomerization [GO:0051260]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of mitotic spindle assembly [GO:1901673]	 sensory perception of sound [GO:0007605]	 skeletal muscle fiber development [GO:0048741]
+NA
+NA
+NA
+
+NA
+histone arginine methylation [GO:0034969]	 histone H3-R17 methylation [GO:0034971]	 peptidyl-arginine methylation
+chromatin remodeling [GO:0006338]	 histone arginine methylation [GO:0034969]	 peptidyl-arginine methylation
+NA
+NA
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+NA
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+centriole replication [GO:0007099]	 centrosome duplication [GO:0051298]	 ciliary basal body organization [GO:0032053]	 ciliary basal body-plasma membrane docking [GO:0097711]	 G2/M transition of mitotic cell cycle [GO:0000086]	 negative regulation of cilium assembly [GO:1902018]	 positive regulation of cilium assembly [GO:0045724]	 protein deubiquitination [GO:0016579]	 regulation of cytokinesis [GO:0032465]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]
+establishment of epithelial cell polarity [GO:0090162]	 regulation of ARF protein signal transduction [GO:0032012]	 regulation of cell adhesion [GO:0030155]	 vesicle-mediated transport [GO:0016192]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 epithelial cilium movement involved in determination of left/right asymmetry [GO:0060287]	 intraciliary retrograde transport [GO:0035721]	 intraciliary transport involved in cilium assembly [GO:0035735]	 Kupffer's vesicle development [GO:0070121]	 melanosome transport [GO:0032402]	 negative regulation of intracellular protein transport [GO:0090317]	 regulation of centrosome duplication [GO:0010824]	 sensory perception of light stimulus [GO:0050953]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+
+
+
+
+
+
+
+
+
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+negative regulation of Wnt signaling pathway [GO:0030178]	 positive regulation of gastrulation [GO:2000543]	 regulation of cell division [GO:0051302]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of protein localization [GO:0032880]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]	 COPII-coated vesicle cargo loading [GO:0090110]	 COPII vesicle coating [GO:0048208]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 intracellular protein transport [GO:0006886]	 in utero embryonic development [GO:0001701]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]	 COPII-coated vesicle cargo loading [GO:0090110]	 COPII vesicle coating [GO:0048208]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 intracellular protein transport [GO:0006886]	 in utero embryonic development [GO:0001701]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]	 COPII-coated vesicle cargo loading [GO:0090110]	 COPII vesicle coating [GO:0048208]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 intracellular protein transport [GO:0006886]	 in utero embryonic development [GO:0001701]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]	 COPII-coated vesicle cargo loading [GO:0090110]	 COPII vesicle coating [GO:0048208]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 intracellular protein transport [GO:0006886]	 in utero embryonic development [GO:0001701]
+
+
+
+
+
+
+
+
+
+
+
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+protein transport to vacuole involved in ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway [GO:0043328]
+NA
+NA
+NA
+NA
+NA
+positive regulation of synapse structural plasticity [GO:0051835]	 postsynaptic actin cytoskeleton organization [GO:0098974]
+positive regulation of synapse structural plasticity [GO:0051835]	 postsynaptic actin cytoskeleton organization [GO:0098974]
+positive regulation of synapse structural plasticity [GO:0051835]	 postsynaptic actin cytoskeleton organization [GO:0098974]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cilium assembly [GO:0060271]	 platelet degranulation [GO:0002576]	 positive regulation of smooth muscle cell proliferation [GO:0048661]	 prostaglandin secretion [GO:0032310]	 response to drug [GO:0042493]	 response to organic cyclic compound [GO:0014070]	 response to organonitrogen compound [GO:0010243]	 transmembrane transport [GO:0055085]
+cilium assembly [GO:0060271]	 platelet degranulation [GO:0002576]	 positive regulation of smooth muscle cell proliferation [GO:0048661]	 prostaglandin secretion [GO:0032310]	 response to drug [GO:0042493]	 response to organic cyclic compound [GO:0014070]	 response to organonitrogen compound [GO:0010243]	 transmembrane transport [GO:0055085]
+NA
+proteolysis [GO:0006508]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+peptide metabolic process [GO:0006518]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+central nervous system development [GO:0007417]	 fatty acid primary amide biosynthetic process [GO:0062112]	 heart development [GO:0007507]	 lactation [GO:0007595]	 limb development [GO:0060173]	 long-chain fatty acid metabolic process [GO:0001676]	 maternal process involved in female pregnancy [GO:0060135]	 odontogenesis [GO:0042476]	 ovulation cycle process [GO:0022602]	 peptide amidation [GO:0001519]	 peptide metabolic process [GO:0006518]	 protein amidation [GO:0018032]	 protein homooligomerization [GO:0051260]	 protein metabolic process [GO:0019538]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of protein secretion [GO:0050708]	 regulation of transcription by RNA polymerase II [GO:0006357]	 response to copper ion [GO:0046688]	 response to drug [GO:0042493]	 response to estradiol [GO:0032355]	 response to glucocorticoid [GO:0051384]	 response to hypoxia [GO:0001666]	 response to pH [GO:0009268]	 toxin metabolic process [GO:0009404]
+peptide metabolic process [GO:0006518]
+NA
+NA
+NA
+protein dephosphorylation [GO:0006470]
+DNA replication [GO:0006260]	 protein folding [GO:0006457]	 response to heat [GO:0009408]
+DNA replication [GO:0006260]	 protein folding [GO:0006457]	 response to heat [GO:0009408]
+DNA replication [GO:0006260]	 protein folding [GO:0006457]	 response to heat [GO:0009408]
+
+flagellated sperm motility [GO:0030317]	 fructose biosynthetic process [GO:0046370]	 fructose metabolic process [GO:0006000]	 L-xylitol catabolic process [GO:0051160]	 NADH oxidation [GO:0006116]	 NADH regeneration [GO:0006735]	 sorbitol biosynthetic process [GO:0006061]	 sorbitol catabolic process [GO:0006062]
+NA
+NA
+NA
+NA
+NA
+cell projection organization [GO:0030030]
+cell division [GO:0051301]	 mitotic chromosome condensation [GO:0007076]
+cell division [GO:0051301]	 mitotic chromosome condensation [GO:0007076]
+cell division [GO:0051301]	 mitotic chromosome condensation [GO:0007076]
+negative regulation of actin filament depolymerization [GO:0030835]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+negative regulation of actin filament depolymerization [GO:0030835]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+blood vessel morphogenesis [GO:0048514]	 branching involved in blood vessel morphogenesis [GO:0001569]
+negative regulation of actin filament depolymerization [GO:0030835]
+NA
+NA
+NA
+
+
+
+
+
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+chromatin organization [GO:0006325]	 positive regulation of rRNA processing [GO:2000234]	 rRNA (guanine-N7)-methylation [GO:0070476]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+cell adhesion [GO:0007155]	 extracellular matrix organization [GO:0030198]	 protein heterotrimerization [GO:0070208]
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+adult locomotory behavior [GO:0008344]	 anatomical structure development [GO:0048856]	 brain development [GO:0007420]	 excitatory postsynaptic potential [GO:0060079]	 learning [GO:0007612]	 lung alveolus development [GO:0048286]	 memory [GO:0007613]	 negative regulation of insulin-like growth factor receptor signaling pathway [GO:0043569]	 negative regulation of phosphorylation [GO:0042326]	 negative regulation of transcription
+NA
+homocysteine catabolic process [GO:0043418]	 response to drug [GO:0042493]	 response to toxic substance [GO:0009636]
+Wnt signaling pathway [GO:0016055]
+Wnt signaling pathway [GO:0016055]
+NA
+NA
+NA
+cation transport [GO:0006812]	 detection of light stimulus involved in visual perception [GO:0050908]	 photoreceptor cell maintenance [GO:0045494]	 photoreceptor cell outer segment organization [GO:0035845]	 protein heterotetramerization [GO:0051290]	 protein localization to organelle [GO:0033365]	 regulation of cytosolic calcium ion concentration [GO:0051480]	 regulation of rhodopsin mediated signaling pathway [GO:0022400]	 retina homeostasis [GO:0001895]	 rhodopsin mediated signaling pathway [GO:0016056]	 sensory perception of smell [GO:0007608]	 visual perception [GO:0007601]
+cation transport [GO:0006812]	 detection of light stimulus involved in visual perception [GO:0050908]	 photoreceptor cell maintenance [GO:0045494]	 photoreceptor cell outer segment organization [GO:0035845]	 protein heterotetramerization [GO:0051290]	 protein localization to organelle [GO:0033365]	 regulation of cytosolic calcium ion concentration [GO:0051480]	 regulation of rhodopsin mediated signaling pathway [GO:0022400]	 retina homeostasis [GO:0001895]	 rhodopsin mediated signaling pathway [GO:0016056]	 sensory perception of smell [GO:0007608]	 visual perception [GO:0007601]
+cation transport [GO:0006812]	 detection of light stimulus involved in visual perception [GO:0050908]	 photoreceptor cell maintenance [GO:0045494]	 photoreceptor cell outer segment organization [GO:0035845]	 protein heterotetramerization [GO:0051290]	 protein localization to organelle [GO:0033365]	 regulation of cytosolic calcium ion concentration [GO:0051480]	 regulation of rhodopsin mediated signaling pathway [GO:0022400]	 retina homeostasis [GO:0001895]	 rhodopsin mediated signaling pathway [GO:0016056]	 sensory perception of smell [GO:0007608]	 visual perception [GO:0007601]
+cation transport [GO:0006812]	 detection of light stimulus involved in visual perception [GO:0050908]	 photoreceptor cell maintenance [GO:0045494]	 photoreceptor cell outer segment organization [GO:0035845]	 protein heterotetramerization [GO:0051290]	 protein localization to organelle [GO:0033365]	 regulation of cytosolic calcium ion concentration [GO:0051480]	 regulation of rhodopsin mediated signaling pathway [GO:0022400]	 retina homeostasis [GO:0001895]	 rhodopsin mediated signaling pathway [GO:0016056]	 sensory perception of smell [GO:0007608]	 visual perception [GO:0007601]
+cellular response to calcium ion [GO:0071277]	 cellular response to growth factor stimulus [GO:0071363]	 ERBB2 signaling pathway [GO:0038128]	 glycerophospholipid biosynthetic process [GO:0046474]	 lipid metabolic process [GO:0006629]	 neutrophil degranulation [GO:0043312]	 positive regulation of cell migration [GO:0030335]	 vesicle-mediated transport [GO:0016192]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+innate immune response [GO:0045087]	 necroptotic process [GO:0070266]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of JNK cascade [GO:0046329]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of NIK/NF-kappaB signaling [GO:1901223]	 negative regulation of p38MAPK cascade [GO:1903753]	 positive regulation of extrinsic apoptotic signaling pathway [GO:2001238]	 protein deubiquitination [GO:0016579]	 protein K63-linked deubiquitination [GO:0070536]	 protein linear deubiquitination [GO:1990108]	 regulation of cilium assembly [GO:1902017]	 regulation of inflammatory response [GO:0050727]	 regulation of intrinsic apoptotic signaling pathway [GO:2001242]	 regulation of mitotic cell cycle [GO:0007346]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 ubiquitin-dependent protein catabolic process [GO:0006511]	 Wnt signaling pathway [GO:0016055]
+innate immune response [GO:0045087]	 necroptotic process [GO:0070266]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of JNK cascade [GO:0046329]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of NIK/NF-kappaB signaling [GO:1901223]	 negative regulation of p38MAPK cascade [GO:1903753]	 positive regulation of extrinsic apoptotic signaling pathway [GO:2001238]	 protein deubiquitination [GO:0016579]	 protein K63-linked deubiquitination [GO:0070536]	 protein linear deubiquitination [GO:1990108]	 regulation of cilium assembly [GO:1902017]	 regulation of inflammatory response [GO:0050727]	 regulation of intrinsic apoptotic signaling pathway [GO:2001242]	 regulation of mitotic cell cycle [GO:0007346]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 ubiquitin-dependent protein catabolic process [GO:0006511]	 Wnt signaling pathway [GO:0016055]
+innate immune response [GO:0045087]	 necroptotic process [GO:0070266]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of JNK cascade [GO:0046329]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of NIK/NF-kappaB signaling [GO:1901223]	 negative regulation of p38MAPK cascade [GO:1903753]	 positive regulation of extrinsic apoptotic signaling pathway [GO:2001238]	 protein deubiquitination [GO:0016579]	 protein K63-linked deubiquitination [GO:0070536]	 protein linear deubiquitination [GO:1990108]	 regulation of cilium assembly [GO:1902017]	 regulation of inflammatory response [GO:0050727]	 regulation of intrinsic apoptotic signaling pathway [GO:2001242]	 regulation of mitotic cell cycle [GO:0007346]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 ubiquitin-dependent protein catabolic process [GO:0006511]	 Wnt signaling pathway [GO:0016055]
+innate immune response [GO:0045087]	 necroptotic process [GO:0070266]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of JNK cascade [GO:0046329]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of NIK/NF-kappaB signaling [GO:1901223]	 negative regulation of p38MAPK cascade [GO:1903753]	 positive regulation of extrinsic apoptotic signaling pathway [GO:2001238]	 protein deubiquitination [GO:0016579]	 protein K63-linked deubiquitination [GO:0070536]	 protein linear deubiquitination [GO:1990108]	 regulation of cilium assembly [GO:1902017]	 regulation of inflammatory response [GO:0050727]	 regulation of intrinsic apoptotic signaling pathway [GO:2001242]	 regulation of mitotic cell cycle [GO:0007346]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 ubiquitin-dependent protein catabolic process [GO:0006511]	 Wnt signaling pathway [GO:0016055]
+NA
+NA
+NA
+NA
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+centriole-centriole cohesion [GO:0010457]	 centrosome cycle [GO:0007098]	 ciliary basal body organization [GO:0032053]	 epithelial structure maintenance [GO:0010669]	 establishment of organelle localization [GO:0051656]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of cilium assembly [GO:0045724]	 positive regulation of protein localization to cilium [GO:1903566]	 protein localization [GO:0008104]	 protein localization to organelle [GO:0033365]
+NA
+NA
+attachment of GPI anchor to protein [GO:0016255]	 neuron apoptotic process [GO:0051402]	 neuron differentiation [GO:0030182]
+astrocyte cell migration [GO:0043615]	 Golgi organization [GO:0007030]	 hematopoietic progenitor cell differentiation [GO:0002244]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of growth hormone secretion [GO:0060124]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of protein binding [GO:0032092]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+ephrin receptor signaling pathway [GO:0048013]	 focal adhesion assembly [GO:0048041]	 Golgi organization [GO:0007030]	 G protein-coupled receptor signaling pathway [GO:0007186]	 intracellular signal transduction [GO:0035556]	 lamellipodium assembly [GO:0030032]	 negative regulation of epidermal growth factor receptor signaling pathway [GO:0042059]	 nervous system development [GO:0007399]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of fibroblast migration [GO:0010763]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of lamellipodium morphogenesis [GO:2000394]	 positive regulation of substrate adhesion-dependent cell spreading [GO:1900026]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+astrocyte cell migration [GO:0043615]	 Golgi organization [GO:0007030]	 hematopoietic progenitor cell differentiation [GO:0002244]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of growth hormone secretion [GO:0060124]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of protein binding [GO:0032092]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 Golgi organization [GO:0007030]	 hematopoietic progenitor cell differentiation [GO:0002244]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of growth hormone secretion [GO:0060124]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of protein binding [GO:0032092]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 Golgi organization [GO:0007030]	 hematopoietic progenitor cell differentiation [GO:0002244]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of growth hormone secretion [GO:0060124]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of protein binding [GO:0032092]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 Golgi organization [GO:0007030]	 hematopoietic progenitor cell differentiation [GO:0002244]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 positive regulation of growth hormone secretion [GO:0060124]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of protein binding [GO:0032092]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of GTP binding [GO:1904424]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+astrocyte cell migration [GO:0043615]	 lamellipodium assembly [GO:0030032]	 positive regulation of apoptotic process [GO:0043065]	 postsynaptic actin cytoskeleton organization [GO:0098974]	 presynaptic actin cytoskeleton organization [GO:0099140]	 regulation of Rho protein signal transduction [GO:0035023]	 small GTPase mediated signal transduction [GO:0007264]
+
+
+
+
+
+
+
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 paraxial mesoderm formation [GO:0048341]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 paraxial mesoderm formation [GO:0048341]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+chemical synaptic transmission [GO:0007268]	 establishment of cell polarity [GO:0030010]	 exocytosis [GO:0006887]	 Golgi to plasma membrane transport [GO:0006893]	 Golgi to transport vesicle transport [GO:0055108]	 membrane biogenesis [GO:0044091]	 oligodendrocyte differentiation [GO:0048709]	 positive regulation of calcium-mediated signaling [GO:0050850]	 protein targeting to membrane [GO:0006612]	 regulation of protein transport [GO:0051223]	 vesicle docking involved in exocytosis [GO:0006904]	 vesicle targeting [GO:0006903]	 vesicle tethering involved in exocytosis [GO:0090522]
+NA
+NA
+NA
+NA
+NA
+NA
+multicellular organism development [GO:0007275]
+
+
+
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cellular response to growth factor stimulus [GO:0071363]	 dTDP biosynthetic process [GO:0006233]	 dTTP biosynthetic process [GO:0006235]	 dUDP biosynthetic process [GO:0006227]	 myoblast differentiation [GO:0045445]	 nucleobase-containing small molecule interconversion [GO:0015949]	 response to cadmium ion [GO:0046686]	 response to estrogen [GO:0043627]	 thymidine biosynthetic process [GO:0046105]
+cellular response to growth factor stimulus [GO:0071363]	 dTDP biosynthetic process [GO:0006233]	 dTTP biosynthetic process [GO:0006235]	 dUDP biosynthetic process [GO:0006227]	 myoblast differentiation [GO:0045445]	 nucleobase-containing small molecule interconversion [GO:0015949]	 response to cadmium ion [GO:0046686]	 response to estrogen [GO:0043627]	 thymidine biosynthetic process [GO:0046105]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+chorionic trophoblast cell differentiation [GO:0060718]	 DNA damage response
+NA
+NA
+NA
+NA
+NA
+NA
+cell population proliferation [GO:0008283]	 DNA dealkylation involved in DNA repair [GO:0006307]	 DNA duplex unwinding [GO:0032508]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+chaperone-mediated protein folding [GO:0061077]	 negative regulation of Rho-dependent protein serine/threonine kinase activity [GO:2000299]	 regulation of cellular response to heat [GO:1900034]	 regulation of centrosome duplication [GO:0010824]
+chaperone-mediated protein folding [GO:0061077]	 negative regulation of Rho-dependent protein serine/threonine kinase activity [GO:2000299]	 regulation of cellular response to heat [GO:1900034]	 regulation of centrosome duplication [GO:0010824]
+animal organ regeneration [GO:0031100]	 liver development [GO:0001889]	 mRNA export from nucleus [GO:0006406]	 nuclear-transcribed mRNA catabolic process
+animal organ regeneration [GO:0031100]	 liver development [GO:0001889]	 mRNA export from nucleus [GO:0006406]	 nuclear-transcribed mRNA catabolic process
+animal organ regeneration [GO:0031100]	 liver development [GO:0001889]	 mRNA export from nucleus [GO:0006406]	 nuclear-transcribed mRNA catabolic process
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 intracellular signal transduction [GO:0035556]	 negative regulation of viral genome replication [GO:0045071]	 nuclear speck organization [GO:0035063]	 positive regulation of cell cycle [GO:0045787]	 positive regulation of cell population proliferation [GO:0008284]	 positive regulation of gene expression [GO:0010628]	 positive regulation of neuron apoptotic process [GO:0043525]	 positive regulation of viral genome replication [GO:0045070]	 protein phosphorylation [GO:0006468]	 regulation of gene expression [GO:0010468]	 regulation of mRNA processing [GO:0050684]	 RNA splicing [GO:0008380]	 spliceosomal complex assembly [GO:0000245]
+NA
+NA
+NA
+NA
+NA
+NA
+brain morphogenesis [GO:0048854]	 cellular response to oxidative stress [GO:0034599]	 DNA repair [GO:0006281]	 gamete generation [GO:0007276]	 interstrand cross-link repair [GO:0036297]	 neuronal stem cell population maintenance [GO:0097150]	 regulation of CD40 signaling pathway [GO:2000348]	 regulation of DNA-binding transcription factor activity [GO:0051090]	 regulation of inflammatory response [GO:0050727]	 regulation of regulatory T cell differentiation [GO:0045589]	 response to gamma radiation [GO:0010332]	 synapsis [GO:0007129]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+calcium ion export across plasma membrane [GO:1990034]	 cellular calcium ion homeostasis [GO:0006874]	 ion transmembrane transport [GO:0034220]	 regulation of cardiac conduction [GO:1903779]	 regulation of cytosolic calcium ion concentration [GO:0051480]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+establishment of epithelial cell polarity [GO:0090162]	 negative regulation of protein secretion [GO:0050709]	 positive regulation of protein secretion [GO:0050714]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+rRNA base methylation [GO:0070475]
+rRNA base methylation [GO:0070475]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+COPII vesicle coating [GO:0048208]
+COPII vesicle coating [GO:0048208]
+COPII vesicle coating [GO:0048208]
+COPII vesicle coating [GO:0048208]
+COPII vesicle coating [GO:0048208]
+germ cell development [GO:0007281]	 multicellular organism development [GO:0007275]	 regulation of translation [GO:0006417]	 spermatogenesis [GO:0007283]
+3'-UTR-mediated mRNA stabilization [GO:0070935]	 germ cell development [GO:0007281]	 meiotic cell cycle [GO:0051321]	 multicellular organism development [GO:0007275]	 positive regulation of translational initiation [GO:0045948]	 spermatogenesis [GO:0007283]
+3'-UTR-mediated mRNA stabilization [GO:0070935]	 germ cell development [GO:0007281]	 meiotic cell cycle [GO:0051321]	 multicellular organism development [GO:0007275]	 positive regulation of translational initiation [GO:0045948]	 spermatogenesis [GO:0007283]
+3'-UTR-mediated mRNA stabilization [GO:0070935]	 germ cell development [GO:0007281]	 meiotic cell cycle [GO:0051321]	 multicellular organism development [GO:0007275]	 positive regulation of translational initiation [GO:0045948]	 spermatogenesis [GO:0007283]
+germ cell development [GO:0007281]	 multicellular organism development [GO:0007275]	 regulation of translation [GO:0006417]	 spermatogenesis [GO:0007283]
+
+
+
+
+
+
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+NA
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+NA
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+NA
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+NA
+establishment of Golgi localization [GO:0051683]	 Golgi organization [GO:0007030]	 maintenance of Golgi location [GO:0051684]	 organelle transport along microtubule [GO:0072384]	 regulation of endocytosis [GO:0030100]	 signal transduction [GO:0007165]
+angiogenesis [GO:0001525]	 cell migration [GO:0016477]	 cortical actin cytoskeleton organization [GO:0030866]	 cytoskeleton organization [GO:0007010]	 regulation of cell shape [GO:0008360]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 peptide catabolic process [GO:0043171]	 proteolysis [GO:0006508]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+polyamine biosynthetic process [GO:0006596]	 positive regulation of intracellular protein transport [GO:0090316]

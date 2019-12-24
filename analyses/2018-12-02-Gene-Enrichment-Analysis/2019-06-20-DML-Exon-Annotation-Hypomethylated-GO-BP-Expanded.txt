@@ -1,0 +1,3434 @@
+GO-BP
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+activation of protein kinase B activity [GO:0032148]	 fat cell differentiation [GO:0045444]	 negative regulation of cell migration [GO:0030336]	 negative regulation of sequestering of triglyceride [GO:0010891]	 phospholipid transport [GO:0015914]	 positive regulation of glucose import [GO:0046326]	 positive regulation of insulin receptor signaling pathway [GO:0046628]	 positive regulation of protein kinase B signaling [GO:0051897]	 protein localization to nuclear pore [GO:0090204]
+blastocyst growth [GO:0001832]	 blastocyst hatching [GO:0001835]	 cellular response to lipopolysaccharide [GO:0071222]	 endodermal cell fate commitment [GO:0001711]	 histone H2B ubiquitination [GO:0033523]	 histone H3-K4 trimethylation [GO:0080182]	 histone monoubiquitination [GO:0010390]	 inner cell mass cell differentiation [GO:0001826]	 interleukin-6-mediated signaling pathway [GO:0070102]	 negative regulation of mRNA polyadenylation [GO:1900364]	 negative regulation of myeloid cell differentiation [GO:0045638]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 positive regulation of histone H2B ubiquitination [GO:2001168]	 positive regulation of histone H3-K4 methylation [GO:0051571]	 positive regulation of histone H3-K79 methylation [GO:2001162]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 positive regulation of transcription elongation from RNA polymerase II promoter [GO:0032968]	 protein ubiquitination [GO:0016567]	 receptor signaling pathway via JAK-STAT [GO:0007259]	 regulation of genetic imprinting [GO:2000653]	 regulation of histone H3-K4 methylation [GO:0051569]	 stem cell population maintenance [GO:0019827]	 transcription by RNA polymerase II [GO:0006366]	 transcription elongation from RNA polymerase II promoter [GO:0006368]	 trophectodermal cell differentiation [GO:0001829]	 Wnt signaling pathway [GO:0016055]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+cytoplasmic microtubule organization [GO:0031122]	 cytoskeleton organization [GO:0007010]	 microtubule cytoskeleton organization [GO:0000226]	 negative regulation of microtubule depolymerization [GO:0007026]	 neuron projection development [GO:0031175]	 regulation of cell morphogenesis [GO:0022604]	 regulation of microtubule polymerization [GO:0031113]
+protein folding in endoplasmic reticulum [GO:0034975]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+hematopoietic progenitor cell differentiation [GO:0002244]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+activation of protein kinase activity [GO:0032147]	 cell cycle [GO:0007049]	 MAPK cascade [GO:0000165]	 neuron projection morphogenesis [GO:0048812]	 protein export from nucleus [GO:0006611]	 protein heterooligomerization [GO:0051291]	 signal transduction by protein phosphorylation [GO:0023014]	 stress-activated protein kinase signaling cascade [GO:0031098]
+activation of protein kinase activity [GO:0032147]	 cell cycle [GO:0007049]	 MAPK cascade [GO:0000165]	 neuron projection morphogenesis [GO:0048812]	 protein export from nucleus [GO:0006611]	 protein heterooligomerization [GO:0051291]	 signal transduction by protein phosphorylation [GO:0023014]	 stress-activated protein kinase signaling cascade [GO:0031098]
+NA
+autophagosome assembly [GO:0000045]	 nervous system development [GO:0007399]
+autophagosome assembly [GO:0000045]	 nervous system development [GO:0007399]
+autophagosome assembly [GO:0000045]	 nervous system development [GO:0007399]
+autophagosome assembly [GO:0000045]	 nervous system development [GO:0007399]
+NA
+NA
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+postsynapse organization [GO:0099173]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 signal transduction [GO:0007165]
+NA
+NA
+NA
+clathrin coat assembly [GO:0048268]	 clathrin-dependent endocytosis [GO:0072583]	 intracellular protein transport [GO:0006886]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+histone arginine methylation [GO:0034969]	 histone H3-R17 methylation [GO:0034971]	 peptidyl-arginine methylation
+chromatin remodeling [GO:0006338]	 histone arginine methylation [GO:0034969]	 peptidyl-arginine methylation
+NA
+NA
+double-strand break repair via homologous recombination [GO:0000724]	 mitotic recombination [GO:0006312]	 reciprocal meiotic recombination [GO:0007131]
+double-strand break repair via homologous recombination [GO:0000724]	 mitotic recombination [GO:0006312]	 reciprocal meiotic recombination [GO:0007131]
+ergothioneine biosynthetic process [GO:0052699]
+NA
+NA
+NA
+NA
+steroid biosynthetic process [GO:0006694]
+steroid biosynthetic process [GO:0006694]
+steroid biosynthetic process [GO:0006694]
+steroid biosynthetic process [GO:0006694]
+NA
+NA
+GPI anchor biosynthetic process [GO:0006506]
+cellular response to anoxia [GO:0071454]	 cellular response to brain-derived neurotrophic factor stimulus [GO:1990416]	 cellular response to calcium ion [GO:0071277]	 cellular response to cAMP [GO:0071320]	 cellular response to insulin stimulus [GO:0032869]	 negative regulation of apoptotic process [GO:0043066]	 positive regulation of dendritic spine morphogenesis [GO:0061003]	 positive regulation of endocytosis [GO:0045807]	 positive regulation of synapse assembly [GO:0051965]	 protein autophosphorylation [GO:0046777]	 regulation of protein autophosphorylation [GO:0031952]	 response to ischemia [GO:0002931]	 response to prolactin [GO:1990637]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+cell differentiation [GO:0030154]	 spermatogenesis [GO:0007283]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+cell differentiation [GO:0030154]	 spermatogenesis [GO:0007283]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+NA
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+cell differentiation [GO:0030154]	 spermatogenesis [GO:0007283]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+antimicrobial humoral immune response mediated by antimicrobial peptide [GO:0061844]	 cellular protein metabolic process [GO:0044267]	 defense response to Gram-negative bacterium [GO:0050829]	 defense response to Gram-positive bacterium [GO:0050830]	 defense response to virus [GO:0051607]	 epithelial cell differentiation [GO:0030855]	 induction of bacterial agglutination [GO:0043152]	 innate immune response [GO:0045087]	 multicellular organism development [GO:0007275]	 protein transport [GO:0015031]	 receptor-mediated endocytosis [GO:0006898]	 viral process [GO:0016032]
+NA
+activation of JNKK activity [GO:0007256]	 activation of JUN kinase activity [GO:0007257]	 base-excision repair [GO:0006284]	 DNA duplex unwinding [GO:0032508]	 DNA repair [GO:0006281]	 intrinsic apoptotic signaling pathway in response to DNA damage [GO:0008630]	 multicellular organism growth [GO:0035264]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of DNA repair [GO:0045739]	 positive regulation of DNA-templated transcription
+activation of JNKK activity [GO:0007256]	 activation of JUN kinase activity [GO:0007257]	 base-excision repair [GO:0006284]	 DNA duplex unwinding [GO:0032508]	 DNA repair [GO:0006281]	 intrinsic apoptotic signaling pathway in response to DNA damage [GO:0008630]	 multicellular organism growth [GO:0035264]	 photoreceptor cell maintenance [GO:0045494]	 positive regulation of DNA repair [GO:0045739]	 positive regulation of DNA-templated transcription
+actin cytoskeleton reorganization [GO:0031532]	 embryo development ending in birth or egg hatching [GO:0009792]	 establishment of cell polarity [GO:0030010]	 establishment or maintenance of actin cytoskeleton polarity [GO:0030950]	 peptidyl-serine phosphorylation [GO:0018105]	 positive regulation of actin filament polymerization [GO:0030838]	 positive regulation of endothelial cell proliferation [GO:0001938]	 positive regulation of peptidyl-tyrosine phosphorylation [GO:0050731]	 positive regulation of protein kinase B signaling [GO:0051897]	 positive regulation of TOR signaling [GO:0032008]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of gene expression [GO:0010468]	 regulation of GTPase activity [GO:0043087]	 regulation of inflammatory response [GO:0050727]	 regulation of peptidyl-serine phosphorylation [GO:0033135]	 regulation of phosphorylation [GO:0042325]	 regulation of protein kinase B signaling [GO:0051896]	 regulation of protein phosphorylation [GO:0001932]	 TOR signaling [GO:0031929]
+actin cytoskeleton reorganization [GO:0031532]	 embryo development ending in birth or egg hatching [GO:0009792]	 establishment of cell polarity [GO:0030010]	 establishment or maintenance of actin cytoskeleton polarity [GO:0030950]	 peptidyl-serine phosphorylation [GO:0018105]	 positive regulation of actin filament polymerization [GO:0030838]	 positive regulation of endothelial cell proliferation [GO:0001938]	 positive regulation of peptidyl-tyrosine phosphorylation [GO:0050731]	 positive regulation of protein kinase B signaling [GO:0051897]	 positive regulation of TOR signaling [GO:0032008]	 regulation of actin cytoskeleton organization [GO:0032956]	 regulation of establishment of cell polarity [GO:2000114]	 regulation of gene expression [GO:0010468]	 regulation of GTPase activity [GO:0043087]	 regulation of inflammatory response [GO:0050727]	 regulation of peptidyl-serine phosphorylation [GO:0033135]	 regulation of phosphorylation [GO:0042325]	 regulation of protein kinase B signaling [GO:0051896]	 regulation of protein phosphorylation [GO:0001932]	 TOR signaling [GO:0031929]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+sensory perception of sound [GO:0007605]
+entrainment of circadian clock by photoperiod [GO:0043153]	 protein ubiquitination [GO:0016567]	 rhythmic process [GO:0048511]
+entrainment of circadian clock by photoperiod [GO:0043153]	 protein ubiquitination [GO:0016567]	 rhythmic process [GO:0048511]
+dephosphorylation of RNA polymerase II C-terminal domain [GO:0070940]	 snRNA transcription [GO:0009301]
+dephosphorylation of RNA polymerase II C-terminal domain [GO:0070940]	 snRNA transcription [GO:0009301]
+dephosphorylation of RNA polymerase II C-terminal domain [GO:0070940]	 snRNA transcription [GO:0009301]
+dephosphorylation of RNA polymerase II C-terminal domain [GO:0070940]	 snRNA transcription [GO:0009301]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+
+
+NA
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+delamination [GO:0060232]	 epithelial to mesenchymal transition [GO:0001837]	 neuroblast delamination [GO:0060234]	 neuroblast division in subventricular zone [GO:0021849]	 positive regulation of transcription by RNA polymerase II [GO:0045944]	 regulation of inflammatory response [GO:0050727]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+activation of GTPase activity [GO:0090630]	 activation of MAPKK activity [GO:0000186]	 blood vessel development [GO:0001568]	 cell-cell adhesion [GO:0098609]	 cellular response to cAMP [GO:0071320]	 cellular response to nerve growth factor stimulus [GO:1990090]	 cytokine-mediated signaling pathway [GO:0019221]	 establishment of endothelial barrier [GO:0061028]	 negative regulation of canonical Wnt signaling pathway [GO:0090090]	 negative regulation of ERK1 and ERK2 cascade [GO:0070373]	 negative regulation of neural precursor cell proliferation [GO:2000178]	 negative regulation of protein kinase B signaling [GO:0051898]	 negative regulation of Ras protein signal transduction [GO:0046580]	 nerve growth factor signaling pathway [GO:0038180]	 platelet-derived growth factor receptor signaling pathway [GO:0048008]	 positive regulation of ERK1 and ERK2 cascade [GO:0070374]	 positive regulation of Fc-gamma receptor signaling pathway involved in phagocytosis [GO:1905451]	 positive regulation of GTPase activity [GO:0043547]	 positive regulation of neuron projection development [GO:0010976]	 positive regulation of Ras protein signal transduction [GO:0046579]	 Rap protein signal transduction [GO:0032486]	 regulation of cell junction assembly [GO:1901888]	 regulation of JNK cascade [GO:0046328]	 signal transduction [GO:0007165]	 transmembrane receptor protein tyrosine kinase signaling pathway [GO:0007169]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 cell division [GO:0051301]	 ciliary basal body-plasma membrane docking [GO:0097711]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 establishment of spindle localization [GO:0051293]	 G2/M transition of mitotic cell cycle [GO:0000086]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 mitotic spindle organization [GO:0007052]	 neutrophil degranulation [GO:0043312]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 cell division [GO:0051301]	 ciliary basal body-plasma membrane docking [GO:0097711]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 establishment of spindle localization [GO:0051293]	 G2/M transition of mitotic cell cycle [GO:0000086]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 mitotic spindle organization [GO:0007052]	 neutrophil degranulation [GO:0043312]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 cell division [GO:0051301]	 ciliary basal body-plasma membrane docking [GO:0097711]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 establishment of spindle localization [GO:0051293]	 G2/M transition of mitotic cell cycle [GO:0000086]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 mitotic spindle organization [GO:0007052]	 neutrophil degranulation [GO:0043312]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]	 cell division [GO:0051301]	 ciliary basal body-plasma membrane docking [GO:0097711]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 endoplasmic reticulum to Golgi vesicle-mediated transport [GO:0006888]	 establishment of spindle localization [GO:0051293]	 G2/M transition of mitotic cell cycle [GO:0000086]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 mitotic spindle organization [GO:0007052]	 neutrophil degranulation [GO:0043312]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of G2/M transition of mitotic cell cycle [GO:0010389]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+cell division [GO:0051301]	 cilium movement [GO:0003341]	 cytoplasmic microtubule organization [GO:0031122]	 cytoplasmic mRNA processing body assembly [GO:0033962]	 establishment of spindle localization [GO:0051293]	 microtubule-based movement [GO:0007018]	 minus-end-directed vesicle transport along microtubule [GO:0072382]	 mitotic cell cycle [GO:0000278]	 nuclear migration [GO:0007097]	 positive regulation of cold-induced thermogenesis [GO:0120162]	 positive regulation of intracellular transport [GO:0032388]	 positive regulation of spindle assembly [GO:1905832]	 regulation of metaphase plate congression [GO:0090235]	 regulation of mitotic spindle organization [GO:0060236]	 retrograde axonal transport [GO:0008090]	 stress granule assembly [GO:0034063]
+mRNA splicing
+mRNA splicing
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+acetate biosynthetic process [GO:0019413]	 acetyl-CoA biosynthetic process [GO:0006085]	 acetyl-CoA biosynthetic process from acetate [GO:0019427]	 propionate biosynthetic process [GO:0019542]
+NA
+NA
+signal transduction [GO:0007165]
+cellular potassium ion homeostasis [GO:0030007]	 glutamate homeostasis [GO:0090461]	 membrane hyperpolarization [GO:0060081]	 positive regulation of transporter activity [GO:0032411]	 protein homooligomerization [GO:0051260]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+microtubule-based movement [GO:0007018]
+NA
+microtubule-based movement [GO:0007018]
+microtubule-based movement [GO:0007018]
+microtubule-based movement [GO:0007018]
+microtubule-based movement [GO:0007018]
+microtubule-based movement [GO:0007018]
+NA
+NA
+microtubule-based movement [GO:0007018]
+microtubule-based movement [GO:0007018]
+phosphatidylinositol-mediated signaling [GO:0048015]	 phosphatidylinositol phosphorylation [GO:0046854]
+phosphatidylinositol-mediated signaling [GO:0048015]	 phosphatidylinositol phosphorylation [GO:0046854]
+phosphatidylinositol-mediated signaling [GO:0048015]	 phosphatidylinositol phosphorylation [GO:0046854]
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+chromatin remodeling [GO:0006338]	 circadian regulation of gene expression [GO:0032922]	 DNA topological change [GO:0006265]
+NA
+NA
+NA
+NA
+NA
+NA
+regulation of transcription
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+endothelial cell morphogenesis [GO:0001886]	 G protein-coupled receptor signaling pathway [GO:0007186]	 positive regulation of apoptotic process [GO:0043065]	 regulation of Rho protein signal transduction [GO:0035023]	 regulation of small GTPase mediated signal transduction [GO:0051056]	 ruffle assembly [GO:0097178]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+ceramide 1-phosphate transport [GO:1902389]	 ceramide transport [GO:0035627]	 intermembrane lipid transfer [GO:0120009]	 negative regulation of autophagy [GO:0010507]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of NLRP3 inflammasome complex assembly [GO:1900226]
+apoptotic process [GO:0006915]	 cell division [GO:0051301]	 meiotic sister chromatid cohesion
+apoptotic process [GO:0006915]	 cell division [GO:0051301]	 meiotic sister chromatid cohesion
+NA
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+angiogenesis [GO:0001525]	 cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 negative regulation of transcription by RNA polymerase II [GO:0000122]	 Notch signaling involved in heart development [GO:0061314]	 regulation of developmental process [GO:0050793]
+NA
+NA
+NA
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+arachidonic acid metabolic process [GO:0019369]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+arachidonic acid metabolic process [GO:0019369]
+apoptotic process [GO:0006915]	 B-1 B cell homeostasis [GO:0001922]	 cell migration [GO:0016477]	 cellular response to hydrogen peroxide [GO:0070301]	 cellular response to lipopolysaccharide [GO:0071222]	 cytoskeleton organization [GO:0007010]	 establishment of protein localization to vacuole [GO:0072666]	 inflammatory response [GO:0006954]	 negative regulation of B cell activation [GO:0050869]	 negative regulation of bone resorption [GO:0045779]	 negative regulation of CD40 signaling pathway [GO:2000349]	 negative regulation of chronic inflammatory response [GO:0002677]	 negative regulation of cyclin-dependent protein serine/threonine kinase activity [GO:0045736]	 negative regulation of endothelial cell apoptotic process [GO:2000352]	 negative regulation of extrinsic apoptotic signaling pathway via death domain receptors [GO:1902042]	 negative regulation of I-kappaB kinase/NF-kappaB signaling [GO:0043124]	 negative regulation of inflammatory response [GO:0050728]	 negative regulation of innate immune response [GO:0045824]	 negative regulation of interleukin-1 beta secretion [GO:0050713]	 negative regulation of interleukin-2 production [GO:0032703]	 negative regulation of interleukin-6 production [GO:0032715]	 negative regulation of NF-kappaB transcription factor activity [GO:0032088]	 negative regulation of nucleotide-binding oligomerization domain containing 1 signaling pathway [GO:0070429]	 negative regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway [GO:0070433]	 negative regulation of osteoclast proliferation [GO:0090291]	 negative regulation of protein ubiquitination [GO:0031397]	 negative regulation of smooth muscle cell proliferation [GO:0048662]	 negative regulation of toll-like receptor 2 signaling pathway [GO:0034136]	 negative regulation of toll-like receptor 3 signaling pathway [GO:0034140]	 negative regulation of toll-like receptor 4 signaling pathway [GO:0034144]	 negative regulation of toll-like receptor 5 signaling pathway [GO:0034148]	 negative regulation of tumor necrosis factor production [GO:0032720]	 negative regulation of type I interferon production [GO:0032480]	 nucleotide-binding oligomerization domain containing signaling pathway [GO:0070423]	 positive regulation of cellular protein catabolic process [GO:1903364]	 positive regulation of hepatocyte proliferation [GO:2000347]	 positive regulation of protein catabolic process [GO:0045732]	 positive regulation of Wnt signaling pathway [GO:0030177]	 protein complex oligomerization [GO:0051259]	 protein deubiquitination [GO:0016579]	 protein deubiquitination involved in ubiquitin-dependent protein catabolic process [GO:0071947]	 protein K11-linked deubiquitination [GO:0035871]	 protein K29-linked deubiquitination [GO:0035523]	 protein K33-linked deubiquitination [GO:1990168]	 protein K48-linked deubiquitination [GO:0071108]	 protein K48-linked ubiquitination [GO:0070936]	 protein K63-linked deubiquitination [GO:0070536]	 regulation of defense response to virus by host [GO:0050691]	 regulation of germinal center formation [GO:0002634]	 regulation of tumor necrosis factor-mediated signaling pathway [GO:0010803]	 regulation of vascular wound healing [GO:0061043]	 response to molecule of bacterial origin [GO:0002237]	 response to muramyl dipeptide [GO:0032495]	 tolerance induction to lipopolysaccharide [GO:0072573]
+NA
+
+NA
+
+NA
+NA
+NA
+multicellular organism development [GO:0007275]	 negative regulation of apoptotic process [GO:0043066]	 negative regulation of cysteine-type endopeptidase activity involved in apoptotic process [GO:0043154]	 protein autoubiquitination [GO:0051865]
+protein import into nucleus [GO:0006606]
+protein import into nucleus [GO:0006606]
+protein import into nucleus [GO:0006606]
+protein import into nucleus [GO:0006606]
+protein import into nucleus [GO:0006606]
+mitotic cell cycle [GO:0000278]	 oocyte maturation [GO:0001556]
+mitotic cell cycle [GO:0000278]	 oocyte maturation [GO:0001556]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+formation of translation preinitiation complex [GO:0001731]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+cilium movement [GO:0003341]	 cilium movement involved in cell motility [GO:0060294]	 epithelial cilium movement [GO:0003351]	 flagellated sperm motility [GO:0030317]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]	 sperm axoneme assembly [GO:0007288]
+acetyl-CoA biosynthetic process [GO:0006085]	 acetyl-CoA metabolic process [GO:0006084]	 citrate metabolic process [GO:0006101]	 fatty acid biosynthetic process [GO:0006633]	 lipid biosynthetic process [GO:0008610]	 oxaloacetate metabolic process [GO:0006107]
+cytoskeleton organization [GO:0007010]	 regulation of cell shape [GO:0008360]	 regulation of transcription by RNA polymerase II [GO:0006357]
+cytoskeleton organization [GO:0007010]	 regulation of cell shape [GO:0008360]	 regulation of transcription by RNA polymerase II [GO:0006357]
+cytoskeleton organization [GO:0007010]	 regulation of cell shape [GO:0008360]	 regulation of transcription by RNA polymerase II [GO:0006357]
+cytoskeleton organization [GO:0007010]	 regulation of cell shape [GO:0008360]	 regulation of transcription by RNA polymerase II [GO:0006357]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NA
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+membrane organization [GO:0061024]	 receptor-mediated endocytosis [GO:0006898]
+receptor-mediated endocytosis [GO:0006898]
+NA
+NA
+NA
+protein deubiquitination [GO:0016579]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+protein deubiquitination [GO:0016579]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+regulation of growth [GO:0040008]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+cilium-dependent cell motility [GO:0060285]	 cilium movement [GO:0003341]	 inner dynein arm assembly [GO:0036159]	 microtubule-based movement [GO:0007018]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+negative regulation of fat cell differentiation [GO:0045599]
+NA
+NA
+NA
+blood coagulation [GO:0007596]	 early endosome to Golgi transport [GO:0034498]	 endosomal transport [GO:0016197]	 Golgi to lysosome transport [GO:0090160]	 protein transport [GO:0015031]	 regulation of Golgi organization [GO:1903358]
+NA
+iron ion homeostasis [GO:0055072]	 positive regulation of cellular protein catabolic process [GO:1903364]	 protein ubiquitination [GO:0016567]	 SCF-dependent proteasomal ubiquitin-dependent protein catabolic process [GO:0031146]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+iron ion homeostasis [GO:0055072]	 positive regulation of cellular protein catabolic process [GO:1903364]	 protein ubiquitination [GO:0016567]	 SCF-dependent proteasomal ubiquitin-dependent protein catabolic process [GO:0031146]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+iron ion homeostasis [GO:0055072]	 positive regulation of cellular protein catabolic process [GO:1903364]	 protein ubiquitination [GO:0016567]	 SCF-dependent proteasomal ubiquitin-dependent protein catabolic process [GO:0031146]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+iron ion homeostasis [GO:0055072]	 positive regulation of cellular protein catabolic process [GO:1903364]	 protein ubiquitination [GO:0016567]	 SCF-dependent proteasomal ubiquitin-dependent protein catabolic process [GO:0031146]	 ubiquitin-dependent protein catabolic process [GO:0006511]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+
+positive regulation of translation [GO:0045727]	 translational initiation [GO:0006413]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+cell differentiation [GO:0030154]	 cilium assembly [GO:0060271]	 cilium movement involved in cell motility [GO:0060294]	 spermatogenesis [GO:0007283]
+NA
+NA
+NA
+NA
+
+
+
+
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+positive regulation of canonical Wnt signaling pathway [GO:0090263]	 positive regulation of ubiquitin-dependent protein catabolic process [GO:2000060]	 protein ADP-ribosylation [GO:0006471]	 protein poly-ADP-ribosylation [GO:0070212]	 regulation of proteasome assembly [GO:0090364]
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+protein localization [GO:0008104]	 regulation of apoptotic process [GO:0042981]
+NA
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+cell cycle [GO:0007049]	 chordate embryonic development [GO:0043009]	 dosage compensation by inactivation of X chromosome [GO:0009048]	 double-strand break repair via homologous recombination [GO:0000724]	 fatty acid biosynthetic process [GO:0006633]	 negative regulation of fatty acid biosynthetic process [GO:0045717]	 negative regulation of histone acetylation [GO:0035067]	 positive regulation of cell cycle arrest [GO:0071158]	 positive regulation of histone acetylation [GO:0035066]	 positive regulation of transcription
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+cristae formation [GO:0042407]	 mitochondrial fusion [GO:0008053]	 mitochondrial protein processing [GO:0034982]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+apoptotic process [GO:0006915]	 bradykinin catabolic process [GO:0010815]	 calcitonin catabolic process [GO:0010816]	 ear development [GO:0043583]	 embryonic digit morphogenesis [GO:0042733]	 endothelin maturation [GO:0034959]	 heart development [GO:0007507]	 hormone catabolic process [GO:0042447]	 peptide hormone processing [GO:0016486]	 pharyngeal system development [GO:0060037]	 positive regulation of cAMP-mediated signaling [GO:0043950]	 positive regulation of cardiac muscle hypertrophy [GO:0010613]	 positive regulation of G protein-coupled receptor signaling pathway [GO:0045745]	 positive regulation of receptor recycling [GO:0001921]	 protein processing [GO:0016485]	 proteolysis [GO:0006508]	 regulation of blood pressure [GO:0008217]	 regulation of blood vessel diameter [GO:0097746]	 regulation of ERK1 and ERK2 cascade [GO:0070372]	 response to hypoxia [GO:0001666]	 substance P catabolic process [GO:0010814]
+NA
+NA
+NA

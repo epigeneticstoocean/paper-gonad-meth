@@ -1,0 +1,2 @@
+geneID,DMLCount,chr,start,end,meth.diff,meth.diff2,meth.diff3,meth.diff4,meth.diff5,no.hyper,strand,pvalue,qvalue,Product
+111128212,5,NC_035783.1,21066995,21066995,54.14835165,50.31610506,53.16455696,50.49947221,-50.70403771,4,+,2.45E-74,3.06E-70,WD repeat-containing protein 81-like

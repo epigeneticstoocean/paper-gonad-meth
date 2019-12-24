@@ -1,0 +1,68 @@
+parentGOslim,frequency
+actin binding,8
+anion channel activity,5
+anion transmembrane transporter activity,7
+ATPase activity, coupled,5
+calcium ion binding,16
+catalytic activity, acting on DNA,5
+cation channel activity,7
+cation transmembrane transporter activity,11
+cysteine-type peptidase activity,5
+DNA binding,43
+DNA-binding transcription factor activity,12
+DNA-binding transcription factor activity, RNA polymerase II-specific,8
+double-stranded DNA binding,14
+endopeptidase activity,5
+enzyme binding,16
+enzyme regulator activity,12
+exopeptidase activity,6
+gated channel activity,11
+GTPase activity,11
+GTPase regulator activity,7
+guanyl-nucleotide exchange factor activity,11
+hydrolase activity, acting on ester bonds,17
+hydrolase activity, acting on glycosyl bonds,8
+intramolecular oxidoreductase activity,5
+ion channel activity,15
+ligase activity,9
+lipid binding,7
+magnesium ion binding,11
+metal ion binding,31
+metal ion transmembrane transporter activity,8
+molecular function regulator,23
+molecular transducer activity,13
+motor activity,5
+mRNA binding,9
+nuclease activity,8
+nucleobase-containing compound kinase activity,6
+nucleoside-triphosphatase regulator activity,9
+oxidoreductase activity,26
+oxidoreductase activity, acting on the aldehyde or oxo group of donors,5
+oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor,8
+peptidase activity,17
+peptide receptor activity,5
+phospholipid binding,5
+protein kinase activity,12
+protein-containing complex binding,6
+proximal promoter sequence-specific DNA binding,5
+purine nucleoside binding,7
+purine ribonucleoside triphosphate binding,32
+pyrophosphatase activity,23
+Ras GTPase binding,5
+RNA binding,33
+RNA polymerase II regulatory region sequence-specific DNA binding,8
+signaling receptor binding,14
+small molecule binding,49
+structural constituent of ribosome,8
+structural molecule activity,12
+transcription coactivator activity,5
+transcription coregulator activity,9
+transcription regulator activity,21
+transferase activity, transferring glycosyl groups,7
+transferase activity, transferring hexosyl groups,5
+transferase activity, transferring phosphorus-containing groups,24
+transmembrane signaling receptor activity,9
+transporter activity,25
+tRNA binding,6
+ubiquitin-protein transferase activity,11
+voltage-gated ion channel activity,5

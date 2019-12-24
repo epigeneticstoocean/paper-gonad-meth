@@ -1,0 +1,152 @@
+"","GO.BP","n"
+"1","",172
+"2"," acetyl-CoA metabolic process [GO:0006084]",1
+"3"," anatomical structure morphogenesis [GO:0009653]",2
+"4"," antigen processing and presentation of peptide antigen via MHC class I [GO:0002474]",3
+"5"," aorta morphogenesis [GO:0035909]",3
+"6"," Arp2/3 complex-mediated actin nucleation [GO:0034314]",2
+"7"," asymmetric cell division [GO:0008356]",2
+"8"," axonogenesis [GO:0007409]",2
+"9"," blastocyst hatching [GO:0001835]",1
+"10"," C-terminal protein deglutamylation [GO:0035609]",2
+"11"," camera-type eye morphogenesis [GO:0048593]",2
+"12"," cell adhesion [GO:0007155]",5
+"13"," cell competition in a multicellular organism [GO:0035212]",2
+"14"," cell division [GO:0051301]",6
+"15"," cell redox homeostasis [GO:0045454]",1
+"16"," cell-cell adhesion [GO:0098609]",21
+"17"," cellular calcium ion homeostasis [GO:0006874]",3
+"18"," cellular response to cytokine stimulus [GO:0071345]",12
+"19"," cellular response to DNA damage stimulus [GO:0006974]",5
+"20"," cellular response to leukemia inhibitory factor [GO:1990830]",2
+"21"," cellular response to lipopolysaccharide [GO:0071222]",1
+"22"," central nervous system projection neuron axonogenesis [GO:0021952]",2
+"23"," centrosome cycle [GO:0007098]",9
+"24"," centrosome duplication [GO:0051298]",14
+"25"," cerebral cortex development [GO:0021987]",21
+"26"," chloride transport [GO:0006821]",9
+"27"," chromatin silencing [GO:0006342]",1
+"28"," ciliary basal body organization [GO:0032053]",23
+"29"," cilium organization [GO:0044782]",4
+"30"," circadian regulation of gene expression [GO:0032922]",2
+"31"," citrate metabolic process [GO:0006101]",1
+"32"," clathrin-dependent endocytosis [GO:0072583]",1
+"33"," collagen fibril organization [GO:0030199]",5
+"34"," compound eye development [GO:0048749]",2
+"35"," cytoplasmic sequestering of protein [GO:0051220]",4
+"36"," cytoskeleton organization [GO:0007010]",2
+"37"," DNA clamp unloading [GO:0090618]",3
+"38"," DNA damage checkpoint [GO:0000077]",2
+"39"," DNA damage induced protein phosphorylation [GO:0006975]",2
+"40"," DNA replication [GO:0006260]",4
+"41"," embryo implantation [GO:0007566]",1
+"42"," embryonic forelimb morphogenesis [GO:0035115]",1
+"43"," embryonic organ development [GO:0048568]",2
+"44"," endosome to lysosome transport [GO:0008333]",1
+"45"," eye photoreceptor cell differentiation [GO:0001754]",2
+"46"," glycerolipid metabolic process [GO:0046486]",136
+"47"," histone H2A-T120 phosphorylation [GO:1990245]",2
+"48"," homeostasis of number of cells [GO:0048872]",2
+"49"," intein-mediated protein splicing [GO:0016539]",5
+"50"," intermediate filament organization [GO:0045109]",3
+"51"," intracellular mRNA localization [GO:0008298]",12
+"52"," intracellular protein transport [GO:0006886]",2
+"53"," intracellular signal transduction [GO:0035556]",136
+"54"," ion transport [GO:0006811]",2
+"55"," microtubule cytoskeleton organization [GO:0000226]",2
+"56"," mitochondria-associated ubiquitin-dependent protein catabolic process [GO:0072671]",4
+"57"," mRNA 3'-end processing [GO:0031124]",1
+"58"," mRNA export from nucleus [GO:0006406]",2
+"59"," multicellular organism development [GO:0007275]",10
+"60"," negative regulation of fat cell proliferation [GO:0070345]",2
+"61"," negative regulation of microtubule depolymerization [GO:0007026]",63
+"62"," negative regulation of transcription by RNA polymerase II [GO:0000122]",4
+"63"," nuclear pore complex assembly [GO:0051292]",1
+"64"," nuclear protein quality control by the ubiquitin-proteasome system [GO:0071630]",4
+"65"," nuclear-transcribed mRNA catabolic process",4
+"66"," peptidyl-lysine methylation [GO:0018022]",6
+"67"," positive regulation of calcineurin-NFAT signaling cascade [GO:0070886]",24
+"68"," positive regulation of gastrulation [GO:2000543]",1
+"69"," positive regulation of protein dephosphorylation [GO:0035307]",24
+"70"," positive regulation of Schwann cell migration [GO:1900149]",3
+"71"," positive regulation of transcription",12
+"72"," positive regulation of transcription by RNA polymerase II [GO:0045944]",2
+"73"," positive regulation of transcription from RNA polymerase II promoter in response to endoplasmic reticulum stress [GO:1990440]",2
+"74"," proteasome-mediated ubiquitin-dependent protein catabolic process [GO:0043161]",1
+"75"," protein localization to M-band [GO:0036309]",6
+"76"," protein transport [GO:0015031]",1
+"77"," protein ubiquitination [GO:0016567]",1
+"78"," Ral protein signal transduction [GO:0032484]",6
+"79"," regulation of cell division [GO:0051302]",1
+"80"," regulation of cell population proliferation [GO:0042127]",4
+"81"," regulation of cytokine biosynthetic process [GO:0042035]",4
+"82"," regulation of exocyst localization [GO:0060178]",6
+"83"," regulation of intracellular pH [GO:0051453]",9
+"84"," regulation of small GTPase mediated signal transduction [GO:0051056]",4
+"85"," regulation of transcription",3
+"86"," regulation of translation [GO:0006417]",1
+"87"," response to alkaloid [GO:0043279]",1
+"88"," response to toxic substance [GO:0009636]",1
+"89"," spermatogenesis [GO:0007283]",4
+"90"," translation [GO:0006412]",1
+"91"," vesicle-mediated transport [GO:0016192]",1
+"92","3'-UTR-mediated mRNA destabilization [GO:0061158]",12
+"93","acetyl-CoA biosynthetic process [GO:0006085]",1
+"94","acetyl-CoA metabolic process [GO:0006084]",2
+"95","acrosome assembly [GO:0001675]",3
+"96","actin cytoskeleton organization [GO:0030036]",5
+"97","actin filament organization [GO:0007015]",2
+"98","actin polymerization-dependent cell motility [GO:0070358]",2
+"99","activation of GTPase activity [GO:0090630]",10
+"100","adult somatic muscle development [GO:0007527]",6
+"101","antigen processing and presentation of exogenous peptide antigen via MHC class II [GO:0019886]",3
+"102","apoptotic cell clearance [GO:0043277]",1
+"103","apoptotic process [GO:0006915]",2
+"104","axo-dendritic transport [GO:0008088]",2
+"105","B cell differentiation [GO:0030183]",2
+"106","B cell proliferation [GO:0042100]",3
+"107","bicarbonate transport [GO:0015701]",9
+"108","blastocyst growth [GO:0001832]",1
+"109","blood vessel maturation [GO:0001955]",1
+"110","branching involved in ureteric bud morphogenesis [GO:0001658]",21
+"111","branchiomotor neuron axon guidance [GO:0021785]",2
+"112","cation transport [GO:0006812]",3
+"113","cell cycle [GO:0007049]",14
+"114","cell differentiation [GO:0030154]",4
+"115","cell migration [GO:0016477]",63
+"116","cell projection organization [GO:0030030]",1
+"117","cellular response to DNA damage stimulus [GO:0006974]",2
+"118","cellular response to hydrogen peroxide [GO:0070301]",4
+"119","cellular response to leukemia inhibitory factor [GO:1990830]",1
+"120","cellular response to lipopolysaccharide [GO:0071222]",3
+"121","centriole replication [GO:0007099]",14
+"122","centriole-centriole cohesion [GO:0010457]",9
+"123","cerebellar Purkinje cell differentiation [GO:0021702]",2
+"124","cilium assembly [GO:0060271]",4
+"125","clathrin coat assembly [GO:0048268]",1
+"126","cytoplasmic microtubule organization [GO:0031122]",2
+"127","diacylglycerol metabolic process [GO:0046339]",136
+"128","DNA repair [GO:0006281]",1
+"129","double-strand break repair via homologous recombination [GO:0000724]",2
+"130","endoplasmic reticulum unfolded protein response [GO:0030968]",2
+"131","glucuronoside catabolic process [GO:0019391]",1
+"132","hematopoietic progenitor cell differentiation [GO:0002244]",1
+"133","intracellular mRNA localization [GO:0008298]",1
+"134","intracellular transport [GO:0046907]",1
+"135","intracellular transport of virus [GO:0075733]",1
+"136","microtubule-based movement [GO:0007018]",16
+"137","mitochondrial translation [GO:0032543]",1
+"138","mitochondrion organization [GO:0007005]",6
+"139","mRNA cis splicing",1
+"140","mRNA export from nucleus [GO:0006406]",1
+"141","mRNA processing [GO:0006397]",5
+"142","mRNA splicing",3
+"143","negative regulation of signal transduction [GO:0009968]",2
+"144","negative regulation of Wnt signaling pathway [GO:0030178]",1
+"145","neuromuscular process controlling balance [GO:0050885]",24
+"146","positive regulation of gene expression [GO:0010628]",12
+"147","positive regulation of transcription",1
+"148","protein deubiquitination [GO:0016579]",2
+"149","protein polyubiquitination [GO:0000209]",1
+"150","proteolysis [GO:0006508]",4
+"151","steroid biosynthetic process [GO:0006694]",4
