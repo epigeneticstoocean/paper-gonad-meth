@@ -1,0 +1,1056 @@
+---
+title: "Differentially Methylated Gene Analysis"
+author: "Yaamini Venkataraman"
+date: "8/19/2019"
+output: github_document
+---
+
+In this script, I will identify genes that are differentially methylated in response to *C. virginica* exposure to experimental ocean acidification conditions. I am roughly replicating an analysis from [this paper](https://advances.sciencemag.org/content/4/6/eaar8028) and [this preprint](https://www.biorxiv.org/content/early/2018/02/21/269076). .I will annotate coverage output from `bismark` with gene information, calculate median methylation for each gene, then perform t-tests for each gene. For differentially methylated genes (DMG), I will conduct a functional enrichment with GO-MWU.
+
+# Set up R Markdown document
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+# Create annotated gene list
+
+## Add gene track
+
+```{r}
+geneList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
+colnames(geneList) <- c("gene-chr", "Gnomon", "gene", "gene-start", "gene-end", "V6", "V7", "V8", "V9") #Rename columns
+head(geneList) #Confirm import
+```
+
+```{r}
+geneList <- geneList[,-c(6:8)] #Remove columns 6-8
+head(geneList) #Confirm changes
+```
+
+### Import gene ID
+
+```{r}
+geneDescriptions <- read.delim2("../2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Gene-Descriptions.txt", header = FALSE, col.names = c("gene-number", "gene-ID", "V3", "V4", "V5", "V6", "V7", "V8", "V9")) #Import document with gene descrptions. Name 9 columns so all rows are imported with 9 columns
+head(geneDescriptions) #Confirm import
+```
+
+```{r}
+geneID <- geneDescriptions$gene.ID #Isolate gene ID column
+geneID <- gsub("Dbxref=GeneID:", "", geneID) #Remove extraneous characters
+head(geneID) #Confirm changes
+```
+
+### Merge gene location and gene ID
+
+```{r}
+geneList <- data.frame(geneList, geneID) #Replace geneList dataframe with geneList and geneID
+geneList <- geneList[,-6] #Remove extra column
+colnames(geneList) <- c("gene-chr", "Gnomon", "gene", "gene-start", "gene-end", "gene-ID") #Rename columns to match previous naming conventions
+head(geneList) #Confirm merge
+```
+
+## Add mRNA track
+
+```{r}
+mRNAList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
+mRNAList <- mRNAList[,-c(6,8)] #Remove extra columns
+colnames(mRNAList) <- c("mRNA-chr", "Gnomon", "mRNA", "mRNA-start", "mRNA-end", "mRNA-strand", "V9") #Rename columns
+head(mRNAList) #Confirm import
+```
+
+### Import mRNA descriptions
+
+```{r}
+mRNADescriptions <- read.delim2("../2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Descriptions.txt", header = FALSE, col.names = paste("V", 1:78, sep = "")) #Import document with gene descrptions. Name 78 columns so all rows are imported with 78 columns
+head(mRNADescriptions) #Confirm import
+```
+
+```{r}
+geneIDmRNAList <- mRNADescriptions$V3 #Isolate gene ID column
+geneIDmRNAList <- gsub("Dbxref=GeneID:", "", geneIDmRNAList) #Remove extraneous characters
+head(geneIDmRNAList) #Confirm changes
+```
+
+```{r}
+genbankIDmRNAList <- mRNADescriptions$V4 #Isolate Genbank ID
+genbankIDmRNAList <- gsub("Genbank:", "", genbankIDmRNAList) #Remove extraneous characters
+head(genbankIDmRNAList) #Confirm changes
+```
+
+### Import isolated mRNA products
+
+```{r}
+mRNAProducts <- read.delim2("../2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products.txt", header = FALSE, col.names = paste("V", 1:16, sep = "")) #Import document with gene descrptions. Name 16 columns so all rows are imported with 16 columns.
+head(mRNAProducts) #Confirm import
+```
+
+```{r}
+mRNAProducts <- mRNAProducts$V1 #Extract the first column with product information
+```
+
+### Reformat mRNA List
+
+```{r}
+mRNAList <- data.frame(mRNAList, geneIDmRNAList, genbankIDmRNAList, mRNAProducts) #Replace mRNAList dataframe with mRNAList, geneIDmRNAList, genbankIDmRNAList, and mRNAProducts
+mRNAList <- mRNAList[,-c(6:7)] #Remove extra columns
+colnames(mRNAList) <- c("mRNA-chr", "Gnomon", "mRNA", "mRNA-start", "mRNA-end", "gene-ID", "Genbank", "Product") #Rename columns to match previous naming conventions
+head(mRNAList) #Confirm merge
+```
+
+## Merge gene and mRNA tracks
+
+```{r}
+geneAnnotations <- unique(merge(x = geneList, y = mRNAList, by = "gene-ID")) #Merge gene and mRNA lists by gene-ID column. I will only have genes with mRNA in the final dataframe. Additionally, keep only unique entries (remove any merging artifacts)
+length(geneAnnotations$`gene-ID`) #There are 60,201 mRNA, so this is a good sign!
+```
+
+```{r}
+geneAnnotations <- geneAnnotations[,c(2, 5:6, 10:11, 1, 12, 13)] #Reorganize columns
+head(geneAnnotations) #Confirm reorganization
+```
+
+## Retain the longest mRNA for each gene
+
+When looking at differentially methylated genes, Liew et al. used the longest mRNA for each gene. I will do the same thing.
+
+```{r}
+geneAnnotations$mRNALength <- as.numeric(geneAnnotations$`mRNA-end` - geneAnnotations$`mRNA-start`) #Calculate the length of each mRNA and save in a new column
+head(geneAnnotations) #Confirm length calculation
+```
+
+```{r}
+attach(geneAnnotations) #Attach dataframe
+geneAnnotations <- geneAnnotations[order(`gene-chr`, `gene-start`, -mRNALength),] #Sort by gene chromosome, then gene start position, and finally mRNA length. The minus sign indicates the dataframe should be sorted in descending order (longer mRNA length first)
+detach(geneAnnotations) #Detach dataframe
+head(geneAnnotations) #Confirm sorting
+```
+
+```{r}
+write.table(geneAnnotations, "2019-08-14-All-Annotated-Gene-and-mRNA.txt", quote = FALSE, row.names = FALSE) #Save ordered file
+```
+
+```{bash}
+#For the 6th field [$6] (gene ID), remove all duplicate entries in a csv file (-F","). These entries are saved and can be extracted as a different output if needed. 
+#Save output to a new file
+awk -F"" '!x[$6]++' 2019-08-14-All-Annotated-Gene-and-mRNA.txt \
+> 2019-08-14-All-Annotated-Gene-and-mRNA-Unique.csv
+```
+
+```{bash}
+head 2019-08-14-All-Annotated-Gene-and-mRNA-Unique.csv #Check file
+```
+
+```{r}
+geneAnnotationsCondensed <- read.csv("2019-08-14-All-Annotated-Gene-and-mRNA-Unique.csv", header = TRUE) #Import condensed information
+length(geneAnnotationsCondensed$gene.chr) #Number of mRNA from unique genes.
+```
+
+## Add Uniprot and GOterm information
+
+```{r}
+blastResults <- read.delim("../2018-12-02-Gene-Enrichment-Analysis/2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt", header = FALSE, sep = "\t", dec = ".") #Import blast results
+blastResults <- blastResults[,c(1, 3)] #Keep only relevant columns
+colnames(blastResults) <- c("Genbank", "Uniprot") #Rename columns
+head(blastResults) #Confirm column headers
+```
+
+```{r}
+geneAnnotationsCondensedUniprot <- unique(merge(x = geneAnnotationsCondensed, y = blastResults, by = "Genbank", all.x = TRUE, sort = FALSE)) #Add Uniprot Accession code to gene annotations. Keep all rows even if they don't have matching Uniprot codes. Do not resort the output. Keep only unique entries (remove merging artifacts)
+head(geneAnnotationsCondensedUniprot) #Confirm merge
+```
+
+```{r}
+uniprotGOTerms <- read.delim("../2018-12-02-Gene-Enrichment-Analysis/uniprot-reviewed_yes.tab", header = TRUE) #Import tab-delimited file with header
+uniprotGOTerms <- uniprotGOTerms[,c(1,8)] #Retain Entry and GOterm columns
+colnames(uniprotGOTerms) <- c("Uniprot", "GO") #Rename columns
+head(uniprotGOTerms) #Confirm import
+```
+
+```{r}
+geneAnnotationsCondensedUniprotGOterms <- unique(merge(x = geneAnnotationsCondensedUniprot, y = uniprotGOTerms, by = "Uniprot", all.x = TRUE)) #Add GOterms to gene annotations. Keep all rows even if they don't have matching Uniprot codes. Keep only unique entries (remove merging artifacts)
+head(geneAnnotationsCondensedUniprotGOterms, n = 2) #Confirm merge. The output is sorted by Uniprot codes, so I'll need to resort. It would have been sorted by Uniprot code order even if I had used sort = FALSE.
+```
+
+```{r}
+geneAnnotationsCondensedUniprotGOterms <- geneAnnotationsCondensedUniprotGOterms[,c(3:8, 2, 10, 9, 1, 11)] #Reorganize columns
+attach(geneAnnotationsCondensedUniprotGOterms) #Attach dataframe
+geneAnnotationsCondensedUniprotGOterms <- geneAnnotationsCondensedUniprotGOterms[order(gene.chr, gene.start),] #Sort by gene chromosome, then start position
+detach(geneAnnotationsCondensedUniprotGOterms) #Detatch dataframe
+head(geneAnnotationsCondensedUniprotGOterms, n = 5) #Confirm reorganization and sorting
+```
+
+I will now save the gene information as a new file. This information will be used to annotate coverage files.
+
+```{r}
+write.csv(geneAnnotationsCondensedUniprotGOterms, "2019-08-14-Annotated-Gene-Longest-mRNA-Uniprot-GOterms.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+```{r}
+write.table(geneAnnotationsCondensedUniprotGOterms, "2019-08-14-Annotated-Gene-Longest-mRNA-Uniprot-GOterms.txt", sep = "\t", col.names = FALSE, row.names = FALSE, quote = FALSE) #Also saving a tab-delimited version
+```
+
+# Annotate coverage files
+
+## Download 5x coverage files
+
+Liew et al. used raw coverage files from `bismark` for their analysis, but I will use manipulated coverage files. In [this Jupyter notebook](https://github.com/fish546-2018/yaamini-virginica/blob/master/notebooks/2019-03-07-Generating-Coverage-Tracks.ipynb), I filtered loci with 5x coverage and saved that information in bedGraphs. These bedGraphs will be used in the DMG analysis.
+
+```{bash, echo = FALSE}
+wget -r -l1 --no-parent -A_5x.bedgraph https://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2019-03-07-Yaamini-Virginica-Repository/analyses/2019-03-07-IGV-Verification/ #Download 5x bedgraphs from gannet
+```
+
+```{bash}
+mv gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2019-03-07-Yaamini-Virginica-Repository/analyses/2019-03-07-IGV-Verification/* . #Move files to present working directory. Where they are stored mimics file structure on gannet
+```
+
+```{bash}
+rm -r gannet.fish.washington.edu #Remove gannet directory
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph #Columns: chr, start, end, percent methylation. Tab-delimited.
+```
+
+## Create new files without percent methylation information
+
+To match loci with the gene they're in, I'm going to use `intersectBed` from `bedtools`. Before I can use files with `intersectBed`, I need to remove the last column from the coverage files, percent methylation. This is because `intersectBed` will only accept chromosome and positions, and will not accept columns with numbers that are not positions.
+
+```{bash}
+#For each file that ends in bedgraph
+#Print the first three columns, tab-delimited, and save the columns in a new file that has the same base name and ends in posOnly
+for f in *bedgraph
+do
+  awk '{print $1"\t"$2"\t"$3}' ${f} > ${f}.posOnly
+done
+```
+
+```{bash}
+find *posOnly #Confirm files were created
+```
+
+```{bash}
+head zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.posOnly #Confirm file formatting
+```
+
+## Run `intersectBed`
+
+```{bash}
+#For each file that ends in posOnly
+#Use intersectBed to find where loci and genes intersect, allowing loci to be mapped to annotated genes
+#wb: Print all lines in the second file
+#a: file that ends in posOnly
+#b: annotated gene list
+#Save output in a new file that has the same base name and ends in -Annotated.txt
+for f in *posOnly
+do
+  /Users/Shared/bioinformatics/bedtools2/bin/intersectBed \
+  -wb \
+  -a ${f} \
+  -b 2019-08-14-Annotated-Gene-Longest-mRNA-Uniprot-GOterms.txt \
+  > ${f}-Annotated.txt
+done
+```
+
+```{bash}
+find *Annotated.txt
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.posOnly-Annotated.txt #Confirm file is annotated
+```
+
+## Add back percent methylation information
+
+After annotating coverage files with `intersectBed`, I need to add percent methylation information back to the annotated files. I need the percent methylation data to calculate median methylation by gene. I could import 20 files into R, or I could use a series of `bash` commands.
+
+The original files aren't tab-delimited while the others are, so I need to get the coverage files in a tab-delimited format so my output will be tab-delimited.
+
+```{bash}
+#For each file that ends in bedgraph (the original coverage files)
+#Print the first three columns (chr, start, end) with dashes ("-") in between. Then, print the rest of the columns (chr, start, end, percentMeth) in the file with tabs ("\t") inbetween.
+#Save the file with the base name + .sorted
+for f in *bedgraph
+do
+  awk '{print $1"-"$2"-"$3"\t"$1"\t"$2"\t"$3"\t"$4}' ${f} \
+  | sort -k1,1 \
+  > ${f}.sorted
+done
+```
+
+```{bash}
+find *bedgraph.sorted
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.sorted
+```
+
+```{bash}
+#For each file that ends in Annotated.txt
+#Print the first three columns (chr, start, end) with dashes in between, then the rest of the columns in the file
+#Save the file with the base name + .sorted
+for f in *Annotated.txt
+do
+  awk '{print $1"-"$2"-"$3"\t"$0}' ${f} \
+  | sort -k1,1 \
+  > ${f}.sorted
+done
+```
+
+```{bash}
+find *Annotated.txt.sorted
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.posOnly-Annotated.txt.sorted
+```
+
+```{bash}
+#For each file that ends in bedgraph
+#Join 2 files using the first column. The files and tab-delimited and the output should also be tab-delimited
+#The first file ends with .bedgraph.sorted
+#The second file ends with .bedgraph.posOnly.Annotated.txt.sorted
+#Add .annotated.percentMeth to the base name of the output file
+for f in *bedgraph
+do
+  join -j 1 -t $'\t' \
+  ${f}.sorted \
+  ${f}.posOnly-Annotated.txt.sorted \
+  > ${f}.annotated-percentMeth
+done
+```
+
+```{bash}
+find *annotated-percentMeth
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.annotated-percentMeth
+```
+
+```{bash}
+for f in *Annotated.txt
+do
+  wc -l ${f}
+done
+```
+
+```{bash}
+for f in *percentMeth
+do
+  wc -l ${f}
+done
+```
+
+## Add column names to files
+
+```{bash}
+#For each file that ends in percentMeth
+#List tab-delimited column headers
+#Add the file after the headers
+#Save output as a new file with the base name + ".header"
+for f in *percentMeth
+do
+  echo -e "key\tchr\tstart\tend\tpercentMeth\tchr2\tstart2\tend2\tgene-chr\tgene-start\tgene-end\tmRNA-start\tmRNA-end\tgeneID\tGenbank\tmRNALength\tProduct\tUniprot\tGO" \
+  | cat - ${f} \
+  > ${f}.header
+done
+```
+
+```{bash}
+find *header
+```
+
+```{bash}
+head zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.annotated-percentMeth.header
+```
+
+# Calculate median percent methylation for each sample
+
+I can do this within R, so the first step is to import the files.
+
+```{r}
+filesToImport <- list.files(pattern = "*header") #Create a file list for all 10 files to import
+list2env(lapply(setNames(filesToImport,
+                         make.names(gsub("_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph.annotated-percentMeth.header", "", filesToImport))),
+                read.delim),
+         envir = .GlobalEnv) #Import files to the .GlobalEnv with list2env. Use lapply to setNames of the files by taking all the common parts of their names out. Read files with read.delim (can only use defaults = header = TRUE, sep = "\t"). Files will be named zr2096_#
+head(zr2096_1) #Confirm import
+```
+
+```{r}
+#Remove extraneous columns...there has to be a better way to do this in R
+zr2096_1 <- zr2096_1[,-c(1, 6:8)]
+zr2096_2 <- zr2096_2[,-c(1, 6:8)]
+zr2096_3 <- zr2096_3[,-c(1, 6:8)]
+zr2096_4 <- zr2096_4[,-c(1, 6:8)]
+zr2096_5 <- zr2096_5[,-c(1, 6:8)]
+zr2096_6 <- zr2096_6[,-c(1, 6:8)]
+zr2096_7 <- zr2096_7[,-c(1, 6:8)]
+zr2096_8 <- zr2096_8[,-c(1, 6:8)]
+zr2096_9 <- zr2096_9[,-c(1, 6:8)]
+zr2096_10 <- zr2096_10[,-c(1, 6:8)]
+head(zr2096_1) #Confirm column removal
+```
+
+```{r}
+#Calculate median percent methylation by gene for each sample
+zr2096_1_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_1, FUN = median)
+zr2096_2_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_2, FUN = median)
+zr2096_3_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_3, FUN = median)
+zr2096_4_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_4, FUN = median)
+zr2096_5_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_5, FUN = median)
+zr2096_6_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_6, FUN = median)
+zr2096_7_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_7, FUN = median)
+zr2096_8_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_8, FUN = median)
+zr2096_9_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_9, FUN = median)
+zr2096_10_PercentMeth <- aggregate(percentMeth ~ geneID, data = zr2096_10, FUN = median)
+head(zr2096_1_PercentMeth) #Confirm percent methylation calculation
+```
+
+```{r}
+#Merge sample percent methylation information so that all geneIDs have data
+fullPercentMeth <- merge(x = zr2096_1_PercentMeth, y = zr2096_2_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_3_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_4_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_5_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_6_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_7_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_8_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_9_PercentMeth, by = "geneID")
+fullPercentMeth <- merge(x = fullPercentMeth, y = zr2096_10_PercentMeth, by = "geneID")
+length(fullPercentMeth$geneID) #Number of gene IDs in combined dataset.
+head(fullPercentMeth) #Confirm merge. Column names are replicated but the columns are from samples 1-10.
+```
+
+```{r}
+#Create individual dataframes
+zr2096_1_PercentMethFull <- fullPercentMeth[,c(1,2)]
+zr2096_2_PercentMethFull <- fullPercentMeth[,c(1,3)]
+zr2096_3_PercentMethFull <- fullPercentMeth[,c(1,4)]
+zr2096_4_PercentMethFull <- fullPercentMeth[,c(1,5)]
+zr2096_5_PercentMethFull <- fullPercentMeth[,c(1,6)]
+zr2096_6_PercentMethFull <- fullPercentMeth[,c(1,7)]
+zr2096_7_PercentMethFull <- fullPercentMeth[,c(1,8)]
+zr2096_8_PercentMethFull <- fullPercentMeth[,c(1,9)]
+zr2096_9_PercentMethFull <- fullPercentMeth[,c(1,10)]
+zr2096_10_PercentMethFull <- fullPercentMeth[,c(1,11)]
+head(zr2096_1_PercentMethFull) #Confirm dataframe creation
+```
+
+```{r}
+#Change column names
+colnames(zr2096_1_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_2_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_3_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_4_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_5_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_6_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_7_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_8_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_9_PercentMethFull)[2] <- "percentMeth"
+colnames(zr2096_10_PercentMethFull)[2] <- "percentMeth"
+head(zr2096_1_PercentMethFull) #Confirm name change
+```
+
+```{r}
+#Add sample number to each dataframe
+zr2096_1_PercentMethFull$sampleNumber <- rep("sample_1", times = length(zr2096_1_PercentMethFull$geneID))
+zr2096_2_PercentMethFull$sampleNumber <- rep("sample_2", times = length(zr2096_2_PercentMethFull$geneID))
+zr2096_3_PercentMethFull$sampleNumber <- rep("sample_3", times = length(zr2096_3_PercentMethFull$geneID))
+zr2096_4_PercentMethFull$sampleNumber <- rep("sample_4", times = length(zr2096_4_PercentMethFull$geneID))
+zr2096_5_PercentMethFull$sampleNumber <- rep("sample_5", times = length(zr2096_5_PercentMethFull$geneID))
+zr2096_6_PercentMethFull$sampleNumber <- rep("sample_6", times = length(zr2096_6_PercentMethFull$geneID))
+zr2096_7_PercentMethFull$sampleNumber <- rep("sample_7", times = length(zr2096_7_PercentMethFull$geneID))
+zr2096_8_PercentMethFull$sampleNumber <- rep("sample_8", times = length(zr2096_8_PercentMethFull$geneID))
+zr2096_9_PercentMethFull$sampleNumber <- rep("sample_9", times = length(zr2096_9_PercentMethFull$geneID))
+zr2096_10_PercentMethFull$sampleNumber <- rep("sample_10", times = length(zr2096_10_PercentMethFull$geneID))
+head(zr2096_5_PercentMethFull) #Confirm column addition
+```
+
+```{r}
+#Add treatment indication to each dataframe
+zr2096_1_PercentMethFull$treatment <- rep("Ambient", times = length(zr2096_1_PercentMethFull$geneID))
+zr2096_2_PercentMethFull$treatment <- rep("Ambient", times = length(zr2096_2_PercentMethFull$geneID))
+zr2096_3_PercentMethFull$treatment <- rep("Ambient", times = length(zr2096_3_PercentMethFull$geneID))
+zr2096_4_PercentMethFull$treatment <- rep("Ambient", times = length(zr2096_4_PercentMethFull$geneID))
+zr2096_5_PercentMethFull$treatment <- rep("Ambient", times = length(zr2096_5_PercentMethFull$geneID))
+zr2096_6_PercentMethFull$treatment <- rep("Treatment", times = length(zr2096_6_PercentMethFull$geneID))
+zr2096_7_PercentMethFull$treatment <- rep("Treatment", times = length(zr2096_7_PercentMethFull$geneID))
+zr2096_8_PercentMethFull$treatment <- rep("Treatment", times = length(zr2096_8_PercentMethFull$geneID))
+zr2096_9_PercentMethFull$treatment <- rep("Treatment", times = length(zr2096_9_PercentMethFull$geneID))
+zr2096_10_PercentMethFull$treatment <- rep("Treatment", times = length(zr2096_10_PercentMethFull$geneID))
+head(zr2096_1_PercentMethFull) #Confirm column addition
+```
+
+```{r}
+fullPercentMethExpanded <- rbind(zr2096_1_PercentMethFull,
+                                 zr2096_2_PercentMethFull,
+                                 zr2096_3_PercentMethFull,
+                                 zr2096_4_PercentMethFull,
+                                 zr2096_5_PercentMethFull,
+                                 zr2096_6_PercentMethFull,
+                                 zr2096_7_PercentMethFull,
+                                 zr2096_8_PercentMethFull,
+                                 zr2096_9_PercentMethFull,
+                                 zr2096_10_PercentMethFull) #Create new dataframe with all sample information
+head(fullPercentMethExpanded) #Confirm dataframe creation
+```
+
+```{r}
+write.csv(fullPercentMethExpanded, "2019-08-22-Gene-Median-Percent-Methylation-By-Sample.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+# Calculate methylation differences between treatments
+
+If I have any differentially methylated genes, I want methylation differences for each gene by treatment to use with gene enrichment. To do this, I'm going to calculate median percent methylation by treatment, then subtract ambient values from treatment values.
+
+```{r}
+ambientSamples <- subset(fullPercentMethExpanded, subset = fullPercentMethExpanded$treatment == "Ambient") #Subset ambient samples
+treatmentSamples <- subset(fullPercentMethExpanded, subset = fullPercentMethExpanded$treatment == "Treatment") #Subset treatment samples
+head(treatmentSamples) #Confirm subset
+```
+
+```{r}
+ambientSamplesPercentMeth <- aggregate(percentMeth ~ geneID, data = ambientSamples, FUN = median) #Calculate median methylation by gene for ambient samples
+treatmentSamplesPercentMeth <- aggregate(percentMeth ~ geneID, data = treatmentSamples, FUN = median) #Calculate median methylation by gene for treatment samples
+head(treatmentSamplesPercentMeth) #Confirm calculations
+```
+
+```{r}
+fullMethDiff <- data.frame("geneID" = ambientSamplesPercentMeth$geneID,
+                           "meth.diff" = (treatmentSamplesPercentMeth$percentMeth - ambientSamplesPercentMeth$percentMeth)) #Create a new dataframe with geneID and methylation differences (treatment - ambient)
+head(fullMethDiff) #Confirm dataframe creation
+```
+
+
+# Identifying differentially methylated genes
+
+## Check normality
+
+I want to do a t-test, so I should first check normality first.
+`
+```{r}
+hist(fullPercentMethExpanded$percentMeth) #Check normality
+```
+
+This clearly isn't a normal distributions. I need to do some corrections to deal with the left-skewness.
+
+```{r}
+fullPercentMethExpanded$logPercentMeth <- log(fullPercentMethExpanded$percentMeth) #Perform log-transformation
+fullPercentMethExpanded$sqrtPercentMeth <- sqrt(fullPercentMethExpanded$percentMeth) #Perform square root transformation
+fullPercentMethExpanded$crtPercentMeth <- (fullPercentMethExpanded$percentMeth)^(1/3) #Perform cube root transformation
+```
+
+```{r}
+#Check normality
+hist(fullPercentMethExpanded$logPercentMeth) #Log transformation
+hist(fullPercentMethExpanded$sqrtPercentMeth) #Square root transformation
+hist(fullPercentMethExpanded$crtPercentMeth) #Cube root transformation
+```
+
+Well, none of these transformations are very helpful! The MBD bias is pretty evident, even in the transformed data. I'll condut a non-parametric test instead.
+
+## Non-parametric test
+
+### Format for statistical testing
+
+```{r}
+attach(fullPercentMethExpanded) #Attach dataframe
+fullPercentMethExpanded <- fullPercentMethExpanded[order(geneID, treatment),] #Sort by gene ID, then by treatment
+detach(fullPercentMethExpanded) #Detach dataframe
+head(fullPercentMethExpanded) #Confirm sorting
+```
+
+
+```{r}
+ambientPercentMethFull <- subset(fullPercentMethExpanded, subset = fullPercentMethExpanded$treatment == "Ambient") #Subset ambient samples
+treatmentPercentMethFull <- subset(fullPercentMethExpanded, subset = fullPercentMethExpanded$treatment == "Treatment") #Subset treatment samples
+head(ambientPercentMethFull) #Confirm subset
+head(treatmentPercentMethFull) #Confirm subset
+```
+
+
+### Conduct Kruskal-Wallis test
+
+```{r}
+KWTestResults <- data.frame("geneID" = unique(ambientPercentMethFull$geneID),
+                            "chi-squared" = rep(0, times = length(unique(ambientPercentMethFull$geneID))),
+                            "df" = rep(0, times = length(unique(ambientPercentMethFull$geneID))),
+                            "p-value" = rep(0, times = length(unique(ambientPercentMethFull$geneID)))) #Create a new dataframe to store results of statistical test
+head(KWTestResults) #Confirm dataframe creation
+```
+
+```{r}
+#For each unique geneID
+#Conduct a KW test for a set of 5 rows from each dataframe (5 ambient and 5 treatment median % methylation values for the same gene)
+#Store the chi-squared statistic in the ith row
+#Store the df in the ith row
+#Store the p.value in the ith row
+for (i in 1:length(KWTestResults$geneID)) {
+  temp <- kruskal.test(list(ambientPercentMethFull$percentMeth[((5*i)-4):(5*i)], treatmentPercentMethFull$percentMeth[((5*i)-4):(5*i)]))
+  KWTestResults$chi.squared[i] <- temp$statistic
+  KWTestResults$df[i] <- temp$parameter
+  KWTestResults$p.value[i] <- temp$p.value
+}
+head(KWTestResults) #Confirm statistical tests worked
+```
+
+```{r}
+KWTestResults$adj.p <- p.adjust(KWTestResults$p.value, method = "BH") #Control the false discovery rate using a Benjamini-Hochberg correction
+range(KWTestResults$adj.p, na.rm = TRUE) #Not counting NAs, there are no genes with significant differential methylation. No need to annotate genes! 
+```
+
+```{r}
+write.csv(KWTestResults, "2019-08-14-DMG-KW-Test-Results.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+#### Match statistical test results to genes with DML
+
+Liew et al. filtered their list of genes before statistical testing by selecting genes with at least five methylated positions. To see if filtering has any effect on the adjusted p-values, I will start by selecting only genes with DML.
+
+```{r}
+DMLGeneAnnotation <- read.csv("2019-06-20-DML-Gene-Annotation.csv", header = TRUE, row.names = 1) #Import file. The first column are row names.
+head(DMLGeneAnnotation) #Confirm import
+```
+
+```{r}
+DMLGeneAnnotationGenes <- data.frame("geneID" = unique(DMLGeneAnnotation$geneID),
+                                     "DML.adj.p" = rep(0, times = length(unique(DMLGeneAnnotation$geneID)))) #Extract unique genes that DML are in and place in a new dataframe. Create an empty column for new adjusted p-values that's the same length as the number of unique gene IDs
+length(DMLGeneAnnotationGenes$geneID) #Count the number of unique gene IDs from DML. About 100 less than the number of DML
+head(DMLGeneAnnotationGenes) #Confirm dataframe creation
+```
+
+```{r}
+KWTestResultsDML <- unique(merge(x = KWTestResults, y = DMLGeneAnnotationGenes, by = "geneID")) #Merge KW test results with DML information. Retain only unique lines (avoid merging artifacts)
+head(KWTestResultsDML) #Confirm merge
+```
+
+```{r}
+KWTestResultsDML$DML.adj.p <- p.adjust(KWTestResultsDML$p.value, method = "BH") #Correct for false discovery rate using Bejamini-Hochberg correction
+range(KWTestResultsDML$DML.adj.p) #There are no significant p-values after correction
+```
+
+```{r}
+write.csv(KWTestResultsDML, "2019-08-14-DMG-KW-Test-Results-DMLOnly.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+# Annotate differentially methylated genes
+
+I will consider genes with significant uncorrected p-values as differentially methylated genes (DMG) since this is an exploratory study.
+
+## All genes
+
+```{r}
+colnames(geneAnnotationsCondensedUniprotGOterms)[6] <- "geneID" #Rename column so it's consistent with KW results
+colnames(geneAnnotationsCondensedUniprotGOterms) #Confirm column was renamed
+```
+
+```{r}
+uncorrGenes <- unique(merge(x = KWTestResults, y = geneAnnotationsCondensedUniprotGOterms, by = "geneID")) #Annotate genes and remove any merging artifacts
+length(uncorrGenes$geneID) == length(KWTestResults$geneID) #Check that gene IDs are not duplicated
+head(uncorrGenes) #Confirm merge
+```
+
+```{r}
+uncorrGenes <- unique(merge(x = uncorrGenes, y = fullMethDiff, by = "geneID")) #Add meth.diff information
+length(uncorrGenes$geneID) == length(KWTestResults$geneID) #Check that gene IDs are not duplicated
+head(uncorrGenes) #Confirm merge
+```
+
+```{r}
+write.csv(uncorrGenes, "2019-08-14-KW-Test-Results-Annotated.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+## DMG
+
+```{r}
+uncorrSigKWTestResults <- subset(KWTestResults, subset = KWTestResults$p.value < 0.05) #Subset genes with uncorrected p-values less than 0.05
+length(uncorrSigKWTestResults$geneID) #There are 223 significant genes.
+head(uncorrSigKWTestResults) #Confirm subset
+```
+
+```{r}
+uncorrSigGenes <- unique(merge(x = uncorrSigKWTestResults, y = geneAnnotationsCondensedUniprotGOterms, by = "geneID")) #Annotate DMG and remove any merging artifacts
+length(uncorrSigGenes$geneID) == length(uncorrSigKWTestResults$geneID) #Check that gene IDs are not duplicated
+head(uncorrSigGenes) #Confirm merge
+```
+
+```{r}
+uncorrSigGenes <- unique(merge(x = uncorrSigGenes, y = fullMethDiff, by = "geneID")) #Add meth.diff information
+length(uncorrSigGenes$geneID) == length(uncorrSigKWTestResults$geneID) #Check that gene IDs are not duplicated
+head(uncorrSigGenes) #Confirm merge
+```
+
+```{r}
+write.csv(uncorrSigGenes, "2019-08-14-DMG-KW-Test-Results-Uncorrected-Sig.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+## DMG with DML
+
+```{r}
+uncorrSigKWTestResultsDML <- subset(KWTestResultsDML, subset = KWTestResultsDML$p.value < 0.05) #Subset p-values that are less than 0.05
+length(uncorrSigKWTestResultsDML$geneID) #There are 6 genes with DML that are differentially methylated
+head(uncorrSigKWTestResultsDML) #Confirm subset
+```
+
+```{r}
+uncorrSigGenesDML <- unique(merge(x = uncorrSigKWTestResultsDML, y = geneAnnotationsCondensedUniprotGOterms, by = "geneID")) #Annotate DMG and remove any merging artifacts
+length(uncorrSigGenesDML$geneID) == length(uncorrSigKWTestResultsDML$geneID) #Check that gene IDs are not duplicated
+head(uncorrSigGenesDML) #Confirm merge
+```
+
+```{r}
+uncorrSigGenesDML <- unique(merge(x = uncorrSigGenesDML, y = fullMethDiff, by = "geneID")) #Add meth.diff information
+length(uncorrSigGenesDML$geneID) == length(uncorrSigKWTestResultsDML$geneID) #Check that gene IDs are not duplicated
+head(uncorrSigGenesDML) #Confirm merge
+```
+
+```{r}
+write.csv(uncorrSigGenesDML, "2019-08-14-DMG-KW-Test-Results-DMLOnly-Uncorrected-Sig.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+# Gene enrichment with GO-MWU
+
+## Format GO-MWU inputs
+
+### GO annotations table
+
+The first table needs to be a tab-delimited file with one column for genes and one column for GOterms. All genes, not just DMG, need to be included.
+
+```{r}
+goAnnotationsGenes <- data.frame(uncorrGenes$Genbank,
+                                 uncorrGenes$GO) #Create a new dataframe with Genbak and GO columns. Use na.omit to drop lines with N/A instead of GOterms
+head(goAnnotationsGenes) #Confirm format is good.
+```
+
+```{r}
+write.table(goAnnotationsGenes, "2019-08-14-Genes-GO-Annotations-Table.tab", sep = "\t", col.names = FALSE, row.names = FALSE, quote = FALSE) #Save file
+```
+
+```{bash}
+head 2019-08-14-Genes-GO-Annotations-Table.tab #Confirm formatting was retained
+```
+
+### Table of significance measures
+
+This table is a .csv file with one column for gene IDs and another for a continuous significance measure. All genes need to be included, not just those with significant DMG. Similar to the GO-MWU example, I will use signed negative log p-values modified from the Kruskal-Wallis output. Hypomethylated genes will have negative p-values, and hypermethylated genes will have positive p-values.
+
+#### Subset table
+
+```{r}
+sigMeasuresGenes <- data.frame("gene" = uncorrGenes$Genbank,
+                               "logP" = log(uncorrGenes$p.value),
+                               "meth.diff" = uncorrGenes$meth.diff) #Subset Genbank ID, log(p-value), and meth.diff
+head(sigMeasuresGenes) #Confirm subset
+```
+
+#### Correct p-values for hypermethylated genes
+
+```{r}
+sigMeasuresGenesHyper <- subset(x = sigMeasuresGenes, subset = sigMeasuresGenes$meth.diff >= 0) #Subset hypermethylated genes. Differences of 0 will need positive p-values as well.
+range(sigMeasuresGenesHyper$meth.diff) #Confirm subset
+```
+
+```{r}
+range(sigMeasuresGenesHyper$logP, na.rm = TRUE) #Look at range of values for hypermethylated genes. Negative values will need to be positive.
+```
+
+```{r}
+sigMeasuresGenesHyper$signLogP <- -1 * sigMeasuresGenesHyper$logP #Multiply values by -1. 0s won't change.
+head(sigMeasuresGenesHyper) #Confirm changes
+```
+
+#### Correct p-values for hypomethylated genes
+
+```{r}
+sigMeasuresGenesHypo <- subset(x = sigMeasuresGenes, subset = sigMeasuresGenes$meth.diff < 0) #Subset hypomethylated loci
+range(sigMeasuresGenesHypo$meth.diff) #Confirm subset
+```
+
+```{r}
+range(sigMeasuresGenesHypo$logP) #Look at range of p-values. All of these are already negative, so there's no need to modify it
+```
+
+```{r}
+sigMeasuresGenesHypo$signLogP <- sigMeasuresGenesHypo$logP #Copy logP to a new columns for consistency
+head(sigMeasuresGenesHypo) #Confirm changes
+```
+
+#### Combine tables with corrected p-values
+
+```{r}
+sigMeasuresGenesCorrected <- rbind(sigMeasuresGenesHyper, sigMeasuresGenesHypo) #Combine dataframes
+sigMeasuresGenesCorrected <- sigMeasuresGenesCorrected[,-c(2:3)] #Remove unnecessary columns
+head(sigMeasuresGenesCorrected) #Confirm changes
+```
+
+```{r}
+write.csv(sigMeasuresGenesCorrected, "2019-08-14-Genes-Table-of-Significance-Measures.csv", quote = FALSE, row.names = FALSE) #Save file
+```
+
+```{bash}
+head 2019-08-14-Genes-Table-of-Significance-Measures.csv #Confirm formatting is good. It is.
+```
+
+## Conduct gene enrichment
+
+These commands were copied from the GO-MWU.R file in the GO-MWU Github repository.
+
+### Biological processes
+
+#### Edit input variables
+
+```{r}
+input="2019-08-14-Genes-Table-of-Significance-Measures.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+goAnnotations="2019-08-14-Genes-GO-Annotations-Table.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon.
+goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
+goDivision="BP" # BP for biological processes
+source("gomwu.functions.R")
+```
+
+#### Run GO-MWU
+
+```{r}
+# Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
+	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
+	smallest=5,   # a GO category should contain at least this many genes to be considered
+	clusterCutHeight=0.25) # threshold for merging similar (gene-sharing) terms. See README for details.
+# There are no GO terms pass 10% FDR.
+```
+
+#### Describe parent GOslim terms
+
+##### All tested genes
+
+Even though there are no significantly enriched terms, I want to describe the parent GOslim categories GO-MWU used to sort my data.
+
+```{r}
+parentGOBPGenes <- read.delim("BP_2019-08-14-Genes-Table-of-Significance-Measures.csv", header = TRUE) #Import GO-MWU output file with individual genes and associated GOslim term. Even though it is a .csv extension, it is a tab-delimited file
+colnames(parentGOBPGenes) <- c("name", "term", "lev", "Genbank", "value") #Rename gene ID column to match previous naming conventions
+head(parentGOBPGenes) #Confirm import
+```
+
+```{r}
+parentGOBPGenesCounts <- as.data.frame(table(parentGOBPGenes$name)) #Count the frequency of each GOslim term
+colnames(parentGOBPGenesCounts) <- c("parentGOslim", "frequency") #Rename columns
+head(parentGOBPGenesCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOBPGenesCounts, "2019-08-14-Genes-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+##### Differentially methylated genes
+
+GO-MWU takes all genes into account, but there may be some differences in parental GOslim terms if I only look at differentially methylated genes.
+
+```{r}
+parentGOBPGenesSig <- unique(merge(x = parentGOBPGenes, y = uncorrSigGenes, by = "Genbank", all.y = TRUE)) #Merge parent GOterms with annotated DMG. Keep all annotated genes that do not have matching GO-MWU information. Remove any merging artifacts.
+head(parentGOBPGenesSig) #Confirm merge
+```
+
+```{r}
+sum(is.na(parentGOBPGenesSig$name)) #Count how many DMG do not have GO-MWU entries. 199/223 do not have GO-MWU entries.
+```
+
+```{r}
+parentGOBPGenesSigCounts <- as.data.frame(table(parentGOBPGenesSig$name)) #Count the frequency of each GOslim term
+colnames(parentGOBPGenesSigCounts) <- c("parentGOslim", "frequency") #Rename columns
+parentGOBPGenesSigCounts <- subset(parentGOBPGenesSigCounts, subset = frequency > 0) #Remove residual factors
+head(parentGOBPGenesSigCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOBPGenesSigCounts, "2019-08-14-DMG-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+I won't break down hypermethylated and hypomethylated DMG because I'm not sure how valuable that information is.
+
+###### Map to GOslim terms
+
+GO-MWU maps to the highest level GOterm it can, but I want to see if I can simplify those higher level GOterms to GOslim terms.
+
+```{r}
+CVGOslim <- read.delim("Blastquery-GOslim-BP.sorted", sep = "\t", header = FALSE) #Import data with Genbank ID and GOslim terms
+colnames(CVGOslim) <- c("Genbank", "GOslim") #Add column names
+head(CVGOslim) #Confirm import
+```
+
+```{r}
+parentGOBPGenesSigGOslim <- unique(merge(x = parentGOBPGenesSig, y = CVGOslim, by = "Genbank", all.x = TRUE)) #Merge parent GOterms with GOslim terms. Keep all entries even if they don't have matching GOslim terms. Remove any merging artifacts
+head(parentGOBPGenesSigGOslim)
+```
+
+```{r}
+sum(is.na(parentGOBPGenesSigGOslim$GOslim)) #Count how many entries do not have GOslim terms. 52/674 do not have GO-MWU entries.
+```
+
+```{r}
+parentGOBPGenesSigGOslimCounts <- as.data.frame(table(parentGOBPGenesSigGOslim$GOslim)) #Count the frequency of each GOslim term
+colnames(parentGOBPGenesSigGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
+parentGOBPGenesSigGOslimCounts <- subset(parentGOBPGenesSigGOslimCounts, subset = frequency > 0) #Remove residual factors
+head(parentGOBPGenesSigGOslimCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOBPGenesSigGOslimCounts, "2019-08-14-DMG-CVGOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+### Cellular components
+
+#### Edit input variables
+
+```{r}
+goDivision="CC" # CC for cellular components. All other inputs are the same.
+```
+
+#### Run GO-MWU
+
+```{r}
+# Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
+	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
+	smallest=5,   # a GO category should contain at least this many genes to be considered
+	clusterCutHeight=0.25) # threshold for merging similar (gene-sharing) terms. See README for details.
+# There are no GO terms pass 10% FDR.
+```
+
+##### All tested genes
+
+```{r}
+parentGOCCGenes <- read.delim("CC_2019-08-14-Genes-Table-of-Significance-Measures.csv", header = TRUE) #Import GO-MWU output file with individual genes and associated GOslim term. Even though it is a .csv extension, it is a tab-delimited file
+colnames(parentGOCCGenes) <- c("name", "term", "lev", "Genbank", "value") #Rename gene ID column to match previous naming conventions
+head(parentGOCCGenes) #Confirm import
+```
+
+```{r}
+parentGOCCGenesCounts <- as.data.frame(table(parentGOCCGenes$name)) #Count the frequency of each GOslim term
+colnames(parentGOCCGenesCounts) <- c("parentGOslim", "frequency") #Rename columns
+head(parentGOCCGenesCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOCCGenesCounts, "2019-08-14-Genes-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+##### Differentially methylated genes
+
+```{r}
+parentGOCCGenesSig <- unique(merge(x = parentGOCCGenes, y = uncorrSigGenes, by = "Genbank", all.y = TRUE)) #Merge parent GOslim terms with annotated DMG. Keep all annotated genes that do not have matching GO-MWU information. Remove any merging artifacts.
+head(parentGOCCGenesSig) #Confirm merge
+```
+
+```{r}
+sum(is.na(parentGOCCGenesSig$name)) #Count how many DMG do not have GO-MWU entries. 203/223 do not have GO-MWU entries.
+```
+
+```{r}
+parentGOCCGenesSigCounts <- as.data.frame(table(parentGOCCGenesSig$name)) #Count the frequency of each GOslim term
+colnames(parentGOCCGenesSigCounts) <- c("parentGOslim", "frequency") #Rename columns
+parentGOCCGenesSigCounts <- subset(parentGOCCGenesSigCounts, subset = frequency > 0) #Remove residual factors
+head(parentGOCCGenesSigCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOCCGenesSigCounts, "2019-08-14-DMG-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+### Molecular function
+
+#### Edit input variables
+
+```{r}
+goDivision="MF" # MF for molecular function. All other inputs are the same.
+```
+
+#### Run GO-MWU
+
+```{r}
+# Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
+	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
+	smallest=5,   # a GO category should contain at least this many genes to be considered
+	clusterCutHeight=0.25) # threshold for merging similar (gene-sharing) terms. See README for details.
+# There are no GO terms pass 10% FDR.
+```
+
+##### All tested genes
+
+```{r}
+parentGOMFGenes <- read.delim("MF_2019-08-14-Genes-Table-of-Significance-Measures.csv", header = TRUE) #Import GO-MWU output file with individual genes and associated GOslim term. Even though it is a .csv extension, it is a tab-delimited file
+colnames(parentGOMFGenes) <- c("name", "term", "lev", "Genbank", "value") #Rename gene ID column to match previous naming conventions
+head(parentGOMFGenes) #Confirm import
+```
+
+```{r}
+parentGOMFGenesCounts <- as.data.frame(table(parentGOMFGenes $name)) #Count the frequency of each GOslim term
+colnames(parentGOMFGenesCounts) <- c("parentGOslim", "frequency") #Rename columns
+head(parentGOMFGenesCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOMFGenesCounts, "2019-08-14-Genes-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+##### Differentially methylated genes
+
+```{r}
+parentGOMFGenesSig <- unique(merge(x = parentGOMFGenes, y = uncorrSigGenes, by = "Genbank", all.y = TRUE)) #Merge parent GOslim terms with annotated DMG. Keep all annotated genes that do not have matching GO-MWU information. Remove any merging artifacts.
+head(parentGOMFGenesSig) #Confirm merge
+```
+
+```{r}
+sum(is.na(parentGOMFGenesSig$name)) #Count how many DMG do not have GO-MWU entries. 188/223 do not have GO-MWU entries.
+```
+
+```{r}
+parentGOMFGenesSigCounts <- as.data.frame(table(parentGOMFGenesSig$name)) #Count the frequency of each GOslim term
+colnames(parentGOMFGenesSigCounts) <- c("parentGOslim", "frequency") #Rename columns
+parentGOMFGenesSigCounts <- subset(parentGOMFGenesSigCounts, subset = frequency > 0) #Remove residual factors
+head(parentGOMFGenesSigCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOMFGenesSigCounts, "2019-08-14-DMG-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
+```
+
+
+###### Map to GOslim terms
+
+```{r}
+CVGOslimMF <- read.delim("Blastquery-GOslim-MF.sorted", sep = "\t", header = FALSE) #Import data with Genbank ID and GOslim terms
+colnames(CVGOslimMF) <- c("Genbank", "GOslim") #Add column names
+head(CVGOslimMF) #Confirm import
+```
+
+```{r}
+parentGOMFGenesSigGOslim <- unique(merge(x = parentGOMFGenesSig, y = CVGOslimMF, by = "Genbank", all.x = TRUE)) #Merge parent GOterms with GOslim terms. Keep all entries even if they don't have matching GOslim terms. Remove any merging artifacts
+head(parentGOMFGenesSigGOslim)
+```
+
+```{r}
+sum(is.na(parentGOMFGenesSigGOslim$GOslim)) #Count how many entries do not have GOslim terms. 61/374 do not have GO-MWU entries.
+```
+
+```{r}
+parentGOMFGenesSigGOslimCounts <- as.data.frame(table(parentGOMFGenesSigGOslim$GOslim)) #Count the frequency of each GOslim term
+colnames(parentGOMFGenesSigGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
+parentGOMFGenesSigGOslimCounts <- subset(parentGOMFGenesSigGOslimCounts, subset = frequency > 0) #Remove residual factors
+head(parentGOMFGenesSigGOslimCounts) #Confirm counts
+```
+
+```{r}
+write.csv(parentGOMFGenesSigGOslimCounts, "2019-08-14-DMG-CVGOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
+```

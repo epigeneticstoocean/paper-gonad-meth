@@ -1,0 +1,98 @@
+---
+title: "Chacterizing CpG Methylation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this script, I'll create figures to characterize CpG methylation in my *C. virginica* gonad samples. I will use a list of CpGs with at least 5x coverage in any samples.
+
+## Session information
+
+```{r}
+sessionInfo()
+```
+
+## All 5x CpGs
+
+### Import data
+
+```{r}
+cpgMethylation <- read.csv("2019-04-09-All-5x-CpGs.csv", header = FALSE) #Import file with CpG methylation for all loci with 5x coverage
+colnames(cpgMethylation) <- c("chromosome", "start", "end", "methylation") #Add column names
+head(cpgMethylation) #Confirm import
+```
+
+## Create figure
+
+```{r}
+RColorBrewer::display.brewer.all() #Show all RColorBrewer palettes. I will choose greens.
+plotColors <- rev(RColorBrewer::brewer.pal(5, "GnBu")) #Create a color palette for the barplots. Use 5 green-blue shades from RColorBrewer. Reverse theorder so the darkest shade is used first.
+barplot(t(t(proportionData)),
+        col = plotColors) #See what plot looks like with new scheme
+barplot(t(t(proportionData)),
+        col = dichromat(plotColors)) #Check that the plot colors will be easy to interpret for those with color blindess
+```
+
+```{r}
+#pdf("2019-04-10-5x-CpG-Frequency-Distribution.pdf", width = 11, height = 8.5)
+hist(x = cpgMethylation$methylation, axes = FALSE, xlab = "", ylab = "", main = "", col = plotColors[2], xaxs = "i", yaxs = "i") #Create base plot
+axis(side = 1, col = "grey80", at = seq(from = 0, to = 100, by = 10), cex.axis = 1.2) #Add x-axis
+mtext(side = 1, text = "Methylation (%)", line = 3, cex = 1.5) #Add x-axis label
+axis(side = 2, col = "grey80", las = 2, labels = c("0", "2", "4", "6"), at = c(0, 2e+05, 4e+05, 6e+05), cex.axis = 1.2) #add y-axis
+mtext(side = 2, text = "Frequency (x100,000)", line = 2.5, cex = 1.5) #Add y-axis label
+#dev.off()
+```
+
+## Methylated 5x CpGs
+
+### Import data
+
+```{r}
+allMethLoci <- read.csv("2019-04-09-All-5x-CpG-Loci-Methylated.csv", header = FALSE) #Import file with positions of all methylated loci with 5x coverage
+colnames(allMethLoci) <- c("chromosome", "start", "end", "methylation") #Add column names
+head(allMethLoci) #Confirm import
+```
+
+```{r}
+methLociGeneOverlaps <- read.delim("2019-05-29-All5xCpGs-Genes.txt", header = FALSE, sep = "\t") #Import file with overlaps for methylated loci and genes
+methLociGeneOverlaps <- methLociGeneOverlaps[,-c(4)] #Remove extra column
+colnames(methLociGeneOverlaps) <- c("chromosome", "start", "end", "gene-start", "gene-end") #Add column names
+head(methLociGeneOverlaps) #Confirm import
+```
+
+### Scaled DML distribution
+
+Scaling each gene from 0% to 100%, I want to see where methylated CpG are located. This is useful to see if methylation is occuring in any consistent location for each gene. 
+
+```{r}
+methLociGeneOverlaps$geneLength <- methLociGeneOverlaps$`gene-end` - methLociGeneOverlaps$`gene-start` #Calculate gene length
+methLociGeneOverlaps$absPosition <- methLociGeneOverlaps$start - methLociGeneOverlaps$`gene-start` #Calculate the absolute position of the methylated CpG in the gene
+methLociGeneOverlaps$scaledPosition <- methLociGeneOverlaps$absPosition / methLociGeneOverlaps$geneLength #Calculate the scaled position of the methylated CpG in the gene
+head(methLociGeneOverlaps) #Confirm calculations
+```
+
+```{r}
+#pdf("2019-10-10-Scaled-Gene-Methylated-Loci.pdf", height = 8.5, width = 11)
+
+par(mar = c(5, 6, 2, 2)) #Change figure dimensions
+hist(methLociGeneOverlaps$scaledPosition, 
+     breaks = 100,
+     axes = FALSE,
+     xlab = "", ylab = "", main = "",
+     ylim = c(0,40000),
+     col = "grey80",
+     xaxs = "i", yaxs = "i") #Create base plot with no axes or labels. Include breaks at each percent.
+axis(side = 1, at = seq(from = 0, to = 1, by = 0.1), col = "grey80", cex = 1.2) #Add x-axis
+mtext(side = 1, "Scaled Position on Gene", line = 3, cex = 1.5) #Add x-axis label
+axis(side = 2, at = seq(from = 0, to = 40000, by = 10000), col = "grey80", las = 2, cex = 1.2) #Add y-axis
+mtext(side = 2, "Number of Methylated CpG", line = 4, cex = 1.5) #Add y-axis label
+
+#dev.off()
+```
+
+
+
+
