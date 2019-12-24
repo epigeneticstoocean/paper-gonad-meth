@@ -50,3 +50,14 @@ analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-TE-All.t
 analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-TE-Cg.txt
 analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-Exon.txt
 analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-Genes.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-07-Intron-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-07-mRNA-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-07-mRNA-TE-Cg.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-07-TE-all-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-07-TE-Cg-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-14-Flanking-Analysis/2018-11-14-mRNA-100bp-DownstreamFlanks-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2018-11-14-Flanking-Analysis/2018-11-14-mRNA-100bp-UpstreamFlanks-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2019-03-17-No-Overlap-CGmotifs.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Gene-Closest-NoOverlap-CGmotifs.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-09-26-Promoter-CGmotif.txt
+analyses/2018-11-01-DML-and-DMR-Analysis/2019-05-29-No-Overlap-CGmotifs.txt
