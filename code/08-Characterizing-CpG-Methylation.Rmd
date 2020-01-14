@@ -20,7 +20,7 @@ sessionInfo()
 ### Import data
 
 ```{r}
-cpgMethylation <- read.csv("2019-04-09-All-5x-CpGs.csv", header = FALSE) #Import file with CpG methylation for all loci with 5x coverage
+cpgMethylation <- read.csv("../analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpGs.csv", header = FALSE) #Import file with CpG methylation for all loci with 5x coverage
 colnames(cpgMethylation) <- c("chromosome", "start", "end", "methylation") #Add column names
 head(cpgMethylation) #Confirm import
 ```
@@ -37,7 +37,7 @@ barplot(t(t(proportionData)),
 ```
 
 ```{r}
-#pdf("2019-04-10-5x-CpG-Frequency-Distribution.pdf", width = 11, height = 8.5)
+#pdf("../analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-10-5x-CpG-Frequency-Distribution.pdf", width = 11, height = 8.5)
 hist(x = cpgMethylation$methylation, axes = FALSE, xlab = "", ylab = "", main = "", col = plotColors[2], xaxs = "i", yaxs = "i") #Create base plot
 axis(side = 1, col = "grey80", at = seq(from = 0, to = 100, by = 10), cex.axis = 1.2) #Add x-axis
 mtext(side = 1, text = "Methylation (%)", line = 3, cex = 1.5) #Add x-axis label
@@ -51,13 +51,13 @@ mtext(side = 2, text = "Frequency (x100,000)", line = 2.5, cex = 1.5) #Add y-axi
 ### Import data
 
 ```{r}
-allMethLoci <- read.csv("2019-04-09-All-5x-CpG-Loci-Methylated.csv", header = FALSE) #Import file with positions of all methylated loci with 5x coverage
+allMethLoci <- read.csv("../analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpG-Loci-Methylated.csv", header = FALSE) #Import file with positions of all methylated loci with 5x coverage
 colnames(allMethLoci) <- c("chromosome", "start", "end", "methylation") #Add column names
 head(allMethLoci) #Confirm import
 ```
 
 ```{r}
-methLociGeneOverlaps <- read.delim("2019-05-29-All5xCpGs-Genes.txt", header = FALSE, sep = "\t") #Import file with overlaps for methylated loci and genes
+methLociGeneOverlaps <- read.delim("../analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-Genes.txt", header = FALSE, sep = "\t") #Import file with overlaps for methylated loci and genes
 methLociGeneOverlaps <- methLociGeneOverlaps[,-c(4)] #Remove extra column
 colnames(methLociGeneOverlaps) <- c("chromosome", "start", "end", "gene-start", "gene-end") #Add column names
 head(methLociGeneOverlaps) #Confirm import
@@ -75,7 +75,7 @@ head(methLociGeneOverlaps) #Confirm calculations
 ```
 
 ```{r}
-#pdf("2019-10-10-Scaled-Gene-Methylated-Loci.pdf", height = 8.5, width = 11)
+#pdf("../analyses/2019-03-18-Characterizing-CpG-Methylation/2019-10-10-Scaled-Gene-Methylated-Loci.pdf", height = 8.5, width = 11)
 
 par(mar = c(5, 6, 2, 2)) #Change figure dimensions
 hist(methLociGeneOverlaps$scaledPosition, 
@@ -92,7 +92,3 @@ mtext(side = 2, "Number of Methylated CpG", line = 4, cex = 1.5) #Add y-axis lab
 
 #dev.off()
 ```
-
-
-
-

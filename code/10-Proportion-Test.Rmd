@@ -30,7 +30,7 @@ sessionInfo()
 # Import data
 
 ```{r}
-overlapData <- read.csv("2019-01-15-Overlap-Proportions.csv", header = TRUE)
+overlapData <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-01-15-Overlap-Proportions.csv", header = TRUE)
 rownames(overlapData) <- overlapData$genomicFeature #Set genomic feature indication and rownames
 overlapData <- overlapData[,-1] #Remove genomic feature indication column
 head(overlapData) #Confirm import
@@ -135,21 +135,6 @@ enrichedVersusDMLTest <- chisq.test(t(enrichedVersusDML)) #Conduct a chi-squared
 enrichedVersusDMLTest #The distribution of DML is significantly different from methylated CpGs.
 ```
 
-### Methylated CpGs vs. DML
-
-Even though the methylated CpGs are not the background of the DML, it's still an interesting comparison.
-
-```{r}
-methylatedVersusDML <- overlapData[,c(3,6)] #Subset data for statistical testing
-methylatedVersusDML <- methylatedVersusDML[-6,] #Remove totalLines row
-head(methylatedVersusDML) #Confirm changes
-```
-
-```{r}
-methylatedVersusDMLTest <- chisq.test(t(methylatedVersusDML)) #Conduct a chi-squared test
-methylatedVersusDMLTest #The distribution of DML is significantly different from methylated CpGs.
-```
-
 ## Create figures
 
 ### Define color scheme
@@ -163,63 +148,6 @@ barplot(t(t(proportionData)),
         col = dichromat(plotColors)) #Check that the plot colors will be easy to interpret for those with color blindess
 ```
 
-### All CpG types
-
-```{r}
-allCpGCategories <- proportionData[,1:5] #Subset data
-head(allCpGCategories) #Confirm subset
-```
-
-```{r}
-#pdf("2019-04-10-All-CpG-Categories.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1), oma = c(1, 1, 1, 10)) #Change figure boundaries
-
-barplot(t(t(allCpGCategories)),
-        axes = FALSE, 
-        names.arg = c("All CpGs", "MBD-Enriched", "Methylated", "Sparsely Methylated", "Unmethylated"),
-        ylim = c(0,100),
-        col = plotColors) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80")
-mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-
-par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
-plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
-legend("topright",
-       xpd = TRUE,
-       legend = c("Exons", "Introns", "Transposable Elements", "Putative Promoters", "Other"),
-       pch = 22, 
-        col = "black", 
-        pt.bg = plotColors,
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-
-### Total CpGs vs. enriched CpGs
-
-```{r}
-totalVersusEnrichedProportions <- proportionData[,1:2] #Subset data
-head(totalVersusEnrichedProportions) #Confirm subset
-```
-
-```{r}
-#pdf("2019-04-10-Total-Versus-Enriched-CpGs.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1)) #Change figure boundaries
-barplot(t(totalVersusEnrichedProportions),
-        beside = TRUE,
-        axes = FALSE, 
-        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
-        col = c(plotColors[2], plotColors[5]),
-        ylim = c(0,50)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 100, by = 5), las = 2, col = "grey80")
-mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-legend("topright", 
-       legend = c("All CpGs", "MBD-Enriched"),
-       pch = 16,
-       col = c(plotColors[2], plotColors[5]),
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-
 ### All CpGs vs. Methylated CpGs
 
 ```{r}
@@ -228,7 +156,7 @@ head(allCpGVersusMethylated) #Confirm subset
 ```
 
 ```{r}
-#pdf("2019-04-10-All-CpGs-Versus-Methylated-CpGs.pdf", height = 8.5, width = 11)
+#pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-04-10-All-CpGs-Versus-Methylated-CpGs.pdf", height = 8.5, width = 11)
 par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
 
 barplot(t(t(allCpGVersusMethylated)),
@@ -253,63 +181,6 @@ legend("topright",
 #dev.off()
 ```
 
-### Enriched CpGs vs. methylated CpGs
-
-```{r}
-enrichedVersusMethylatedProportions <- proportionData[,2:3] #Subset data
-head(enrichedVersusMethylatedProportions) #Confirm subset
-```
-
-```{r}
-#pdf("2019-04-10-Total-Versus-Methylated-CpGs.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1)) #Change figure boundaries
-barplot(t(enrichedVersusMethylatedProportions), 
-        beside = TRUE, 
-        axes = FALSE, 
-        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
-        col = c(plotColors[2], plotColors[5]),
-        ylim = c(0,50)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 50, by = 5), las = 2, col = "grey80")
-mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-legend("topright", 
-       legend = c("MBD-Enriched", "Methylated"),
-       pch = 16,
-       col = c(plotColors[2], plotColors[5]),
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-
-### Enriched CpGs vs. methylated vs. sparsely methylated vs. unmethylated
-
-```{r}
-allMethylationCategoriesProportions <- proportionData[,2:5] #Subset data
-head(allMethylationCategoriesProportions) #Confirm subset
-```
-
-```{r}
-#pdf("2019-04-10-All-Methylation-Categories.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1), oma = c(1, 1, 1, 10)) #Change figure boundaries
-
-barplot(t(t(allMethylationCategoriesProportions)),
-        axes = FALSE, 
-        names.arg = c("MBD-Enriched", "Methylated", "Sparsely Methylated", "Unmethylated"),
-        ylim = c(0,100),
-        col = plotColors) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80")
-mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-
-par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
-plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
-legend("topright",
-       xpd = TRUE,
-       legend = c("Exons", "Introns", "Transposable Elements", "Putative Promoters", "Other"),
-       pch = 22, 
-        col = "black", 
-        pt.bg = plotColors,
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-
 ### Enriched CpGs vs. DML
 
 ```{r}
@@ -318,7 +189,7 @@ head(enrichedVersusDMLProportions) #Confirm subset
 ```
 
 ```{r}
-#pdf("2019-04-10-Enriched-Versus-DML.pdf", height = 8.5, width = 11)
+#pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-04-10-Enriched-Versus-DML.pdf", height = 8.5, width = 11)
 par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
 
 barplot(t(t(enrichedVersusDMLProportions)), 
@@ -342,74 +213,3 @@ legend("topright",
        cex = 1.5) #Place a legend in the top right of the figure with no box. pch = 22 has a background and outline. col changes the outline, pt.bg changes the point fill
 #dev.off()
 ```
-
-### Methylated CpGs vs. DML
-
-```{r}
-methylatedVersusDMLProportions <- proportionData[,c(3,6)] #Subset data
-head(methylatedVersusDMLProportions) #Confirm subset
-```
-
-```{r}
-#pdf("2019-04-10-Methylated-CpGs-Versus-DML.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1)) #Change figure boundaries
-barplot(t(methylatedVersusDMLProportions),
-        axes = FALSE, 
-        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
-        ylim = c(0,65)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 65, by = 5), las = 2, col = "grey80")
-mtext(side = 2, "Proportion CpGs", line = 3) #Add y-axis label
-legend("topright", 
-       legend = c("Methylated CpGs", "DML"),
-       pch = 16,
-       col = c("grey20", "grey80"),
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-
-# DMR
-
-## Conduct chi-squared test
-
-### 100 bp tile background vs. DMR
-
-The 100 bp tiles are every possible DMR, so this is the appropriate background.
-
-```{r}
-backgroundVersusDMR <- overlapData[,c(7,8)] #Subset data for statistical testing
-backgroundVersusDMR <- backgroundVersusDMR[-6,] #Remove totalLines row
-head(backgroundVersusDMR) #Confirm changes
-```
-
-```{r}
-backgroundVersusDMRTest <- chisq.test(t(backgroundVersusDMR)) #Conduct a chi-squared test
-backgroundVersusDMRTest #The distribution of DML is significantly different from methylated CpGs.
-```
-
-## Create figures
-
-### 100 bp tile background vs. DMR
-
-```{r}
-backgroundVersusDMRProportions <- proportionData[,c(8,7)] #Subset data. Column 8 is the DMRBackground, and column 7 are the DMR.
-head(backgroundVersusDMRProportions) #Confirm subset
-```
-
-```{r}
-#pdf("2019-06-05-Background-Versus-DMR.pdf", height = 8.5, width = 11)
-par(mar = c(3,5,1,1)) #Change figure boundaries
-barplot(t(backgroundVersusDMRProportions), 
-        beside = TRUE, 
-        axes = FALSE, 
-        names.arg = c("Exons", "Introns", "TE", "Promoters", "Other"),
-        ylim = c(0,75)) #Create a grouped barplot (beside = TRUE) using a transposed version of the proportion data. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
-axis(side = 2, at = seq(0, 75, by = 5), las = 2, col = "grey80")
-mtext(side = 2, "Proportion 100 bp Regions", line = 3) #Add y-axis label
-legend("topright", 
-       legend = c("All 100 bp Regions", "DMR"),
-       pch = 16,
-       col = c("grey20", "grey80"),
-       bty = "n") #Place a legend in the top right of the figure with no box
-#dev.off()
-```
-

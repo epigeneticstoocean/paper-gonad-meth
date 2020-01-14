@@ -68,25 +68,21 @@ Now I can perform a `blastx` to compare my query, the *C. virginica* transcripts
 7. `-max_target_seqs 1` keeps only one aligned sequence (i.e. the best match)
 
 ```{bash}
-pwd #Obtain present working directory
-```
-
-```{bash}
 /Users/Shared/Apps/ncbi-blast-2.2.29+/bin/blastx \
--query 2018-09-06-Virginica-transcripts.fna \
+-query ../analyses/2018-12-02-Gene-Enrichment-Analysis/2018-09-06-Virginica-transcripts.fna \
 -db uniprot-filtered-reviewed.fasta \
 -outfmt 6 \
--out 2018-09-06-Transcript-Uniprot-blastx.txt \
+-out ../analyses/2018-12-02-Gene-Enrichment-Analysis/2018-09-06-Transcript-Uniprot-blastx.txt \
 -num_threads 4 \
 -max_target_seqs 1
 ```
 
 ```{bash}
-head 2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt #Check file format of Uniprot codes. I'm using a file with the Uniprot code already isolated so I don't have to unfold any columns after merging files.
+head ../analyses/2018-12-02-Gene-Enrichment-Analysis/2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt #Check file format of Uniprot codes. I'm using a file with the Uniprot code already isolated so I don't have to unfold any columns after merging files.
 ```
 
 ```{r}
-blastResults <- read.delim("2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt", header = FALSE, sep = "\t", dec = ".") #Import blast results
+blastResults <- read.delim("../analyses/2018-12-02-Gene-Enrichment-Analysis/2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt", header = FALSE, sep = "\t", dec = ".") #Import blast results
 head(blastResults) #Confirm import
 colnames(blastResults) <- c("Genbank", "V2", "Uniprot", "V4", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
 head(blastResults) #Confirm column headers
@@ -119,13 +115,13 @@ I can start with my DML csv file, then merge that with the information from `clo
 ## Merge DML list with `closestBed` list
 
 ```{r}
-allDML <- read.csv("../2018-10-25-MethylKit/2018-10-25-Loci-Analysis/2019-04-05-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5.csv", header = TRUE) #Import DML list
+allDML <- read.csv("../analyses/2018-10-25-MethylKit/2018-10-25-Loci-Analysis/2019-04-05-Differentially-Methylated-Loci-Filtered-Destrand-50-Cov5.csv", header = TRUE) #Import DML list
 allDML <- allDML[,-1] #Remove first column
 head(allDML) #Confirm import
 ```
 
 ```{r}
-closestDML <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Genes-Closest-NoOverlap-DMLs.txt", header = FALSE) #Import DML with closestBed information
+closestDML <- read.delim("../analyses/2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Genes-Closest-NoOverlap-DMLs.txt", header = FALSE) #Import DML with closestBed information
 colnames(closestDML) <- c("chr", "start", "end", "meth.diff", "gene-chr", "gene-start", "gene-end", "dist-to-closest-gene") #Add column names
 head(closestDML) #Confirm column names. DML downstream of genes have positive distances. There may be more lines than DML becuase there are some DML that overlap multiple gene features, or have ties for closest gene features.
 ```
@@ -152,7 +148,7 @@ head(allDMLclosestBed) #Confirm reorganization
 ### Import full gene list
 
 ```{r}
-geneList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
+geneList <- read.delim("../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
 colnames(geneList) <- c("gene-chr", "Gnomon", "gene", "gene-start", "gene-end", "V6", "V7", "V8", "V9") #Rename columns
 head(geneList) #Confirm import
 ```
@@ -165,13 +161,13 @@ head(geneList) #Confirm changes
 ### Isolate gene description from full list
 
 ```{bash}
-cut -f9 ../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3 \
+cut -f9 ../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3 \
 | awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-Gene-Descriptions.txt #Isolate gene description column and convert ";" to "\t". Save the output as a new file
+> ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Gene-Descriptions.txt #Isolate gene description column and convert ";" to "\t". Save the output as a new file
 ```
 
 ```{bash}
-head 2019-06-20-Gene-Descriptions.txt #Confirm file creation. 
+head ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Gene-Descriptions.txt #Confirm file creation. 
 ```
 
 Before I import this new data set into R, I need to count the number of columns. I can do this with `awk`.
@@ -183,12 +179,12 @@ awk '{print NF}' 2019-06-20-Gene-Descriptions.txt > 2019-06-20-Gene-Description-
 ### Import isolated gene descriptions
 
 ```{r}
-geneDescriptionColumns <- read.delim("2019-06-20-Gene-Description-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
+geneDescriptionColumns <- read.delim("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Gene-Description-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
 max(geneDescriptionColumns) #Max number of columns. I'll need to import my gene description dataset with 9 columns per row.
 ```
 
 ```{r}
-geneDescriptions <- read.delim2("2019-06-20-Gene-Descriptions.txt", header = FALSE, col.names = c("gene-number", "gene-ID", "V3", "V4", "V5", "V6", "V7", "V8", "V9")) #Import document with gene descrptions. Name 9 columns so all rows are imported with 9 columns
+geneDescriptions <- read.delim2("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Gene-Descriptions.txt", header = FALSE, col.names = c("gene-number", "gene-ID", "V3", "V4", "V5", "V6", "V7", "V8", "V9")) #Import document with gene descrptions. Name 9 columns so all rows are imported with 9 columns
 head(geneDescriptions) #Confirm import
 ```
 
@@ -223,7 +219,7 @@ head(allDMLclosestBedgeneList) #Confirm reorganization
 ### Import full mRNA track
 
 ```{r}
-mRNAList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
+mRNAList <- read.delim("../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
 mRNAList <- mRNAList[,-c(6,8)] #Remove extra columns
 colnames(mRNAList) <- c("mRNA-chr", "Gnomon", "mRNA", "mRNA-start", "mRNA-end", "mRNA-strand", "V9") #Rename columns
 head(mRNAList) #Confirm import
@@ -232,31 +228,31 @@ head(mRNAList) #Confirm import
 ### Isolate mRNA description from full list
 
 ```{bash}
-cut -f9 ../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3 \
+cut -f9 ../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3 \
 | awk  '{gsub(";","\t",$0); print;}' \
 | awk  '{gsub(",","\t",$0); print;}' \
-> 2019-06-20-mRNA-Descriptions.txt #Isolate mRNA description column and convert ";" and "," to "\t". Save the output as a new file
+> ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Descriptions.txt #Isolate mRNA description column and convert ";" and "," to "\t". Save the output as a new file
 ```
 
 ```{bash}
-head 2019-06-20-mRNA-Descriptions.txt #Confirm file creation. 
+head ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Descriptions.txt #Confirm file creation. 
 ```
 
 Before I import this new data set into R, I need to count the number of columns. I can do this with `awk`.
 
 ```{bash}
-awk '{print NF}' 2019-06-20-mRNA-Descriptions.txt > 2019-06-20-mRNA-Description-Column-Numbers.txt
+awk '{print NF}' ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Descriptions.txt > ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Description-Column-Numbers.txt
 ```
 
 ### Import isolated mRNA descriptions
 
 ```{r}
-mRNADescriptionColumns <- read.delim("2019-06-20-mRNA-Description-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
+mRNADescriptionColumns <- read.delim("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Description-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
 max(mRNADescriptionColumns) #Max number of columns. I'll need to import my gene description dataset with 78 columns per row.
 ```
 
 ```{r}
-mRNADescriptions <- read.delim2("2019-06-20-mRNA-Descriptions.txt", header = FALSE, col.names = paste("V", 1:78, sep = "")) #Import document with gene descrptions. Name 78 columns so all rows are imported with 78 columns
+mRNADescriptions <- read.delim2("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Descriptions.txt", header = FALSE, col.names = paste("V", 1:78, sep = "")) #Import document with gene descrptions. Name 78 columns so all rows are imported with 78 columns
 head(mRNADescriptions) #Confirm import
 ```
 
@@ -277,31 +273,31 @@ Buried in the `mRNAList` is mRNA product information. I'm going to extract that 
 ### Isolate product descriptions
 
 ```{bash}
-cut -f9 ../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3 \
+cut -f9 ../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3 \
 | awk  '{gsub("product=","\t",$0); print;}' \
 | cut -f2 \
 | awk  '{gsub(";","\t",$0); print;}' \
 | awk  '{gsub("%","\t",$0); print;}' \
-> 2019-06-20-mRNA-Products.txt #Isolate mRNA description column and convert "product=" to "\t". This separates the descriptions into 2 columns. The beginning of second column has the product description. Take the second column of the output and convert ";" and "%" to "\t" to better isolate mRNA products. Save the output as a new file.
+> ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products.txt #Isolate mRNA description column and convert "product=" to "\t". This separates the descriptions into 2 columns. The beginning of second column has the product description. Take the second column of the output and convert ";" and "%" to "\t" to better isolate mRNA products. Save the output as a new file.
 ```
 
 ```{bash}
-head 2019-06-20-mRNA-Products.txt #Confirm product description isolation
+head ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products.txt #Confirm product description isolation
 ```
 
 ```{bash}
-awk '{print NF}' 2019-06-20-mRNA-Products.txt > 2019-06-20-mRNA-Products-Column-Numbers.txt
+awk '{print NF}' ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products.txt > ../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products-Column-Numbers.txt
 ```
 
 ### Import isolated mRNA products
 
 ```{r}
-mRNAProductColumns <- read.delim("2019-06-20-mRNA-Products-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
+mRNAProductColumns <- read.delim("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products-Column-Numbers.txt", header = FALSE) #Import data with number of columns for each row
 max(mRNAProductColumns) #Max number of columns. I'll need to import my dataset with 16 columns per row.
 ```
 
 ```{r}
-mRNAProducts <- read.delim2("2019-06-20-mRNA-Products.txt", header = FALSE, col.names = paste("V", 1:16, sep = "")) #Import document with gene descrptions. Name 16 columns so all rows are imported with 16 columns.
+mRNAProducts <- read.delim2("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Products.txt", header = FALSE, col.names = paste("V", 1:16, sep = "")) #Import document with gene descrptions. Name 16 columns so all rows are imported with 16 columns.
 head(mRNAProducts) #Confirm import
 ```
 
@@ -353,15 +349,15 @@ I will use a Uniprot-SwissProt database I downloaded to match Uniprot-Accession 
 ### Import Uniprot-Gene Ontology databse
 
 ```{bash}
-gunzip uniprot-reviewed_yes.tab.gz #Unzip file
+gunzip ../analyses/2018-12-02-Gene-Enrichment-Analysis/uniprot-reviewed_yes.tab.gz #Unzip file
 ```
 
 ```{bash}
-head -n2 uniprot-reviewed_yes.tab #View file header
+head -n2 ../analyses/2018-12-02-Gene-Enrichment-Analysis/uniprot-reviewed_yes.tab #View file header
 ```
 
 ```{r}
-uniprotGOTerms <- read.delim("uniprot-reviewed_yes.tab", header = TRUE) #Import tab-delimited file with header
+uniprotGOTerms <- read.delim("../analyses/2018-12-02-Gene-Enrichment-Analysis/uniprot-reviewed_yes.tab", header = TRUE) #Import tab-delimited file with header
 head(uniprotGOTerms) #Confirm import
 ```
 
@@ -392,7 +388,7 @@ head(masterDMLAnnotation) #Confirm changes
 ```
 
 ```{r}
-write.csv(masterDMLAnnotation, "2019-06-20-Master-DML-Annotation.csv") #Write out masterDMLAnnotation as a .csv file
+write.csv(masterDMLAnnotation, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-Master-DML-Annotation.csv") #Write out masterDMLAnnotation as a .csv file
 ```
 
 Now that I have a master gene list, I can create relevant subset documents.
@@ -405,7 +401,7 @@ head(DMLGeneAnnotation) #Confirm subset
 ```
 
 ```{r}
-write.csv(DMLGeneAnnotation, "2019-06-20-DML-Gene-Annotation.csv") #Save file
+write.csv(DMLGeneAnnotation, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-DML-Gene-Annotation.csv") #Save file
 ```
 
 ### Characterize DML distribution in genes
@@ -454,7 +450,7 @@ head(genes1DMLAnnotations) #Confirm merge
 ```
 
 ```{r}
-write.csv(genes1DMLAnnotations, "2019-10-01-Genes-with-1-DML.csv", quote = FALSE, row.names = FALSE) #Save file
+write.csv(genes1DMLAnnotations, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-1-DML.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
 ```{r}
@@ -464,7 +460,7 @@ head(genes2DMLAnnotations) #Confirm merge
 ```
 
 ```{r}
-write.csv(genes2DMLAnnotations, "2019-10-01-Genes-with-2-DML.csv", quote = FALSE, row.names = FALSE) #Save file
+write.csv(genes2DMLAnnotations, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-2-DML.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
 ```{r}
@@ -474,7 +470,7 @@ head(genes3DMLAnnotations) #Confirm merge
 ```
 
 ```{r}
-write.csv(genes3DMLAnnotations, "2019-10-01-Genes-with-3-DML.csv", quote = FALSE, row.names = FALSE) #Save file
+write.csv(genes3DMLAnnotations, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-3-DML.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
 ```{r}
@@ -484,7 +480,7 @@ head(genes4DMLAnnotations) #Confirm merge
 ```
 
 ```{r}
-write.csv(genes4DMLAnnotations, "2019-10-01-Genes-with-4-DML.csv", quote = FALSE, row.names = FALSE) #Save file
+write.csv(genes4DMLAnnotations, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-4-DML.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
 ```{r}
@@ -494,7 +490,7 @@ head(genes5DMLAnnotations) #Confirm merge
 ```
 
 ```{r}
-write.csv(genes5DMLAnnotations, "2019-10-01-Genes-with-5-DML.csv", quote = FALSE, row.names = FALSE) #Save file
+write.csv(genes5DMLAnnotations, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-5-DML.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
 #### Characterize types of DML in genes
@@ -514,7 +510,7 @@ head(genes1DMLBreakdown)
 I did some Excel manipulations to count the number of hypermethylated DML in genes with multiple DML.
 
 ```{r}
-genes2DMLCounts <- read.csv("2019-10-01-Genes-with-2-DML-withCounts.csv", header = TRUE) #Import file
+genes2DMLCounts <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-2-DML-withCounts.csv", header = TRUE) #Import file
 genes2DMLCounts$no.hypo <- genes2DMLCounts$DMLCount - genes2DMLCounts$no.hyper #Calculate the number of hypomethylated DML in genes
 head(genes2DMLCounts) #Confirm changes
 ```
@@ -534,7 +530,7 @@ head(genes2DMLBreakdown)
 ```
 
 ```{r}
-genes3DMLCounts <- read.csv("2019-10-01-Genes-with-3-DML-withCounts.csv", header = TRUE) #Import file
+genes3DMLCounts <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-3-DML-withCounts.csv", header = TRUE) #Import file
 genes3DMLCounts$no.hypo <- genes3DMLCounts$DMLCount - genes3DMLCounts$no.hyper #Calculate the number of hypomethylated DML in genes
 head(genes3DMLCounts) #Confirm changes
 ```
@@ -556,7 +552,7 @@ head(genes3DMLBreakdown)
 ```
 
 ```{r}
-genes4DMLCounts <- read.csv("2019-10-01-Genes-with-4-DML-withCounts.csv", header = TRUE) #Import file
+genes4DMLCounts <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-4-DML-withCounts.csv", header = TRUE) #Import file
 genes4DMLCounts$no.hypo <- genes4DMLCounts$DMLCount - genes4DMLCounts$no.hyper #Calculate the number of hypomethylated DML in genes
 head(genes4DMLCounts) #Confirm changes
 ```
@@ -580,7 +576,7 @@ head(genes4DMLBreakdown)
 ```
 
 ```{r}
-genes5DMLCounts <- read.csv("2019-10-01-Genes-with-5-DML-withCounts.csv", header = TRUE) #Import file
+genes5DMLCounts <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-01-Genes-with-5-DML-withCounts.csv", header = TRUE) #Import file
 genes5DMLCounts$no.hypo <- genes5DMLCounts$DMLCount - genes5DMLCounts$no.hyper #Calculate the number of hypomethylated DML in genes
 head(genes5DMLCounts) #Confirm changes
 ```
@@ -597,7 +593,6 @@ sum(genes5DMLCounts$no.hyper == 0) #Count # genes with all DML hypomethylated
 ##### Create individual figures
 
 I'm going to create a multipanel plot with a breakdown of the number hyper- and hypomethylated in genes. I will start by creating each figure separately.
-
 
 ```{r}
 #DML/gene
@@ -681,7 +676,7 @@ barplot(t(t(proportionData)),
 I'm going to combine the breakdowns with the number of DML in each chromosome.
 
 ```{r}
-#pdf("2019-10-03-DML-Distribution-in-Chr-Genes.pdf", width = 11, height = 8.5)
+#pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-03-DML-Distribution-in-Chr-Genes.pdf", width = 11, height = 8.5)
 
 plotMatrix <- matrix(c(1,1,0,3,4,
                        2,2,0,5,6),
@@ -839,7 +834,7 @@ xminDML <- min(breaksDMLPlot) #Set xmin based on breaks
 ```
 
 ```{r}
-#pdf("2019-10-09-Scaled-Gene-DML-Distribution.pdf", height = 8.5, width = 11)
+#pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-10-09-Scaled-Gene-DML-Distribution.pdf", height = 8.5, width = 11)
 
 plot(hyperPlotDML, 
      xlim = c(xminDML, xmaxDML),
@@ -861,7 +856,7 @@ mtext(side = 2, "Number of DML", line = 2, cex = 1.5) #Add y-axis label
 If methylation changes in adults can impact biomineralization processes in larvae, then biomineralization genes should be differentially methylated in adult gonad tissue. I want to see how many (if any) biomineralization genes contain DML.
 
 ```{r}
-biomineralizationGenes <- read.csv("2019-12-09-Biomineralization-Genes.csv", header = TRUE) #Import biomineralization genes Alan compiled
+biomineralizationGenes <- read.csv("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-12-09-Biomineralization-Genes.csv", header = TRUE) #Import biomineralization genes Alan compiled
 biomineralizationGenes$geneID <- gsub("LOC", "", biomineralizationGenes$geneID) #Remove extraneous characters. The biomineralization geneID have "LOC," while my master list geneID don't have those characters. I removed these characters
 length(biomineralizationGenes$geneID) #There are 82 biomineralization genes
 head(biomineralizationGenes) #Confirm changes
@@ -876,7 +871,7 @@ head(DMLbiomineralizationGenes) #Confirm merge
 ```
 
 ```{r}
-write.csv(DMLbiomineralizationGenes, "2019-12-09-Biomineralization-Genes-with-DML.csv", row.names = FALSE, quote = FALSE) #Save file
+write.csv(DMLbiomineralizationGenes, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-12-09-Biomineralization-Genes-with-DML.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
 ### Hypermethylated DML-gene overlaps
@@ -887,7 +882,7 @@ head(DMLGeneAnnotationHypermethylated) #Confirm subset
 ```
 
 ```{r}
-write.csv(DMLGeneAnnotationHypermethylated, "2019-06-20-DML-Gene-Annotation-Hypermethylated.csv") #Save file
+write.csv(DMLGeneAnnotationHypermethylated, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-DML-Gene-Annotation-Hypermethylated.csv") #Save file
 ```
 
 ### Hypomethylated DML-gene overlaps
@@ -898,203 +893,7 @@ head(DMLGeneAnnotationHypomethylated) #Confirm subset
 ```
 
 ```{r}
-write.csv(DMLGeneAnnotationHypomethylated, "2019-06-20-DML-Gene-Annotation-Hypomethylated.csv") #Save file
-```
-
-# Master exon overlap list
-
-## Import DML-exon overlaps
-
-```{r}
-DMLExonOverlaps <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-05-29-DML-Exon.txt", header = FALSE) #Import file with DML and matching exons
-DMLExonOverlaps <- DMLExonOverlaps[,-4] #Remove extra meth.diff column
-colnames(DMLExonOverlaps) <- c("chr", "start", "end", "exon-chr", "exon-start", "exon-end")
-DMLExonOverlaps$start <- DMLExonOverlaps$start + 1 #Add 1 to the start position since the file is BEDtools output
-DMLExonOverlaps$end <- DMLExonOverlaps$end - 1 #Add 1 to the start position since the file is BEDtools output
-head(DMLExonOverlaps) #Confirm changes
-```
-
-## Merge with DML-gene annotation table
-
-```{r}
-DMLExonAnnotation <- merge(x = DMLExonOverlaps, y = DMLGeneAnnotation, by = "start", sort = FALSE, all.x = TRUE) #Merge files by DML position. Don't sort the output and retain all rows from DMLExonOverlaps even if there are no matches in DMLGeneAnnotation
-head(DMLExonAnnotation) #Confirm merge
-```
-
-```{r}
-DMLExonAnnotation <- DMLExonAnnotation[,c(2, 1, 3, 9:12, 5:6, 15:28)] #Reorganize columns remove dist-to-closest-gene column since these is all overlaps.
-colnames(DMLExonAnnotation) <- c("chr", "start", "end", "meth.diff", "strand", "pvalue", "qvalue", "exon-start", "exon-end", "gene-start", "gene-end", "geneID", "mRNA-start", "mRNA-end", "Genbank", "Uniprot-ID", "Uniprot-Accession", "evalue", "Product", "GO-ID", "GO-BP", "GO-CC", "GO-MF") #Add column names
-DMLExonAnnotation <- distinct(DMLExonAnnotation) #Remove duplicate rows (merging artifacts)
-head(DMLExonAnnotation) #Confirm changes
-```
-
-```{r}
-write.csv(DMLExonAnnotation, "2019-06-20-DML-Exon-Annotation.csv") #Save file
-```
-
-## Hypermethylated DML-exon overlaps
-
-```{r}
-DMLExonAnnotationHypermethylated <- DMLExonAnnotation[DMLExonAnnotation$meth.diff > 0,] #Obtain hypermethylated DML by subsetting meth.dif > 0
-head(DMLExonAnnotationHypermethylated) #Confirm subset
-```
-
-```{r}
-write.csv(DMLExonAnnotationHypermethylated, "2019-06-20-DML-Exon-Annotation-Hypermethylated.csv") #Save file
-```
-
-## Hypomethylated DML-exon overlaps
-
-```{r}
-DMLExonAnnotationHypomethylated <- DMLExonAnnotation[DMLExonAnnotation$meth.diff < 0,] #Obtain hypomethylated DML by subsetting meth.dif < 0
-head(DMLExonAnnotationHypomethylated) #Confirm subset
-```
-
-```{r}
-write.csv(DMLExonAnnotationHypomethylated, "2019-06-20-DML-Exon-Annotation-Hypomethylated.csv") #Save file
-```
-
-# Master intron overlap list
-
-## Import DML-Intron overlaps
-
-```{r}
-DMLIntonOverlaps <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-05-29-DML-Intron.txt", header = FALSE) #Import file with DML and matching introns
-DMLIntonOverlaps <- DMLIntonOverlaps[,-4] #Remove extra meth.diff column
-colnames(DMLIntonOverlaps) <- c("chr", "start", "end", "intron-chr", "intron-start", "intron-end")
-DMLIntonOverlaps$start <- DMLIntonOverlaps$start + 1 #Add 1 to the start position since the file is BEDtools output
-DMLIntonOverlaps$end <- DMLIntonOverlaps$end - 1 #Add 1 to the start position since the file is BEDtools output
-head(DMLIntonOverlaps) #Confirm changes
-```
-
-## Merge with DML-gene annotation table
-
-```{r}
-DMLIntronAnnotation <- merge(x = DMLIntonOverlaps, y = DMLGeneAnnotation, by = "start", sort = FALSE, all.x = TRUE) #Merge files by DML position. Don't sort the output and retain all rows from DMLIntronOverlaps even if there are no matches in DMLGeneAnnotation
-head(DMLIntronAnnotation) #Confirm merge
-```
-
-```{r}
-DMLIntronAnnotation <- DMLIntronAnnotation[,c(2, 1, 3, 9:12, 5:6, 15:28)] #Reorganize columns remove dist-to-closest-gene column since these is all overlaps.
-colnames(DMLIntronAnnotation) <- c("chr", "start", "end", "meth.diff", "strand", "pvalue", "qvalue", "intron-start", "intron-end", "gene-start", "gene-end", "geneID", "mRNA-start", "mRNA-end", "Genbank", "Uniprot-ID", "Uniprot-Accession", "evalue", "Product", "GO-ID", "GO-BP", "GO-CC", "GO-MF") #Add column names
-DMLIntronAnnotation <- distinct(DMLIntronAnnotation) #Remove duplicate rows (merging artifacts)
-head(DMLIntronAnnotation) #Confirm changes
-```
-
-```{r}
-write.csv(DMLIntronAnnotation, "2019-06-20-DML-Intron-Annotation.csv") #Save file
-```
-
-## Hypermethylated DML-intron overlaps
-
-```{r}
-DMLIntronAnnotationHypermethylated <- subset(x = DMLIntronAnnotation, subset = DMLIntronAnnotation$meth.diff > 0) #Obtain hypermethylated DML by subsetting meth.diff > 0
-head(DMLIntronAnnotationHypermethylated) #Confirm subset
-```
-
-```{r}
-write.csv(DMLIntronAnnotationHypermethylated, "2019-06-20-DML-Intron-Annotation-Hypermethylated.csv") #Save file
-```
-
-## Hypomethylated DML-intron overlaps
-
-```{r}
-DMLIntronAnnotationHypomethylated <- subset(x = DMLIntronAnnotation, subset = DMLIntronAnnotation$meth.diff < 0) #Obtain hypomethylated DML by subsetting meth.diff < 0
-head(DMLIntronAnnotationHypomethylated) #Confirm subset
-```
-
-```{r}
-write.csv(DMLIntronAnnotationHypomethylated, "2019-06-20-DML-Intron-Annotation-Hypomethylated.csv") #Save file
-```
-
-# Master promoter overlap list
-
-The `dist-to-closet-gene` has important information for DML distances to genes, but not the closest transcription start sites (i.e. mRNA). I will import the DML-promoter overlaps, then modify this dataframe to obtain a master DML-promoter overlap annotation.
-
-## Import DML-promoter overlaps
-
-```{r}
-promoterList <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-mRNA-1000bp-UpstreamFlanks-DML.txt", header = FALSE) #Import DML-promoter overlaps
-promoterList <- promoterList[,-c(7:8)] #Remove extra columns
-colnames(promoterList) <- c("flank-chr", "flank-start", "flank-end", "chr", "start", "end") #Rename columns
-head(promoterList) #Confirm changes
-```
-
-```{r}
-promoterList$start <- promoterList$start + 1 #Add 1 to the start position since the file is BEDtools output
-promoterList$end <- promoterList$end -1 #Subtract 1 to the end position since the file is BEDtools output
-promoterList$`mRNA-start` <- promoterList$`flank-end` #Duplicate The end of the flank is the same as the start of the mRNA. Create a duplicate column for easy merging.
-head(promoterList) #Confrm changes
-```
-
-## Merge with `masterDMLAnnotation`
-
-```{r}
-DMLPromoterAnnotation <- merge(x = masterDMLAnnotation, y = promoterList, by = "mRNA-start", sort = FALSE, all.y = TRUE) #Merge the master list with promoter information by mRNA-start. Retain all rows in promoterList that do not have matching entries in masterDMLAnnotation
-head(DMLPromoterAnnotation) #Confirm merge
-```
-
-```{r}
-DMLPromoterAnnotation <- DMLPromoterAnnotation[,c(2:13, 25:26, 1, 14:23)] #Reorganize columns
-colnames(DMLPromoterAnnotation) <- c("chr", "start", "end", "meth.diff", "strand", "pvalue", "qvalue", "dist-to-closest-gene", "gene-chr", "gene-start", "gene-end", "geneID", "flank-start", "flank-end", "mRNA-start", "mRNA-end", "Genbank", "Uniprot-Accession", "Uniprot-ID", "evalue", "Product", "GO-ID", "GO-BP", "GO-CC", "GO-MF") #Rename columns to match naming conventions
-DMLPromoterAnnotation <- distinct(DMLPromoterAnnotation) #Remove duplicate rows (merge artifacts)
-head(DMLPromoterAnnotation) #Confirm reorganization
-```
-
-```{r}
-write.csv(DMLPromoterAnnotation, "2019-06-20-DML-Promoter-Annotation.csv") #Save file
-```
-
-# Master transposable element list
-
-The last annotation list I need is one with DML-transposable element overlaps.
-
-## Import DML-TE overlap file
-
-```{r}
-TEOverlaps <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-05-29-DML-TE-all.txt", header = FALSE) #Import DML-TE overlap file
-TEOverlaps <- TEOverlaps[,-c(4, 6:7, 12)] #Remove extraneous columns
-colnames(TEOverlaps) <- c("chr", "start", "end", "TE-chr", "TE-start", "TE-end", "V10", "TE-strand", "Target-Motif") #Rename columns
-head(TEOverlaps) #Confirm import
-```
-
-## Merge with TE-gene overlap file
-
-```{r}
-TEGeneOverlaps <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2018-11-07-Genes-TE-all.txt", header = FALSE)
-TEGeneOverlaps <- TEGeneOverlaps[,-c(4:6, 11, 13)] #Remove extraneous columns
-colnames(TEGeneOverlaps) <- c("gene-chr", "gene-start", "gene-end", "TE-start", "TE-end", "V10", "TE-strand", "Target-Motif") #Rename columns. Changed V9 to V10 to match column names in TEOverlaps
-head(TEGeneOverlaps) #Confirm import
-```
-
-```{r}
-TEDMLOverlaps <- merge(x = TEOverlaps, y = TEGeneOverlaps, by = c("TE-start", "TE-end"), sort = FALSE, all.x = TRUE) #Merge TEOverlaps with TEGeneOverlaps. Do not sort the output. Retain any information in the DML-TE overlaps that does not have matching gene annotations
-head(TEDMLOverlaps) #Confirm merge
-```
-
-```{r}
-TEDMLOverlaps <- TEDMLOverlaps[,c(3:5, 1:2, 7:9, 11:12)] #Reorganize columns
-head(TEDMLOverlaps) #Confirm changes
-```
-
-## Merge with `masterDMLAnnotation`
-
-This will allow me to match TE-DML-gene overlaps with genes.
-
-```{r}
-DMLTEAnnotation <- merge(x = TEDMLOverlaps, y = masterDMLAnnotation, by = c("gene-start", "gene-end"), sort = FALSE, all.x = TRUE) #Merge TEDMLOverlaps with masterDMLAnnotation by gene start and end positions. Do not sort the output and retain any TEDMLOverlap entries that do not have matches in masterDMLAnnotation
-head(DMLTEAnnotation) #Confirm merge
-```
-
-```{r}
-DMLTEAnnotation <- DMLTEAnnotation[,c(11:17, 6:10, 18, 1:2, 20:31)] #Reorganize columns
-colnames(DMLTEAnnotation) <- c("chr", "start", "end", "meth.diff", "strand", "pvalue", "qvalue", "TE-start", "TE-end", "V10", "TE-strand", "Target-Motif", "dist-to-closest-gene", "gene-start", "gene-end", "geneID", "mRNA-start", "mRNA-end", "Genbank", "Uniprot-Accession", "Uniprot-ID", "evalue", "Product", "GO-ID", "GO-BP", "GO-CC", "GO-MF") #Rename columns
-DMLTEAnnotation <- distinct(DMLTEAnnotation) #Retain unique rows
-head(DMLTEAnnotation) #Confirm changes
-```
-
-```{r}
-write.csv(DMLTEAnnotation, "2019-06-20-DML-TE-Annotation.csv") #Save file
+write.csv(DMLGeneAnnotationHypomethylated, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-DML-Gene-Annotation-Hypomethylated.csv") #Save file
 ```
 
 # Gene background
@@ -1102,7 +901,7 @@ write.csv(DMLTEAnnotation, "2019-06-20-DML-TE-Annotation.csv") #Save file
 ## Import DMLBackground-mRNA overlaps
 
 ```{r}
-DMLBackgroundmRNAOverlaps <- read.delim("../2018-11-01-DML-and-DMR-Analysis/2019-06-20-DMLBackground-mRNA.txt", header = FALSE)
+DMLBackgroundmRNAOverlaps <- read.delim("../analyses/2018-11-01-DML-and-DMR-Analysis/2019-06-20-DMLBackground-mRNA.txt", header = FALSE)
 DMLBackgroundmRNAOverlaps <- DMLBackgroundmRNAOverlaps[,-c(4:5)] #Remove extra columns
 colnames(DMLBackgroundmRNAOverlaps) <- c("chr", "DMLB-start", "DMLB-end", "mRNA-start", "mRNA-end") #Rename columns
 head(DMLBackgroundmRNAOverlaps) #Confirm import
@@ -1139,464 +938,5 @@ head(backgroundmRNAblasteValueCutoff) #Confirm reorganization
 ```
 
 ```{r}
-write.csv(backgroundmRNAblasteValueCutoff, "2019-06-20-mRNA-Gene-Background-Uniprot.csv") #Write out file
+write.csv(backgroundmRNAblasteValueCutoff, "../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-06-20-mRNA-Gene-Background-Uniprot.csv") #Write out file
 ```
-
-# Functional gene description
-
-I will use `GO-BP` information to characterize Gene Ontology represented in DML-exon and DML-intron overlaps. I will also separate this out by hyper- and hypomethylated DML.
-
-## Exons
-
-### All exons
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLExonAnnotationEvalueCutoff <- subset(x = DMLExonAnnotation, subset = DMLExonAnnotation$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLExonAnnotationEvalueCutoff, "2019-06-20-DML-Exon-Annotation-Evalue-Cutoff.csv")
-nrow(DMLExonAnnotationEvalueCutoff) #Approx. 8000 rows dropped
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Exon-Annotation-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Exon-Annotation-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Exon-Annotation-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Exon-Annotation-GO-BP-Expanded.txt > 2019-06-20-DML-Exon-Annotation-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLExonAnnotationGOBPColumns <- read.delim("2019-06-20-DML-Exon-Annotation-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLExonAnnotationGOBPColumns$X1) #I should import the file with 353 columns
-```
-
-```{r}
-DMLExonAnnotationGOBPExpanded <- read.delim("2019-06-20-DML-Exon-Annotation-GO-BP-Expanded.txt", col.names = paste("V", 1:353, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLExonAnnotationGOBPExpanded <- DMLExonAnnotationGOBPExpanded[-1,] #Remove the first row, which is the original haeder from the file
-head(DMLExonAnnotationGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLExonAnnotationGOBPExpanded <- DMLExonAnnotationGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLExonAnnotationGOBPExpandedNoNA <- DMLExonAnnotationGOBPExpanded[is.na(DMLExonAnnotationGOBPExpanded$V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLExonAnnotationGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLExonAnnotationGOBPExpandedNoNA$V2 <- gsub('{1}$', '', DMLExonAnnotationGOBPExpandedNoNA$V2) #Remove space before GOterms
-DMLExonAnnotationGOBPExpandedNoNA$V3 <- gsub('{1}$', '', DMLExonAnnotationGOBPExpandedNoNA$V3) #Remove space before GOterms
-head(DMLExonAnnotationGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLExonAnnotationGOBPExpandedNoNAList <- c(as.vector(DMLExonAnnotationGOBPExpandedNoNA$V1),
-                                           as.vector(DMLExonAnnotationGOBPExpandedNoNA$V2),
-                                           as.vector(DMLExonAnnotationGOBPExpandedNoNA$V3)) #Convert to a vector
-DMLExonAnnotationGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLExonAnnotationGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLExonAnnotationGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLExonAnnotationGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLExonAnnotationGOBPCounts <- count(DMLExonAnnotationGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLExonAnnotationGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLExonAnnotationGOBPCounts) #Count the number of rows
-```
-
-```{r}
-write.csv(DMLExonAnnotationGOBPCounts, "2019-06-20-DML-Exon-Annotation-GO-BP-Counts.csv") #Save file
-```
-
-### Hypermethylated exons
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLExonAnnotationHypermethylatedEvalueCutoff <- subset(x = DMLExonAnnotationHypermethylated, subset = DMLExonAnnotationHypermethylated$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLExonAnnotationHypermethylatedEvalueCutoff, "2019-06-20-DML-Exon-Annotation-Hypermethylated-Evalue-Cutoff.csv") #Save file
-nrow(DMLExonAnnotationHypermethylatedEvalueCutoff) #Count the number of rows
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Exon-Annotation-Hypermethylated-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded.txt > 2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPColumns <- read.delim("2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLExonAnnotationHypermethylatedGOBPColumns$X1) #I should import the file with 147 columns
-```
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPExpanded <- read.delim("2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Expanded.txt", col.names = paste("V", 1:147, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLExonAnnotationHypermethylatedGOBPExpanded <- DMLExonAnnotationHypermethylatedGOBPExpanded[-1,] #Remove the first row, which is the original haeder from the file
-head(DMLExonAnnotationHypermethylatedGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPExpanded <- DMLExonAnnotationHypermethylatedGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLExonAnnotationHypermethylatedGOBPExpandedNoNA <- DMLExonAnnotationHypermethylatedGOBPExpanded[is.na(DMLExonAnnotationHypermethylatedGOBPExpanded$V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLExonAnnotationHypermethylatedGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V2 <- gsub('{1}$', '', DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V2) #Remove space before GOterms
-DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V3 <- gsub('{1}$', '', DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V3) #Remove space before GOterms
-head(DMLExonAnnotationHypermethylatedGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList <- c(as.vector(DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V1),
-                                           as.vector(DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V2),
-                                           as.vector(DMLExonAnnotationHypermethylatedGOBPExpandedNoNA$V3)) #Convert to a vector
-DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLExonAnnotationHypermethylatedGOBPCounts <- count(DMLExonAnnotationHypermethylatedGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLExonAnnotationHypermethylatedGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLExonAnnotationHypermethylatedGOBPCounts) #Count the number of rows
-```
-
-```{r}
-write.csv(DMLExonAnnotationHypermethylatedGOBPCounts, "2019-06-20-DML-Exon-Annotation-Hypermethylated-GO-BP-Counts.csv") #Save file
-```
-
-### Hypomethylated exons
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLExonAnnotationHypomethylatedEvalueCutoff <- subset(x = DMLExonAnnotationHypomethylated, subset = DMLExonAnnotationHypomethylated$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLExonAnnotationHypomethylatedEvalueCutoff, "2019-06-20-DML-Exon-Annotation-Hypomethylated-Evalue-Cutoff.csv") #Save file
-nrow(DMLExonAnnotationHypomethylatedEvalueCutoff) #Count the number of rows
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Exon-Annotation-Hypomethylated-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded.txt > 2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPColumns <- read.delim("2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLExonAnnotationHypomethylatedGOBPColumns$X1) #I should import the file with 353 columns
-```
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPExpanded <- read.delim("2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Expanded.txt", col.names = paste("V", 1:353, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLExonAnnotationHypomethylatedGOBPExpanded <- DMLExonAnnotationHypomethylatedGOBPExpanded[-1,] #Remove the first row, which is the original haeder from the file
-head(DMLExonAnnotationHypomethylatedGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPExpanded <- DMLExonAnnotationHypomethylatedGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLExonAnnotationHypomethylatedGOBPExpandedNoNA <- DMLExonAnnotationHypomethylatedGOBPExpanded[is.na(DMLExonAnnotationHypomethylatedGOBPExpanded $V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLExonAnnotationHypomethylatedGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V2 <- gsub('{1}$', '', DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V2) #Remove space before GOterms
-DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V3 <- gsub('{1}$', '', DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V3) #Remove space before GOterms
-head(DMLExonAnnotationHypomethylatedGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList <- c(as.vector(DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V1),
-                                           as.vector(DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V2),
-                                           as.vector(DMLExonAnnotationHypomethylatedGOBPExpandedNoNA $V3)) #Convert to a vector
-DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLExonAnnotationHypomethylatedGOBPCounts <- count(DMLExonAnnotationHypomethylatedGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLExonAnnotationHypomethylatedGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLExonAnnotationHypomethylatedGOBPCounts) #Count rows
-```
-
-```{r}
-write.csv(DMLExonAnnotationHypomethylatedGOBPCounts, "2019-06-20-DML-Exon-Annotation-Hypomethylated-GO-BP-Counts.csv") #Save file
-```
-
-## Introns
-
-### All introns
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLIntronAnnotationEvalueCutoff <- subset(x = DMLIntronAnnotation, subset = DMLIntronAnnotation$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLIntronAnnotationEvalueCutoff, "2019-06-20-DML-Intron-Annotation-Evalue-Cutoff.csv")
-nrow(DMLIntronAnnotationEvalueCutoff)
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Intron-Annotation-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Intron-Annotation-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Intron-Annotation-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Intron-Annotation-GO-BP-Expanded.txt > 2019-06-20-DML-Intron-Annotation-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLIntronAnnotationGOBPColumns <- read.delim("2019-06-20-DML-Intron-Annotation-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLIntronAnnotationGOBPColumns $X1) #I should import the file with 147 columns
-```
-
-```{r}
-DMLIntronAnnotationGOBPExpanded <- read.delim("2019-06-20-DML-Intron-Annotation-GO-BP-Expanded.txt", col.names = paste("V", 1:147, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLIntronAnnotationGOBPExpanded <- DMLIntronAnnotationGOBPExpanded[-1,] #Remove the first row, which is the original header from the file
-head(DMLIntronAnnotationGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLIntronAnnotationGOBPExpanded <- DMLIntronAnnotationGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLIntronAnnotationGOBPExpandedNoNA <- DMLIntronAnnotationGOBPExpanded[is.na(DMLIntronAnnotationGOBPExpanded $V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLIntronAnnotationGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLIntronAnnotationGOBPExpandedNoNA $V2 <- gsub('{1}$', '', DMLIntronAnnotationGOBPExpandedNoNA $V2) #Remove space before GOterms
-DMLIntronAnnotationGOBPExpandedNoNA $V3 <- gsub('{1}$', '', DMLIntronAnnotationGOBPExpandedNoNA $V3) #Remove space before GOterms
-head(DMLIntronAnnotationGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLIntronAnnotationGOBPExpandedNoNAList <- c(as.vector(DMLIntronAnnotationGOBPExpandedNoNA$V1),
-                                           as.vector(DMLIntronAnnotationGOBPExpandedNoNA$V2),
-                                           as.vector(DMLIntronAnnotationGOBPExpandedNoNA$V3)) #Convert to a vector
-DMLIntronAnnotationGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLIntronAnnotationGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLIntronAnnotationGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLIntronAnnotationGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLIntronAnnotationGOBPCounts <- count(DMLIntronAnnotationGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLIntronAnnotationGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLIntronAnnotationGOBPCounts) #Count the number of GOterm categories
-```
-
-```{r}
-write.csv(DMLIntronAnnotationGOBPCounts, "2019-06-20-DML-Intron-Annotation-GO-BP-Counts.csv") #Save file
-```
-
-### Hypermethylated introns
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLIntronAnnotationHypermethylatedEvalueCutoff <- subset(x = DMLIntronAnnotationHypermethylated, subset = DMLIntronAnnotationHypermethylated$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLIntronAnnotationHypermethylatedEvalueCutoff, "2019-06-20-DML-Intron-Annotation-Hypermethylated-Evalue-Cutoff.csv") #Save file
-nrow(DMLIntronAnnotationHypermethylatedEvalueCutoff) #Count the number of rows
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Intron-Annotation-Hypermethylated-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded.txt > 2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPColumns <- read.delim("2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLIntronAnnotationHypermethylatedGOBPColumns$X1) #I should import the file with 147 columns
-```
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPExpanded <- read.delim("2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Expanded.txt", col.names = paste("V", 1:147, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLIntronAnnotationHypermethylatedGOBPExpanded <- DMLIntronAnnotationHypermethylatedGOBPExpanded[-1,] #Remove the first row, which is the original haeder from the file
-head(DMLIntronAnnotationHypermethylatedGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPExpanded <- DMLIntronAnnotationHypermethylatedGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA <- DMLIntronAnnotationHypermethylatedGOBPExpanded[is.na(DMLIntronAnnotationHypermethylatedGOBPExpanded$V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V2 <- gsub('{1}$', '', DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V2) #Remove space before GOterms
-DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V3 <- gsub('{1}$', '', DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V3) #Remove space before GOterms
-head(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList <- c(as.vector(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V1),
-                                           as.vector(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V2),
-                                           as.vector(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNA$V3)) #Convert to a vector
-DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLIntronAnnotationHypermethylatedGOBPCounts <- count(DMLIntronAnnotationHypermethylatedGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLIntronAnnotationHypermethylatedGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLIntronAnnotationHypermethylatedGOBPCounts) #Count rows
-```
-
-```{r}
-write.csv(DMLIntronAnnotationHypermethylatedGOBPCounts, "2019-06-20-DML-Intron-Annotation-Hypermethylated-GO-BP-Counts.csv") #Save file
-```
-
-### Hypomethylated introns
-
-#### Subset by e-value cutoffs
-
-```{r}
-DMLIntronAnnotationHypomethylatedEvalueCutoff <- subset(x = DMLIntronAnnotationHypomethylated, subset = DMLIntronAnnotationHypomethylated$evalue < 1e-10) #Subset rows with acceptably low e-value cutoffs (no larger than 1e-10)
-write.csv(DMLIntronAnnotationHypomethylatedEvalueCutoff, "2019-06-20-DML-Intron-Annotation-Hypomethylated-Evalue-Cutoff.csv") #Save file
-nrow(DMLIntronAnnotationHypomethylatedEvalueCutoff) #Count the number of rows
-```
-
-#### Separate GOterms into new columns
-
-```{bash}
-awk -F "\"*,\"*" '{print $22}' 2019-06-20-DML-Intron-Annotation-Hypomethylated-Evalue-Cutoff.csv \
-| awk  '{gsub(";","\t",$0); print;}' \
-> 2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded.txt #Isolate GO-BP column and convert ";" to ",". Save the output as a new file.
-```
-
-```{bash}
-head -n5 2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded.txt #Confirm file creation
-```
-
-```{bash}
-awk '{print NF}' 2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded.txt > 2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded-Column-Numbers.txt #Count the number of columns in each row
-```
-
-#### Import and format isolated GO-BP information
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPColumns <- read.delim("2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded-Column-Numbers.txt")
-max(DMLIntronAnnotationHypomethylatedGOBPColumns$X1) #I should import the file with 73 columns
-```
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPExpanded <- read.delim("2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Expanded.txt", col.names = paste("V", 1:73, sep = ""), header = FALSE) #Import expanded GO-BP information
-DMLIntronAnnotationHypomethylatedGOBPExpanded <- DMLIntronAnnotationHypomethylatedGOBPExpanded[-1,] #Remove the first row, which is the original haeder from the file
-head(DMLIntronAnnotationHypomethylatedGOBPExpanded) #Confirm import
-```
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPExpanded <- DMLIntronAnnotationHypomethylatedGOBPExpanded[,c(1:3)] #Not every Uniprot Accession code has the same number of GOterms. I will use the first 3 GOterms assigned in my analyses
-DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA <- DMLIntronAnnotationHypomethylatedGOBPExpanded[is.na(DMLIntronAnnotationHypomethylatedGOBPExpanded $V1) == FALSE,] #Keeps rows with without NA in the first column (columns with at least one associated GOterm)
-nrow(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA) #Count the number of rows
-```
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V2 <- gsub('{1}$', '', DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V2) #Remove space before GOterms
-DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V3 <- gsub('{1}$', '', DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V3) #Remove space before GOterms
-head(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA) #Confim change
-```
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList <- c(as.vector(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V1),
-                                           as.vector(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V2),
-                                           as.vector(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNA $V3)) #Convert to a vector
-DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList <- data.frame("rowNumber" = seq(from = 1, to = length(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList), by = 1),
-                                                    "GO-BP" = DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList) #Add row numbers to use in count function
-head(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList) #Check format
-```
-
-#### Count GOterms
-
-```{r}
-DMLIntronAnnotationHypomethylatedGOBPCounts <- count(DMLIntronAnnotationHypomethylatedGOBPExpandedNoNAList, GO.BP) #Count instances of each GOterm
-head(DMLIntronAnnotationHypomethylatedGOBPCounts) #Confirm counting
-```
-
-```{r}
-nrow(DMLIntronAnnotationHypomethylatedGOBPCounts)
-```
-
-```{r}
-write.csv(DMLIntronAnnotationHypomethylatedGOBPCounts, "2019-06-20-DML-Intron-Annotation-Hypomethylated-GO-BP-Counts.csv") #Save file
-```
-

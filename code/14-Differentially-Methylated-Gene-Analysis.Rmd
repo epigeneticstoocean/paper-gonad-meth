@@ -7,6 +7,8 @@ output: github_document
 
 In this script, I will identify genes that are differentially methylated in response to *C. virginica* exposure to experimental ocean acidification conditions. I am roughly replicating an analysis from [this paper](https://advances.sciencemag.org/content/4/6/eaar8028) and [this preprint](https://www.biorxiv.org/content/early/2018/02/21/269076). .I will annotate coverage output from `bismark` with gene information, calculate median methylation for each gene, then perform t-tests for each gene. For differentially methylated genes (DMG), I will conduct a functional enrichment with GO-MWU.
 
+**NOTE: MOVE THIS R MARKDOWN FILE INTO THE `2019-08-14-Differentially-Methylated-Genes` FOLDER BEFORE RUNNING.**
+
 # Set up R Markdown document
 
 ```{r setup, include=FALSE}
@@ -530,7 +532,6 @@ fullMethDiff <- data.frame("geneID" = ambientSamplesPercentMeth$geneID,
 head(fullMethDiff) #Confirm dataframe creation
 ```
 
-
 # Identifying differentially methylated genes
 
 ## Check normality
@@ -576,7 +577,6 @@ treatmentPercentMethFull <- subset(fullPercentMethExpanded, subset = fullPercent
 head(ambientPercentMethFull) #Confirm subset
 head(treatmentPercentMethFull) #Confirm subset
 ```
-
 
 ### Conduct Kruskal-Wallis test
 
