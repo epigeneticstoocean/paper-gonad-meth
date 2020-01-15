@@ -1,0 +1,27 @@
+# `genome-feature-tracks` Subdirectory Structure:
+
+Folder with genome feature tracks used for downstream analyses.
+
+**Genome feature tracks**:
+
+- [Genes (sorted)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Genes (unsorted)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_gene_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [mRNA](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Coding sequences (sorted)](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_Gnomon_CDS_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb). *Note: external link*
+- [Coding sequences (unsorted)](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_Gnomon_CDS_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb). *Note: external link*
+- [Exons (sorted)](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_Gnomon_exon_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb). *Note: external link*
+- [Exons (unsorted)](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_Gnomon_exon_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb). *Note: external link*
+- [Exon-associated UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_exonUTR_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Introns](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_intron_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Putative promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-29-mRNA-Promoter-Track.bed): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/08-DML-Analysis.ipynb)
+- [Non-coding sequences](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_noncoding_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_intergenic_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [Transposable elements](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_TE-all.gff): Generated with [this script](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/06-te_repeatmasker.sh).
+- [lncRNA](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_intron_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+- [mtDNA](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
+
+**Other files**:
+
+- [2018-06-15-bedtools-Chromosome-Lengths.txt](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2018-06-15-bedtools-Chromosome-Lengths.txt): List of chromosome start and stop positions used by `bedtools`
+- [2019-05-28-bedtools-Chromosome-Names.txt](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-28-bedtools-Chromosome-Names.txt): List of chromosome names used by `bedtools`
+- [2019-05-13-Genome-Track-Verification.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-13-Genome-Track-Verification.xml): IGV session used to verify genome feature tracks
