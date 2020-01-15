@@ -213,7 +213,7 @@ write.csv(diffMethStats50FilteredCov5DestrandHypo, "../analyses/2018-10-25-Loci-
 
 I want to plot the distribution of DML across the *C. virginica* genome and compare it to the number of genes in each chromosome.
 
-##### Calculate distribution of DML across chromosomes
+###### Calculate distribution of DML across chromosomes
 
 ```{r}
 DMLchrCounts <-as.data.frame(table(diffMethStats50FilteredCov5Destrand$chr)) #Count the number of DML/chromosome
@@ -228,7 +228,7 @@ head(DMLchrCounts) #Confirm formatting
 write.csv(DMLchrCounts, "../analyses/2018-10-25-MethylKit/2019-09-30-DML-per-Chromosome.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
-##### [*C. virginica* genome information from NCBI](https://www.ncbi.nlm.nih.gov/genome/398)
+###### [*C. virginica* genome information from NCBI](https://www.ncbi.nlm.nih.gov/genome/398)
 
 ```{r}
 DMLchrCounts$geneCount <- c(3932, 4137, 4712, 3896, 6239, 2630, 3015, 4445, 4960, 1527) #Create column with number of gene sequences in each chromosome
@@ -236,7 +236,7 @@ DMLchrCounts$DMLbyGenes <- (DMLchrCounts$DMLCount / DMLchrCounts$geneCount)*100
 head(DMLchrCounts) #Confirm dataframe creation
 ```
 
-##### Create figure
+###### Create figure
 
 ```{r}
 #pdf("../analyses/2018-10-25-MethylKit/2019-09-30-DML-and-Gene-Distribution.pdf", height = 8.5, width = 11) #Save figure as a pdf

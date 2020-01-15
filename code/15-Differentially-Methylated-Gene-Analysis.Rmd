@@ -26,7 +26,7 @@ sessionInfo()
 ## Add gene track
 
 ```{r}
-geneList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
+geneList <- read.delim("../genome-feature-tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
 colnames(geneList) <- c("gene-chr", "Gnomon", "gene", "gene-start", "gene-end", "V6", "V7", "V8", "V9") #Rename columns
 head(geneList) #Confirm import
 ```
@@ -61,7 +61,7 @@ head(geneList) #Confirm merge
 ## Add mRNA track
 
 ```{r}
-mRNAList <- read.delim("../2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
+mRNAList <- read.delim("../genome-feature-tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
 mRNAList <- mRNAList[,-c(6,8)] #Remove extra columns
 colnames(mRNAList) <- c("mRNA-chr", "Gnomon", "mRNA", "mRNA-start", "mRNA-end", "mRNA-strand", "V9") #Rename columns
 head(mRNAList) #Confirm import
@@ -1025,7 +1025,6 @@ head(parentGOMFGenesSigCounts) #Confirm counts
 ```{r}
 write.csv(parentGOMFGenesSigCounts, "2019-08-14-DMG-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
-
 
 ###### Map to GOslim terms
 

@@ -121,7 +121,7 @@ head(allDML) #Confirm import
 ```
 
 ```{r}
-closestDML <- read.delim("../analyses/2018-11-01-DML-and-DMR-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Genes-Closest-NoOverlap-DMLs.txt", header = FALSE) #Import DML with closestBed information
+closestDML <- read.delim("../analyses/2018-11-01-DML-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Genes-Closest-NoOverlap-DMLs.txt", header = FALSE) #Import DML with closestBed information
 colnames(closestDML) <- c("chr", "start", "end", "meth.diff", "gene-chr", "gene-start", "gene-end", "dist-to-closest-gene") #Add column names
 head(closestDML) #Confirm column names. DML downstream of genes have positive distances. There may be more lines than DML becuase there are some DML that overlap multiple gene features, or have ties for closest gene features.
 ```
@@ -148,7 +148,7 @@ head(allDMLclosestBed) #Confirm reorganization
 ### Import full gene list
 
 ```{r}
-geneList <- read.delim("../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
+geneList <- read.delim("../genome-feature-tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3", header = FALSE) #Import gene gff3
 colnames(geneList) <- c("gene-chr", "Gnomon", "gene", "gene-start", "gene-end", "V6", "V7", "V8", "V9") #Rename columns
 head(geneList) #Confirm import
 ```
@@ -188,7 +188,6 @@ geneDescriptions <- read.delim2("../analyses/2018-12-02-Gene-Enrichment-Analysis
 head(geneDescriptions) #Confirm import
 ```
 
-
 ```{r}
 geneID <- geneDescriptions$gene.ID #Isolate gene ID column
 geneID <- gsub("Dbxref=GeneID:", "", geneID) #Remove extraneous characters
@@ -219,7 +218,7 @@ head(allDMLclosestBedgeneList) #Confirm reorganization
 ### Import full mRNA track
 
 ```{r}
-mRNAList <- read.delim("../analyses/2019-05-13-Generating-Genome-Feature-Tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
+mRNAList <- read.delim("../genome-feature-tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3", header = FALSE) #Import mRNA track
 mRNAList <- mRNAList[,-c(6,8)] #Remove extra columns
 colnames(mRNAList) <- c("mRNA-chr", "Gnomon", "mRNA", "mRNA-start", "mRNA-end", "mRNA-strand", "V9") #Rename columns
 head(mRNAList) #Confirm import
@@ -901,7 +900,7 @@ write.csv(DMLGeneAnnotationHypomethylated, "../analyses/2018-12-02-Gene-Enrichme
 ## Import DMLBackground-mRNA overlaps
 
 ```{r}
-DMLBackgroundmRNAOverlaps <- read.delim("../analyses/2018-11-01-DML-and-DMR-Analysis/2019-06-20-DMLBackground-mRNA.txt", header = FALSE)
+DMLBackgroundmRNAOverlaps <- read.delim("../analyses/2018-11-01-DML-Analysis/2019-06-20-DMLBackground-mRNA.txt", header = FALSE)
 DMLBackgroundmRNAOverlaps <- DMLBackgroundmRNAOverlaps[,-c(4:5)] #Remove extra columns
 colnames(DMLBackgroundmRNAOverlaps) <- c("chr", "DMLB-start", "DMLB-end", "mRNA-start", "mRNA-end") #Rename columns
 head(DMLBackgroundmRNAOverlaps) #Confirm import

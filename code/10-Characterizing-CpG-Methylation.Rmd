@@ -63,7 +63,7 @@ colnames(methLociGeneOverlaps) <- c("chromosome", "start", "end", "gene-start", 
 head(methLociGeneOverlaps) #Confirm import
 ```
 
-### Scaled DML distribution
+### Scaled methylated CpG distribution
 
 Scaling each gene from 0% to 100%, I want to see where methylated CpG are located. This is useful to see if methylation is occuring in any consistent location for each gene. 
 
