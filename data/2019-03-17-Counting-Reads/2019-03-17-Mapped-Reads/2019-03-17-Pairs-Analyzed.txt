@@ -1,0 +1,10 @@
+Sequence pairs analysed in total:	17448883
+Sequence pairs analysed in total:	28603346
+Sequence pairs analysed in total:	30325606
+Sequence pairs analysed in total:	29548753
+Sequence pairs analysed in total:	23970516
+Sequence pairs analysed in total:	31503281
+Sequence pairs analysed in total:	23909493
+Sequence pairs analysed in total:	29273635
+Sequence pairs analysed in total:	29483218
+Sequence pairs analysed in total:	31847541

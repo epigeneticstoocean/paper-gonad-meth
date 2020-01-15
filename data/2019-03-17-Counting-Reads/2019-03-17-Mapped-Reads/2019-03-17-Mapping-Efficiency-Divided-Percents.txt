@@ -1,0 +1,10 @@
+Mapping efficiency:	53.2% 	53.2	0.532
+Mapping efficiency:	28.9% 	28.9	0.289
+Mapping efficiency:	50.3% 	50.3	0.503
+Mapping efficiency:	52.6% 	52.6	0.526
+Mapping efficiency:	54.2% 	54.2	0.542
+Mapping efficiency:	52.0% 	52.0	0.52
+Mapping efficiency:	54.4% 	54.4	0.544
+Mapping efficiency:	51.7% 	51.7	0.517
+Mapping efficiency:	48.2% 	48.2	0.482
+Mapping efficiency:	50.6% 	50.6	0.506
