@@ -1,0 +1,42 @@
+Bismark report for: /gscratch/scrubbed/yaamini/data/Virginica-MBD/2018-10-17-Trimmed-Files//zr2096_8_s1_R1_val_1.fq.gz and /gscratch/scrubbed/yaamini/data/Virginica-MBD/2018-10-17-Trimmed-Files//zr2096_8_s1_R2_val_2.fq.gz (version: v0.19.0)
+Bismark was run with Bowtie 2 against the bisulfite genome of /gscratch/scrubbed/yaamini/data/Virginica-MBD/2018-04-27-Bismark-Inputs/ with the specified options: -q --score-min L,0,-1.2 -p 28 --reorder --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+Option '--non_directional' specified: alignments to all strands were being performed (OT, OB, CTOT, CTOB)
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	29483218
+Number of paired-end alignments with a unique best hit:	14200416
+Mapping efficiency:	48.2% 
+Sequence pairs with no alignments under any condition:	9943053
+Sequence pairs did not map uniquely:	5339749
+Sequence pairs which were discarded because genomic sequence could not be extracted:	11
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	3629946	((converted) top strand)
+GA/CT/CT:	3487296	(complementary to (converted) top strand)
+GA/CT/GA:	3468647	(complementary to (converted) bottom strand)
+CT/GA/GA:	3614516	((converted) bottom strand)
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	362392795
+
+Total methylated C's in CpG context:	29294128
+Total methylated C's in CHG context:	2164397
+Total methylated C's in CHH context:	13260103
+Total methylated C's in Unknown context:	1218115
+
+
+Total unmethylated C's in CpG context:	14337861
+Total unmethylated C's in CHG context:	75732890
+Total unmethylated C's in CHH context:	227603416
+Total unmethylated C's in Unknown context:	4698419
+
+
+C methylated in CpG context:	67.1%
+C methylated in CHG context:	2.8%
+C methylated in CHH context:	5.5%
+C methylated in unknown context (CN or CHN):	20.6%
+
+
+Bismark completed in 0d 10h 28m 25s
