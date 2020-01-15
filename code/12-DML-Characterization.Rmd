@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this script, I'll create several annotation tables for DML and examine patterns in DML locations across chromosomes and genes.
+In this script, I'll create annotation tables for DML and examine patterns in DML locations across chromosomes and genes.
 
 # Install packages
 

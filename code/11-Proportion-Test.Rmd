@@ -5,7 +5,7 @@ date: "1/15/2019"
 output: html_document
 ---
 
-I will use a proportion test to compare the proportion of genome feature overlaps between differentially methylated loci (DML), differentially methylated regions (DMR), and the gene background.
+I will use a proportion test to compare the proportion of genome feature overlaps between various CpG categories.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
