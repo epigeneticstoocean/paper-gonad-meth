@@ -1,5 +1,5 @@
 ---
-title: "Gene Enrichment Analysis"
+title: "DML Characterization"
 output: html_document
 ---
 
@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this script, I'll create several annotation tables for DML, perform a functional gene description, and prepare Uniprot codes for enrichment in DAVID.
+In this script, I'll create several annotation tables for DML and examine patterns in DML locations across chromosomes and genes.
 
 # Install packages
 
