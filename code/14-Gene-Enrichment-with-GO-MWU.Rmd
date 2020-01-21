@@ -240,16 +240,6 @@ colnames(parentGOBP) <- c("name", "term", "lev", "Genbank", "value") #Rename gen
 head(parentGOBP) #Confirm import
 ```
 
-```{r}
-parentGOBPCounts <- as.data.frame(table(parentGOBP$name)) #Count the frequency of each GOslim term
-colnames(parentGOBPCounts) <- c("parentGOslim", "frequency") #Rename columns
-head(parentGOBPCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPCounts, "2019-07-30-allTested-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ###### Map to GOslim terms
 
 ```{r}
@@ -368,17 +358,6 @@ head(parentGOBPDML) #Confirm merge. There are several entries without any matchi
 sum(is.na(parentGOBPDML$name)) #Count how many genes with DML do not have GO-MWU entries.
 ```
 
-```{r}
-parentGOBPDMLCounts <- as.data.frame(table(parentGOBPDML$name)) #Count the frequency of each GOslim term
-colnames(parentGOBPDMLCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOBPDMLCounts <- subset(parentGOBPDMLCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOBPDMLCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPDMLCounts, "2019-07-30-condensedDML-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ###### Map to GOslim terms
 
 ```{r}
@@ -476,17 +455,6 @@ sum(is.na(parentGOBPCondensedHyper$name))
 ```
 
 ```{r}
-parentGOBPCondensedHyperCounts <- as.data.frame(table(parentGOBPCondensedHyper$name)) #Count the frequency of each GOslim term
-colnames(parentGOBPCondensedHyperCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOBPCondensedHyperCounts <- subset(parentGOBPCondensedHyperCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOBPCondensedHyperCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPCondensedHyperCounts, "2019-07-30-condensedDMLHyper-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
-```{r}
 parentGOBPCondensedHyperGOslim <- subset(x = parentGOBPDMLGOslim, subset = parentGOBPDMLGOslim$meth.diff > 0) #Subset hypermethylated loci
 head(parentGOBPCondensedHyperGOslim) #Confirm subset
 ```
@@ -520,17 +488,6 @@ head(parentGOBPCondensedHypo) #Confirm merge
 
 ```{r}
 sum(is.na(parentGOBPCondensedHypo$name)) #Count genes with DML that do not have GO-MWU terms associated with them
-```
-
-```{r}
-parentGOBPCondensedHypoCounts <- as.data.frame(table(parentGOBPCondensedHypo$name)) #Count the frequency of each GOslim term
-colnames(parentGOBPCondensedHypoCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOBPCondensedHypoCounts <- subset(parentGOBPCondensedHypoCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOBPCondensedHypoCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPCondensedHypoCounts, "2019-07-30-condensedDMLHypo-Parent-GOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
 ```{r}
@@ -619,16 +576,6 @@ colnames(parentGOCC) <- c("name", "term", "lev", "Genbank", "value") #Rename gen
 head(parentGOCC) #Confirm import
 ```
 
-```{r}
-parentGOCCCounts <- as.data.frame(table(parentGOCC$name)) #Count the frequency of each GOslim term
-colnames(parentGOCCCounts) <- c("parentGOslim", "frequency") #Rename columns
-head(parentGOCCCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOCCCounts, "2019-07-30-allTested-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ##### Differentially methylated loci
 
 ```{r}
@@ -640,17 +587,6 @@ head(parentGOCCCondensed) #Confirm merge
 sum(is.na(parentGOCCCondensed$name)) #Count how many genes with DML do not have GO-MWU characterizations
 ```
 
-```{r}
-parentGOCCCondensedCounts <- as.data.frame(table(parentGOCCCondensed$name)) #Count the frequency of each GOslim term
-colnames(parentGOCCCondensedCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOCCCondensedCounts <- subset(parentGOCCCondensedCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOCCCondensedCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOCCCondensedCounts, "2019-07-30-condensedDML-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ###### Hypermethylated loci
 
 ```{r}
@@ -658,33 +594,11 @@ parentGOCCCondensedHyper <- unique(merge(x = condensedDMLHyper, y = parentGOCC, 
 head(parentGOCCCondensedHyper) #Confirm merge
 ```
 
-```{r}
-parentGOCCCondensedHyperCounts <- as.data.frame(table(parentGOCCCondensedHyper$name)) #Count the frequency of each GOslim term
-colnames(parentGOCCCondensedHyperCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOCCCondensedHyperCounts <- subset(parentGOCCCondensedHyperCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOCCCondensedHyperCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOCCCondensedHyperCounts, "2019-07-30-condensedDMLHyper-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ###### Hypomethylated loci
 
 ```{r}
 parentGOCCCondensedHypo <- unique(merge(x = condensedDMLHypo, y = parentGOCC, by = "Genbank")) #Merge condensed DML with parentGOCC
 head(parentGOCCCondensedHypo) #Confirm merge
-```
-
-```{r}
-parentGOCCCondensedHypoCounts <- as.data.frame(table(parentGOCCCondensedHypo$name)) #Count the frequency of each GOslim term
-colnames(parentGOCCCondensedHypoCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOCCCondensedHypoCounts <- subset(parentGOCCCondensedHypoCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOCCCondensedHypoCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOCCCondensedHypoCounts, "2019-07-30-condensedDMLHypo-Parent-GOSlim-Frequency-CC.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
 ### Molecular function
@@ -717,16 +631,6 @@ colnames(parentGOMF) <- c("name", "term", "lev", "Genbank", "value") #Rename gen
 head(parentGOMF) #Confirm import
 ```
 
-```{r}
-parentGOMFCounts <- as.data.frame(table(parentGOMF$name)) #Count the frequency of each GOslim term
-colnames(parentGOMFCounts) <- c("parentGOslim", "frequency") #Rename columns
-head(parentGOMFCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCounts, "2019-07-30-allTested-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ##### Differentially methylated loci
 
 ```{r}
@@ -736,17 +640,6 @@ head(parentGOMFCondensed) #Confirm merge
 
 ```{r}
 sum(is.na(parentGOMFCondensed$name)) #Count how many genes with DML do not have GO-MWU characterizations
-```
-
-```{r}
-parentGOMFCondensedCounts <- as.data.frame(table(parentGOMFCondensed$name)) #Count the frequency of each GOslim term
-colnames(parentGOMFCondensedCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOMFCondensedCounts <- subset(parentGOMFCondensedCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFCondensedCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCondensedCounts, "2019-07-30-condensedDML-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
 ###### Map to GOslim terms
@@ -789,17 +682,6 @@ sum(is.na(parentGOMFCondensedHyper$name)) #Count DML without GO-MWU parent GOter
 ```
 
 ```{r}
-parentGOMFCondensedHyperCounts <- as.data.frame(table(parentGOMFCondensedHyper$name)) #Count the frequency of each GOslim term
-colnames(parentGOMFCondensedHyperCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOMFCondensedHyperCounts <- subset(parentGOMFCondensedHyperCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFCondensedHyperCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCondensedHyperCounts, "2019-07-30-condensedDMLHyper-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
-```{r}
 parentGOMFCondensedHyperGOslim <- subset(x = parentGOMFDMLGOslim, subset = parentGOMFDMLGOslim$meth.diff > 0) #Subset hypermethylated loci
 head(parentGOMFCondensedHyperGOslim) #Confirm subset
 ```
@@ -828,17 +710,6 @@ head(parentGOMFCondensedHypo) #Confirm merge
 
 ```{r}
 sum(is.na(parentGOMFCondensedHypo$name)) #Count DML without parent GOterms from GO-MWU for corresponding genes. 973/
-```
-
-```{r}
-parentGOMFCondensedHypoCounts <- as.data.frame(table(parentGOMFCondensedHypo $name)) #Count the frequency of each GOslim term
-colnames(parentGOMFCondensedHypoCounts) <- c("parentGOslim", "frequency") #Rename columns
-parentGOMFCondensedHypoCounts <- subset(parentGOMFCondensedHypoCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFCondensedHypoCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCondensedHypoCounts, "2019-07-30-condensedDMLHypo-Parent-GOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
 ```
 
 ```{r}
