@@ -1,6 +1,6 @@
 # `data` Subdirectory Structure
 
-Raw data used for [analyses](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses). Repository contents and relevant metadata below.
+Raw data used for [analyses](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses). Repository contents and relevant metadata below. The *C. virginica* genome can be found [here](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/data/C_virginica-3.0_genomic.fa) (*Note: external link*).
 
 **[OysterTissueInfoSheet_GonadTestRoberts_20171002.xlsx](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/data/OysterTissueInfoSheet_GonadTestRoberts_20171002.xlsx)**:
 
