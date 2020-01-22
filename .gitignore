@@ -69,3 +69,5 @@ genome-feature-tracks/C_virginica-3.0_Gnomon_exon_yrv.gff3
 genome-feature-tracks/ref_C_virginica-3.0_top_level.gff3
 data/C_virginica-3.0_genomic.fa
 .Rproj.user
+genome-feature-tracks/C_virginica-3.0_CG-motif.bed
+genome-feature-tracks/C_virginica-3.0_CG-motif.bed.idx

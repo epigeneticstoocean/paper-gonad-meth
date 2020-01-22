@@ -4,6 +4,7 @@ Folder with genome feature tracks used for downstream analyses.
 
 **Genome feature tracks**:
 
+- [CG motifs](https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_CG-motif.bed): Pre-generated track. *Note: external link*
 - [Genes (sorted)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_gene_sorted_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
 - [Genes (unsorted)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_gene_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
 - [mRNA](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/C_virginica-3.0_Gnomon_mRNA_yrv.gff3): Generated in [this Jupyter notebook](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/07-Generating-Genome-Feature-Tracks.ipynb).
