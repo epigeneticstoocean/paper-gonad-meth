@@ -243,7 +243,7 @@ head(parentGOBP) #Confirm import
 ###### Map to GOslim terms
 
 ```{r}
-CVGOslim <- read.delim("../2019-08-14-Differentially-Methylated-Genes/Blastquery-GOslim-BP.sorted.unique.noOther", sep = "\t", header = FALSE) #Import GOslim information
+CVGOslim <- read.delim("../2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-BP.sorted.unique.noOther", sep = "\t", header = FALSE) #Import GOslim information
 colnames(CVGOslim) <- c("Genbank", "GOslim") #Add column names
 head(CVGOslim) #Confirm import
 ```
@@ -645,7 +645,7 @@ sum(is.na(parentGOMFCondensed$name)) #Count how many genes with DML do not have 
 ###### Map to GOslim terms
 
 ```{r}
-CVGOslimMF <- read.delim("../2019-08-14-Differentially-Methylated-Genes/Blastquery-GOslim-MF.sorted", sep = "\t", header = FALSE) #Import GOslim information
+CVGOslimMF <- read.delim("../2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-MF.sorted", sep = "\t", header = FALSE) #Import GOslim information
 colnames(CVGOslimMF) <- c("Genbank", "GOslim") #Add column names
 head(CVGOslimMF) #Confirm import
 ```
