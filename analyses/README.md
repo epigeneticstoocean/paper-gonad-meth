@@ -62,7 +62,8 @@ The following pipelines are represented in this subdirectory:
 
 **[2019-03-07-IGV-Verification](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-03-07-IGV-Verification)**: Output from [05-Generating-Coverage-Tracks.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/05-Generating-Coverage-Tracks.ipynb).
 
-- [2019-03-07-DML-Visualization.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml): IGV session used to verify DML by comparing DML to 5x coverage sample tracks
+- [2019-03-07-DML-Visualization.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml): IGV session used to verify DML by comparing DML to 5x coverage sample tracks. *Note: bedgraph and DML links are local links to other files in the cloned repository.*
+- 5x coverage tracks for all samples (10 total)
 
 **[2019-03-18-Characterizing-CpG-Methylation](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-03-18-Characterizing-CpG-Methylation)**: Output from [09-Characterizing-CpG-Methylation.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/09-Characterizing-CpG-Methylation.ipynb) and [10-Characterizing-CpG-Methylation.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/10-Characterizing-CpG-Methylation.Rmd).
 

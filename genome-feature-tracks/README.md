@@ -25,4 +25,4 @@ Folder with genome feature tracks used for downstream analyses.
 
 - [2018-06-15-bedtools-Chromosome-Lengths.txt](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2018-06-15-bedtools-Chromosome-Lengths.txt): List of chromosome start and stop positions used by `bedtools`
 - [2019-05-28-bedtools-Chromosome-Names.txt](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-28-bedtools-Chromosome-Names.txt): List of chromosome names used by `bedtools`
-- [2019-05-13-Genome-Track-Verification.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-13-Genome-Track-Verification.xml): IGV session used to verify genome feature tracks
+- [2019-05-13-Genome-Track-Verification.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/genome-feature-tracks/2019-05-13-Genome-Track-Verification.xml): IGV session used to verify genome feature tracks. *Note: files are linked to versions on `gannet`, not the cloned repository.
