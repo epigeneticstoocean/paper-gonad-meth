@@ -15,6 +15,12 @@ In this script, I'll create figures to characterize CpG methylation in my *C. vi
 sessionInfo()
 ```
 
+# Make analysis directory
+
+```{bash}
+mkdir ../analyses/2019-03-18-Characterizing-CpG-Methylation
+```
+
 ## All 5x CpGs
 
 ### Import data

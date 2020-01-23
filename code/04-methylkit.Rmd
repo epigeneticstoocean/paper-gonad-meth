@@ -13,6 +13,12 @@ In this file, I'll identify differentially methylated loci (DMLs) using `methylK
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Make analysis directory
+
+```{bash}
+mkdir ../analyses/2018-10-25-MethylKit
+```
+
 # Install packages
 
 ```{r}
