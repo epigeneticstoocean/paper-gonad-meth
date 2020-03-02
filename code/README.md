@@ -16,4 +16,3 @@ Scripts are organized in the oder they should be run.
 - [12-blastx-to-GOslim.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/12-blastx-to-GOslim.ipynb): Match `blastx` output with mRNA transcripts to GOSlim terms
 - [13-DML-Characterization.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/13-DML-Characterization.Rmd): Create annotation tables for DML and examine patterns in DML locations across chromosomes and genes
 - [14-Gene-Enrichment-with-GO-MWU.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/14-Gene-Enrichment-with-GO-MWU.Rmd): Use GO-MWU to perform gene enrichment of DML-gene overlaps
-- [15-Differentially-Methylated-Gene-Analysis.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/15-Differentially-Methylated-Gene-Analysis.Rmd): Identify differentially methylated genes and perform gene enrichment with GO-MWU

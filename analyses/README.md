@@ -34,10 +34,13 @@ The following pipelines are represented in this subdirectory:
 		- [Hypomethylated DML](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-Flanking-Analysis/2019-09-26-Promoter-Hypomethylated-DML.txt)
 	- [Closest, non-overlapping genes to DML](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-Flanking-Analysis/2019-05-29-Genes-Closest-NoOverlap-DMLs.txt)
 - DML overlaps with [genome feature tracks](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/genome-feature-tracks). Any overlaps not represented in the list below can be found on `gannet`.
+	- [DML-Exon UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-exonUTR.txt)
 	- [DML-Exon](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-Exon.txt)
 	- [DML-Genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-Genes.txt)
 	- [DML-Intron](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-Intron.txt)
 	- [DML-TE](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-TE-all.txt)
+	- [DML-Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-DML-intergenic.txt)
+	- [DML-Methylation islands](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2020-02-06-DML-MI.txt)
 	- [DML-Other](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-No-Overlap-DML.txt)
 	- Hypermethylated DML overlaps...
 		- [With exons](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-05-29-Hypermethylated-DML-Exon.txt)
@@ -60,45 +63,73 @@ The following pipelines are represented in this subdirectory:
 	- [With putative promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-06-20-DMLBackground-Promoters.txt)
 	- [With mRNA](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-11-01-DML-Analysis/2019-06-20-DMLBackground-mRNA.txt)
 
-**[2019-03-07-IGV-Verification](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-03-07-IGV-Verification)**: Output from [05-Generating-Coverage-Tracks.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/05-Generating-Coverage-Tracks.ipynb).
+**[2019-03-07-IGV-Verification](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-03-07-IGV-Verification)**: Output from [05-Generating-Coverage-Tracks.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/05-Generating-Coverage-Tracks.ipynb) and [09-Characterizing-CpG-Methylation.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/09-Characterizing-CpG-Methylation.ipynb).
 
-- [2019-03-07-DML-Visualization.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml): IGV session used to verify DML by comparing DML to 5x coverage sample tracks. *Note: bedgraph and DML links are local links to other files in the cloned repository.*
+- [2019-03-07-DML-Visualization.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml): IGV session used to verify DML by comparing DML to 5x coverage sample tracks.
 - 5x coverage tracks for all samples (10 total)
+- [2020-02-06-Methylation-Island-Verification.xml](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-07-IGV-Verification/2020-02-06-Methylation-Island-Verification.xml): IGV session used to compare methylation islands to mRNA
 
 **[2019-03-18-Characterizing-CpG-Methylation](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-03-18-Characterizing-CpG-Methylation)**: Output from [09-Characterizing-CpG-Methylation.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/09-Characterizing-CpG-Methylation.ipynb) and [10-Characterizing-CpG-Methylation.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/10-Characterizing-CpG-Methylation.Rmd).
 
 - All 5x CpG loci
 	- [Frequency distribution (figure)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-10-5x-CpG-Frequency-Distribution.pdf)
-	- [Overlaps with "other"](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-NoOverlaps.txt)
+		- Overlaps with (any overlaps not represented in the list below can be found on `gannet`)...
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-intergenic.txt)
+		- [Other](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-All5xCpGs-NoOverlaps.txt)
 - Methylated loci (> 50% methylated)
 	- Overlaps with (any overlaps not represented in the list below can be found on `gannet`)...
+		- [Exon UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-ExonUTR.txt)
 		- [Introns](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-Intron.txt)
 		- [Promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-Putative-Promoters.txt)
 		- [TE](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-TE-All.txt)
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-intergenic.txt)
 		- [Other](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-MethLoci-NoOverlaps.txt)
 	- [Distribution of methylated CpG along a scaled gene (figure)](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-10-10-Scaled-Gene-Methylated-Loci.pdf)
 - Sparsely methylated loci (10-50% methylated)
 	- [BEDfile](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpG-Loci-Sparsely-Methylated.bed)
 	- [bedgraph](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpG-Loci-Sparsely-Methylated.bedgraph)
 	- Overlaps with (any overlaps not represented in the list below can be found on `gannet`)...
+		- [Exon UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-ExonUTR.txt)
 		- [Exons](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-Exon.txt)
 		- [Genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-Genes.txt)
 		- [Introns](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-Intron.txt)
 		- [Promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-Putative-Promoters.txt)
 		- [TE](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-TE-All.txt)
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-intergenic.txt)
 		- [Other](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-SparseMethLoci-NoOverlaps.txt)
 - Unmethylated loci (< 10% methylated)
 	- [BEDfile](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpG-Loci-Unmethylated.bed)
 	- [bedgraph](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-04-09-All-5x-CpG-Loci-Unmethylated.bedgraph)
 	- Overlaps with (any overlaps not represented in the list below can be found on `gannet`)...
+		- [Exon UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-ExonUTR.txt)
 		- [Exons](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-Exon.txt)
 		- [Genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-Genes.txt)
 		- [Introns](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-Intron.txt)
 		- [Promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-Putative-Promoters.txt)
 		- [TE](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-TE-All.txt)
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-intergenic.txt)
 		- [Other](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2019-05-29-UnMethLoci-NoOverlaps.txt)
+- Methylation islands
+	- [Official methylation island list](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-06-Methylation-Islands-500_0.02_50-filtered.tab): Filtered version of [original file](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-06-Methylation-Islands-500_0.02_50.tab) created using [this script](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/methyl_island_sliding_window.pl)
+		- [Associated BEDfile](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-06-Methylation-Islands-500_0.02_50-filtered.tab.bed)
+	- Overlaps with...
+		- [Genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-06-MI-Genes.txt)
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-06-MI-intergenic.txt)
+- Characterizing methylation patterns
+	- Median percent methylation of samples and globally for...
+		- [Promoters](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-promoterOverlap-percentMeth-Medians.txt)
+		- [Exon UTR](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-UTROverlap-percentMeth-Medians.txt)
+		- [Exons](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-exonOverlap-percentMeth-Medians.txt)
+		- [Introns](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-intronOverlap-percentMeth-Medians.txt)
+		- [Transposable elements](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-TEOverlap-percentMeth-Medians.txt)
+		- [Intergenic regions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-intergenicOverlap-percentMeth-Medians.txt)
+		- Median percent methylation figures
+			- All samples and globally ([one figure](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-All-Median-Methylation-Across-Features.pdf) and [multipanel](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-All-Median-Methylation-Across-Split-Features.pdf))
+			- [Samples only](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-Sample-Median-Methylation-Across-Features.pdf)
+			- [Global only](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-Global-Median-Methylation-Across-Features.pdf)
+			- [Methylation distribution, global methylation, and samples](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-03-18-Characterizing-CpG-Methylation/2020-02-25-Methylation-Distribution-Median-Methylation-Across-Features-Multipanel.pdf)
 
-**[2018-12-02-Gene-Enrichment-Analysis](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2018-12-02-Gene-Enrichment-Analysis)**: Output from [11-Proportion-Test.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/11-Proportion-Test.Rmd), [12-blastx-to-GOslim.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/12-blastx-to-GOslim.ipynb), [13-DML-Characterization.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/13-DML-Characterization.Rmd), and [14-Gene-Enrichment-with-GO-MWU.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/14-Gene-Enrichment-with-GO-MWU.Rmd).
+**[2018-12-02-Gene-Enrichment-Analysis](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2018-12-02-Gene-Enrichment-Analysis)**: Output from [10-Characterizing-CpG-Methylation.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/10-Characterizing-CpG-Methylation.Rmd), [11-Proportion-Test.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/11-Proportion-Test.Rmd), [12-blastx-to-GOslim.ipynb](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/12-blastx-to-GOslim.ipynb), [13-DML-Characterization.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/13-DML-Characterization.Rmd), and [14-Gene-Enrichment-with-GO-MWU.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/14-Gene-Enrichment-with-GO-MWU.Rmd).
 
 - Proportion test
 	- [Overlap proportion data](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-01-15-Overlap-Proportions.csv)
@@ -110,7 +141,6 @@ The following pipelines are represented in this subdirectory:
 		- [Sorted GOSlim terms](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-BP.sorted)
 		- [Sorted, unique GOSlim terms](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-BP.sorted.unique)
 		- [Sorted, unique, no "other biological processes"](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-BP.sorted.unique.noOther)
-	- [Sorted molecular function GOSlim terms](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-MF.sorted)
 - DML characterization
 	- [Annotated *C. virginica* transcripts with isolated Uniprot Accession codes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2018-09-11-Transcript-Uniprot-blastx-codeIsolated.txt)
 	- DML distribution
@@ -132,34 +162,20 @@ The following pipelines are represented in this subdirectory:
 - Gene enrichment with GO-MWU
 	- GO-MWU input
 		- [GO annotation table](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-allTested-GO-Annotations-Table.tab)
-		- [Table of significance measures](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-allTested-Table-of-Significance-Measures.csv)
+		- [Table of significance measures](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-allTested-Table-of-Significance-Measures-Uncorrected.csv)
 		- [Gene ontology database](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/go.obo)
 		- [GO-MWU functions](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/gomwu.functions.R)
 		- [GO-MWU perl script A](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/gomwu_a.pl)
 		- [GO-MWU perl script B](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/gomwu_a.pl)
-	- GO-MWU output
-		- Reformatted data table with measures of interest
-			- [Biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/BP_2019-07-30-allTested-Table-of-Significance-Measures.csv)
-			- [Cellular components](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/CC_2019-07-30-allTested-Table-of-Significance-Measures.csv)
-			- [Molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/MF_2019-07-30-allTested-Table-of-Significance-Measures.csv)
-		- Dissimilarity tables
-			- [Biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/dissim_BP_2019-07-30-allTested-GO-Annotations-Table.tab)
-			- [Cellular components](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/dissim_CC_2019-07-30-allTested-GO-Annotations-Table.tab)
-			- [Molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/dissim_MF_2019-07-30-allTested-GO-Annotations-Table.tab)
-		- Results of MWU test
-			- [Biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/MWU_BP_2019-07-30-allTested-Table-of-Significance-Measures.csv)
-			- [Cellular components](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/MWU_CC_2019-07-30-allTested-Table-of-Significance-Measures.csv)
-			- [Molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/MWU_MF_2019-07-30-allTested-Table-of-Significance-Measures.csv)
+	- GO-MWU output for biological processes
+		- [Reformatted data table with measures of interest](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/BP_2019-07-30-allTested-Table-of-Significance-Measures-Uncorrected.csv)
+		- [Dissimilarity tables](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/dissim_BP_2019-07-30-allTested-GO-Annotations-Table.tab)
+		- [Results of MWU test](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/MWU_BP_2019-07-30-allTested-Table-of-Significance-Measures-Uncorrected.csv)
 	- Further analyses
 		- [Unique entries for all tested CpG loci with GOterms](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-All-Tested-Loci-Uniprot-GOTerms-Unique.csv)
 		- GOSlim terms for...
 			- [All tested CpGs, biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-allTested-CVGOSlim-Frequency-BP.csv)
 			- [DML, biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDML-CVGOSlim-Frequency-BP.csv)
-			- [Hypermethylated DML, biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDMLHyper-CVGOSlim-Frequency-BP.csv)
-			- [Hypomethylated DML, biological processes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDMLHypo-CVGOSlim-Frequency-BP.csv)
-			- [DML, molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDML-CVGOSlim-Frequency-MF.csv)
-			- [Hypermethylated DML, molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDMLHyper-CVGOSlim-Frequency-MF.csv)
-			- [Hypomethylated DML, molecular function](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-07-30-condensedDMLHypo-CVGOSlim-Frequency-MF.csv)
 		- GOSlim comparison figures
 			- [All tested CpGs-gene overlaps](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-11-19-BP-GOSlim-allTested-Gene-Overlaps.pdf)
 			- [DML-gene overlaps](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-11-19-BP-GOSlim-DML-Gene-Overlaps.pdf)
@@ -168,8 +184,3 @@ The following pipelines are represented in this subdirectory:
 			- [List of biomineralization genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-12-09-Biomineralization-Genes.csv)
 			- [List of biomineralization genes with DML](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2018-12-02-Gene-Enrichment-Analysis/2019-12-09-Biomineralization-Genes-with-DML.csv)
 
-**[2019-08-14-Differentially-Methylated-Genes](https://github.com/epigeneticstoocean/paper-gonad-meth/tree/master/analyses/2019-08-14-Differentially-Methylated-Genes)**: Output from [15-Differentially-Methylated-Gene-Analysis.Rmd](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/code/15-Differentially-Methylated-Gene-Analysis.Rmd).
-
-- [Gene percent methylation by sample](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-08-14-Differentially-Methylated-Genes/2019-08-22-Gene-Median-Percent-Methylation-By-Sample.csv)
-- [Kruskall-Wallis Test results to identify differentially methylated genes](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-08-14-Differentially-Methylated-Genes/2019-08-14-DMG-KW-Test-Results.csv)
-- [Annotated Kruskal-Wallis Test results](https://github.com/epigeneticstoocean/paper-gonad-meth/blob/master/analyses/2019-08-14-Differentially-Methylated-Genes/2019-08-14-KW-Test-Results-Annotated.csv)
