@@ -236,23 +236,44 @@ DMLchrCounts$DMLbyGenes <- (DMLchrCounts$DMLCount / DMLchrCounts$geneCount)*100
 head(DMLchrCounts) #Confirm dataframe creation
 ```
 
-###### Create figure
+```{bash}
+#Count the number of CGs in each chromosme (excluding MT chromosome)
+grep "NC_035780.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035781.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035782.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035783.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035784.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035785.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035786.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035787.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035788.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+grep "NC_035789.1" ../genome-feature-tracks/C_virginica-3.0_CG-motif.bed | wc -l
+```
+
+```{r}
+DMLchrCounts$chrCpGCounts <- c(1394962, 1237469, 1568195, 1200917, 2008680, 1121671, 1251184, 1633946, 2300335, 740913) #Create column with number of CpGs in each chromosome
+DMLchrCounts$DMLbyChrCpG <- (DMLchrCounts$DMLCount / DMLchrCounts$chrCpGCounts) #Normalize DML counts by number of CpGs in each chromosome
+range(DMLchrCounts$DMLbyChrCpG) #Look at range of values
+head(DMLchrCounts) #Confirm column creation
+```
+
+##### Create figure
 
 ```{r}
 #pdf("../analyses/2018-10-25-MethylKit/2019-09-30-DML-and-Gene-Distribution.pdf", height = 8.5, width = 11) #Save figure as a pdf
 
 par(mar = c(5,7,2,10)) #Change figure boundaries
 
-DMLbarplot <- barplot(as.matrix(t(DMLchrCounts$DMLCount)),
+DMLbarplot <- barplot(as.matrix(t(DMLchrCounts$DMLbyChrCpG)),
                       axes = FALSE, 
                       names.arg = DMLchrCounts$chr,
                       cex.names = 1.5,
                       xlim = c(0.7,11.5),
-                      ylim = c(0,150),
+                      ylim = c(0,7e-05),
                       col = "grey80") #Create a barplot and save as a new object. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis. The object contains x coordinates for bars, so xlim is set at 12 to compensate for maximum value of 11.5
 mtext(side = 1, "Chromosome", line = 3, cex = 1.5) #Add x-axis label
-axis(side = 2, line = 1.5, at = seq(0, 150, by = 50), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for DML counts
-mtext(side = 2, "Number of DML", line = 5, cex = 1.5) #Add y-axis label for DML counts
+axis(side = 2, line = 1.5, at = seq(0, 7e-05, by = 1e-05), labels = seq(0, 7, by = 1), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for DML counts
+mtext(side = 2, "Number DML per 10,000 CpGs", line = 5, cex = 1.5) #Add y-axis label for DML counts
 
 par(new = TRUE) #Create a new plot
 plot(x = DMLbarplot,
