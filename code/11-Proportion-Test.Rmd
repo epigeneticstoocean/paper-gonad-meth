@@ -42,13 +42,21 @@ head(overlapData) #Confirm import
 proportionData <- overlapData #Copy overlap data as a new dataframe
 nLength <- length(proportionData$totalCpG) #Count number of rows
 for(i in 1:nLength) {
-  proportionData[i,] <- (proportionData[i,]/proportionData[6,])*100
-} #Divide each column of proportionData by respective totalLines entry. Multiply by 100 and and save the percentage
-head(proportionData) #Confirm changes
+  proportionData[8,i] <- sum(proportionData[,i], na.rm = TRUE)
+} #Count the total number of entries for each column
+tail(proportionData) #Confirm changes
 ```
 
 ```{r}
-proportionData <- proportionData[-6,] #Remove totalLines row
+nLength <- length(proportionData$totalCpG) #Count number of rows
+for(i in 1:nLength) {
+  proportionData[i,] <- (proportionData[i,]/proportionData[8,])*100
+} #Divide each column of proportionData by respective totalLines entry. Multiply by 100 and and save the percentage
+tail(proportionData) #Confirm changes
+```
+
+```{r}
+proportionData <- proportionData[-8,] #Remove totalLines row
 tail(proportionData) #Confirm changes
 ```
 
@@ -57,27 +65,6 @@ tail(proportionData) #Confirm changes
 ## Conduct chi-squared tests of homogeneity
 
 The null hypothesis is that loci distributions in the genome are the same between different categories.
-
-### Total CpGs vs. all CpGs with 5x coverage enriched by MBD treatment
-
-I want to see if MBD enriched CpGs in certain areas of the genome.
-
-```{r}
-totalVersusEnriched <- overlapData[, 1:2] #Subset data for statistical testing
-totalVersusEnriched <- totalVersusEnriched[-6, ] #Remove totalLines row
-head(totalVersusEnriched) #Confirm changes
-```
-
-```{r}
-totalVersusEnrichedTest <- chisq.test(t(totalVersusEnriched)) #Conduct a chi-squared test
-totalVersusEnrichedTest #The distribution of enriched CpGs from MBD is different from the distribution of all CG motifs in the C. virginica genome
-```
-
-```{r}
-totalVersusEnrichedTest$observed #Look at observed valules
-totalVersusEnrichedTest$expected #Look at expected values
-totalVersusEnrichedTest$residuals #Look at residuals
-```
 
 ### Total CpGs vs. methylated CpGs
 
@@ -90,34 +77,6 @@ head(totalVersusMethylated) #Confirm changes
 ```{r}
 totalVersusMethylatedTest <- chisq.test(t(totalVersusMethylated)) #Conduct a chi-squared test
 totalVersusMethylatedTest #The distribution of methylated CpGs is significantly different from all CpG
-```
-
-### Enriched CpGs vs. methylated CpGs
-
-Are methylated CpGs more populous in certain genomic regions?
-
-```{r}
-enrichedVersusMethylated <- overlapData[, 2:3] #Subset data for statistical testing
-enrichedVersusMethylated <- enrichedVersusMethylated[-6, ] #Remove totalLines row
-head(enrichedVersusMethylated) #Confirm changes
-```
-
-```{r}
-enrichedVersusMethylatedTest <- chisq.test(t(enrichedVersusMethylated)) #Conduct a chi-squared test
-enrichedVersusMethylatedTest #The distribution of methylated CpGs is significantly different from CpGs enriched by MBD
-```
-
-### Enriched CpGs vs. methylated CpGs vs. sparsely methylated CpGs vs. unmethylated CpGs
-
-```{r}
-allMethylationCategories <- overlapData[, 2:5] #Subset data for statistical testing
-allMethylationCategories <- allMethylationCategories[-6, ] #Remove totalLines row
-head(allMethylationCategories) #Confirm changes
-```
-
-```{r}
-allMethylationCategoriesTest <- chisq.test(t(allMethylationCategories)) #Conduct a chi-squared test
-allMethylationCategoriesTest #The distributions differ from eachother.
 ```
 
 ### Enriched CpGs vs. DML
@@ -159,6 +118,8 @@ head(allCpGVersusMethylated) #Confirm subset
 #pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-04-10-All-CpGs-Versus-Methylated-CpGs.pdf", height = 8.5, width = 11)
 par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
 
+par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
+
 barplot(t(t(allCpGVersusMethylated)),
         axes = FALSE, 
         names.arg = c("All CpGs", "Methylated CpGs"),
@@ -166,30 +127,33 @@ barplot(t(t(allCpGVersusMethylated)),
         ylim = c(0,100),
         col = plotColors) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
 axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2)
-mtext(side = 2, "Proportion CpGs", line = 3, cex = 1.5) #Add y-axis label
+mtext(side = 2, "Proportion Overlap", line = 3, cex = 1.5) #Add y-axis label
 
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
 plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
 legend("topright",
        xpd = TRUE,
-       legend = c("Exons", "Introns", "Transposable Elements", "Putative Promoters", "Other"),
+       legend = c("Putative Promoters", "UTRs", "Exons", "Introns", "Transposable Elements", "Intergenic", "Other"),
        pch = 22, 
         col = "black", 
         pt.bg = plotColors,
        bty = "n",
        cex = 1.5) #Place a legend in the top right of the figure with no box
+
 #dev.off()
 ```
 
 ### Enriched CpGs vs. DML
 
 ```{r}
-enrichedVersusDMLProportions <- proportionData[,c(2,6)] #Subset data
+enrichedVersusDMLProportions <- proportionData[,c(2,7)] #Subset data
 head(enrichedVersusDMLProportions) #Confirm subset
 ```
 
 ```{r}
 #pdf("../analyses/2018-12-02-Gene-Enrichment-Analysis/2019-04-10-Enriched-Versus-DML.pdf", height = 8.5, width = 11)
+par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
+
 par(mar = c(3,5,1,1), oma = c(1, 1, 1, 15)) #Change figure boundaries
 
 barplot(t(t(enrichedVersusDMLProportions)), 
@@ -205,11 +169,12 @@ par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #
 plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
 legend("topright",
        xpd = TRUE,
-       legend = c("Exons", "Introns", "Transposable Elements", "Putative Promoters", "Other"),
+       legend = c("Putative Promoters", "UTRs", "Exons", "Introns", "Transposable Elements", "Intergenic", "Other"),
        pch = 22, 
         col = "black", 
         pt.bg = plotColors,
        bty = "n",
        cex = 1.5) #Place a legend in the top right of the figure with no box. pch = 22 has a background and outline. col changes the outline, pt.bg changes the point fill
+
 #dev.off()
 ```
