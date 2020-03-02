@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Session genome="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/data/C_virginica-3.0_genomic.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="NC_035782.1:37244753-37337853" nextAutoscaleGroup="2" path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml" version="8">
+<Session genome="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/data/C_virginica-3.0_genomic.fa" hasGeneTrack="false" hasSequenceTrack="false" locus="All" nextAutoscaleGroup="2" path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/2019-03-07-DML-Visualization.xml" version="8">
     <Resources>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2018-10-25-MethylKit/2019-04-05-DML-Destrand-5x-Locations.bed"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
         <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_CG-motif.bed"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
-        <Resource path="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2018-10-25-MethylKit/2019-04-05-DML-Destrand-5x-Locations.bed"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph"/>
     </Resources>
-    <Panel height="574" name="DataPanel" width="1903">
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="51,153,255" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="1-5x-400ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+    <Panel height="579" name="DataPanel" width="1837">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,204,255" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="1-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="51,153,255" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="2-5x-400ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,204,255" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="2-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="51,153,255" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="3-5x-400ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,204,255" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="3-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="51,153,255" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="4-5x-400ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,204,255" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="4-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="51,153,255" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="5-5x-400ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,204,255" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="5-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,204" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="6-5x-2800ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="6-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,204" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="7-5x-2800ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="7-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,204" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="8-5x-2800ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="8-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,204" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,204" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="9-5x-2800ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="9-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
-        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,204" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="10-5x-2800ppm" renderer="BAR_CHART" visible="true" windowFunction="mean">
+        <Track autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2019-03-07-IGV-Verification/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_5x.bedgraph" name="10-control" renderer="BAR_CHART" visible="true" windowFunction="mean">
             <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
         </Track>
     </Panel>
-    <Panel height="149" name="FeaturePanel" width="1903">
-        <Track altColor="0,0,178" clazz="org.broad.igv.track.SequenceTrack" color="0,0,178" fontSize="10" id="Reference sequence" name="Reference sequence" visible="true"/>
-        <Track clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" fontSize="10" id="/Users/yaamini/Documents/paper-gonad-meth/analyses/2018-10-25-MethylKit/2019-04-05-DML-Destrand-5x-Locations.bed" name="DML" visible="true"/>
+    <Panel height="150" name="FeaturePanel" width="1837">
+        <Track clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;6.0;255,255,255;0,0,178" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/analyses/2018-10-25-MethylKit/2019-04-05-DML-Destrand-5x-Locations.bed" name="DML" visible="true"/>
         <Track clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" featureVisibilityWindow="1000000" fontSize="10" id="https://gannet.fish.washington.edu/spartina/paper-gonad-meth/genome-feature-tracks/C_virginica-3.0_CG-motif.bed" name="CG-motifs" visible="true"/>
     </Panel>
-    <PanelLayout dividerFractions="0.7890410958904109"/>
+    <PanelLayout dividerFractions="0.7894021739130435"/>
     <HiddenAttributes>
         <Attribute name="DATA FILE"/>
         <Attribute name="DATA TYPE"/>
