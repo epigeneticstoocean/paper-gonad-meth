@@ -1,0 +1,189 @@
+---
+title: "Chacterizing Methylation Islands"
+output: github_document
+---
+
+# Set up R Markdown Document
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Install packages
+
+```{r}
+#install.packages("dichromat")
+require(dichromat)
+```
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
+# Methylation island characteristics
+
+## Import data
+
+```{r}
+methylationIslands <- read.delim("2020-02-06-Methylation-Islands-500_0.02_25-filtered.tab", header = FALSE) #Import methylation island list
+colnames(methylationIslands) <- c("chr", "MI.start", "MI.end", "mCpGs", "MI.length") #Add column names
+head(methylationIslands) #Confirm file format
+```
+
+## Calculate statistics
+
+```{r}
+range(methylationIslands$mCpGs) #Calculate the range of the number of mCpGs
+median(methylationIslands$mCpGs) #Calculate the median number of mCpGs in an island
+```
+
+```{r}
+range(methylationIslands$MI.length) #Calculate the range MI length
+median(methylationIslands$MI.length) #Calculate the median MI length
+```
+
+```{r}
+methIslandLengthDistr <- hist(methylationIslands$MI.length) #Create histogram and save output to characterize length distribution
+methIslandLengthDistr$breaks #Look at bins for methylation island length
+methIslandLengthDistr$counts #Look at counts for number of islands in bins
+```
+
+```{r}
+methIslandLengths <- t(methylationIslands$MI.length)
+```
+
+```{r}
+gap.barplot(methylationIslands$MI.length, gap = c(40, 30,000))
+```
+
+# Individual feature overlap with methylation islands
+
+## Putative promoters
+
+```{r}
+promoterMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-exonUTR-MI.txt", header = FALSE) #Import overlaps
+promoterMI <- promoterMI[,-c(2:3,6:10)] #Remove redundant column
+colnames(promoterMI) <- c("chr", "promoter.start", "promoter.end", "MI.start", "MI.end", "overlap") #Add column names
+head(promoterMI) #Confirm reformatting
+```
+
+```{r}
+promoterMI$promoter.length <- promoterMI$promoter.end - promoterMI$promoter.start #Calculate promoter length
+promoterMI$percent <- ((promoterMI$overlap - 1) / promoterMI$promoter.length)*100 #Calculate percent overlap of individual promoters with MI
+head(promoterMI) #Check calculations
+```
+
+## UTRs
+
+```{r}
+exonUTRMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-exonUTR-MI.txt", header = FALSE) #Import overlaps
+exonUTRMI <- exonUTRMI[,-c(2:3,6:10)] #Remove redundant column
+colnames(exonUTRMI) <- c("chr", "UTR.start", "UTR.end", "MI.start", "MI.end", "overlap") #Add column names
+head(exonUTRMI) #Confirm reformatting
+```
+
+```{r}
+exonUTRMI$UTR.length <- exonUTRMI$UTR.end - exonUTRMI$UTR.start #Calculate UTR length
+exonUTRMI$percent <- ((exonUTRMI$overlap -1 ) / exonUTRMI$UTR.length)*100 #Calculate percent overlap of individual UTR with MI
+head(exonUTRMI) #Check calculations
+```
+
+## Exons
+
+```{r}
+exonMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-Exons-MI.txt", header = FALSE) #Import overlaps
+exonMI <- exonMI[,-4] #Remove redundant column
+colnames(exonMI) <- c("chr", "exon.start", "exon.end", "MI.start", "MI.end", "overlap") #Add column names
+head(exonMI) #Confirm reformatting
+```
+
+```{r}
+exonMI$exon.length <- exonMI$exon.end - exonMI$exon.start #Calculate exon length
+exonMI$percent <- (exonMI$overlap / exonMI$exon.length)*100 #Calculate percent overlap of individual exons with MI
+head(exonMI) #Check calculations
+```
+
+## Introns
+
+```{r}
+intronMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-Introns-MI.txt", header = FALSE) #Import overlaps
+intronMI <- intronMI[,-4] #Remove redundant column
+colnames(intronMI) <- c("chr", "intron.start", "intron.end", "MI.start", "MI.end", "overlap") #Add column names
+head(intronMI) #Confirm reformatting
+```
+
+```{r}
+intronMI$intron.length <- intronMI$intron.end - intronMI$intron.start #Calculate intron length
+intronMI$percent <- (intronMI$overlap / intronMI$intron.length)*100 #Calculate percent overlap with individual introns
+head(intronMI) #Check calculations
+```
+
+## Transposable Elements
+
+```{r}
+transElemMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-TEall-MI.txt", header = FALSE) #Import overlaps
+transElemMI <- transElemMI[,-c(2:3,6:10)] #Remove redundant columns
+colnames(transElemMI) <- c("chr", "TE.start", "TE.end", "MI.start", "MI.end", "overlap") #Add column names
+head(transElemMI) #Confirm reformatting
+```
+
+```{r}
+transElemMI$TE.length <- transElemMI$TE.end - transElemMI$TE.start #Calculate TE length
+transElemMI$percent <- ((transElemMI$overlap - 1) / transElemMI$TE.length)*100 #Calculate percent overlap with individual TE
+head(transElemMI) #Check calculations
+```
+
+## Intergenic
+
+```{r}
+intergenicMI <- read.delim("../2019-03-18-Characterizing-CpG-Methylation/2020-02-06-intergenic-MI.txt", header = FALSE) #Import overlaps
+intergenicMI <- intergenicMI[,-4] #Remove redundant columns
+colnames(intergenicMI) <- c("chr", "intergenic.start", "intergenic.end", "MI.start", "MI.end", "overlap") #Add column names
+head(intergenicMI) #Confirm reformatting
+```
+
+```{r}
+intergenicMI$intergenic.length <- intergenicMI$intergenic.end - intergenicMI$intergenic.start #Calculate intergenic region length
+intergenicMI$percent <- (intergenicMI$overlap / intergenicMI$intergenic.length) * 100 #Calculate percent overlap with individual intergenic regions
+head(intergenicMI) #Check calculations
+```
+
+## Create standalone boxplot
+
+```{r}
+#pdf("2020-02-24-Individual-Genome-Feature-Overalps-with-MI.pdf", height = 8.5, width = 11)
+
+par(mar = c(3,4,1,1), oma = c(1, 1, 1, 10)) #Change figure boundaries
+
+boxplot(promoterMI$percent, 
+        exonUTRMI$percent, 
+        exonMI$percent, 
+        intronMI$percent, 
+        transElemMI$percent, 
+        intergenicMI$percent, 
+        outline = FALSE, 
+        lty = 1, lwd = 1.5,
+        axes = FALSE,ylim = c(0,100),
+        col = plotColors[1:6], border = "grey20") #Create with MI overlap data that are colored according to plotColors. Do not plot outlier information (outline = FALSE). Do not use dashed lines (lty = 1), increase line thickness (lwd = 1.5), and change border color (border).
+
+mtext(side = 1, "Genomic Feature", line = 2, cex = 1.5) #Add x-axis label
+axis(side = 2, at = seq(from = 0, to = 100, by = 10), las = 2, col = "grey80", cex = 1.2) #Add y-axis
+mtext(side = 2, "Overlap with MI (%)", cex = 1.5, line = 3) #Add y-axis label
+
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
+plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
+legend("topright",
+       xpd = TRUE,
+       legend = c("Putative Promoters", "UTRs", "Exons", "Introns", "Transposable Elements", "Intergenic"),
+       pch = 22, 
+        col = "black", 
+        pt.bg = plotColors[1:6],
+       bty = "n",
+       cex = 1) #Place a legend in the top right of the figure with no box. pch = 22 has a background and outline. col changes the outline, pt.bg changes the point fill
+
+#dev.off()
+```
+
+
