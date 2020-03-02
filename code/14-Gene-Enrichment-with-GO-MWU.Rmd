@@ -132,8 +132,6 @@ head 2019-07-30-allTested-GO-Annotations-Table.tab #Confirm formatting was retai
 
 This table is a .csv file with one column for gene IDs and another for a continuous significance measure. All genes need to be included, not just those with significant DML. Similar to the GO-MWU example, I will use signed negative log p-values modified from `methylKit` output. Hypomethylated loci will have negative p-values, and hypermethylated loci will have positive p-values.
 
-### Subset table
-
 ```{r}
 sigMeasures <- data.frame("gene" = allTestedGOtermsCondensed$Genbank,
                           "logP" = log(allTestedGOtermsCondensed$pvalue),
@@ -150,66 +148,16 @@ head(sigMeasuresUncorrected) #Confirm subset
 write.csv(sigMeasuresUncorrected, "2019-07-30-allTested-Table-of-Significance-Measures-Uncorrected.csv", quote = FALSE, row.names = FALSE) #Save file
 ```
 
-### Correct p-values for hypermethylated loci
-
-```{r}
-sigMeasuresHyper <- subset(x = sigMeasures, subset = sigMeasures$meth.diff >= 0) #Subset hypermethylated loci. Differences of 0 will need positive p-values as well.
-range(sigMeasuresHyper$meth.diff) #Confirm subset
-```
-
-```{r}
-range(sigMeasuresHyper$logP) #Look at range of values for hypermethylated loci. All values are negative, so they need to be made positive.
-```
-
-```{r}
-sigMeasuresHyper$signLogP <- -1 * sigMeasuresHyper$logP #Multiply values by -1
-head(sigMeasuresHyper) #Confirm changes
-```
-
-### Correct p-values for hypomethylated loci
-
-```{r}
-sigMeasuresHypo <- subset(x = sigMeasures, subset = sigMeasures$meth.diff < 0) #Subset hypomethylated loci
-range(sigMeasuresHypo$meth.diff) #Confirm subset
-```
-
-```{r}
-range(sigMeasuresHypo$logP) #Look at range of p-values. All of these are already negative, so there's no need to modify it
-```
-
-```{r}
-sigMeasuresHypo$signLogP <- sigMeasuresHypo$logP #Copy logP to a new columns for consistency
-head(sigMeasuresHypo) #Confirm changes
-```
-
-### Combine tables with corrected p-values
-
-```{r}
-sigMeasuresCorrected <- rbind(sigMeasuresHyper, sigMeasuresHypo) #Combine dataframes
-sigMeasuresCorrected <- sigMeasuresCorrected[,-c(2:3)] #Remove unnecessary columns
-head(sigMeasuresCorrected) #Confirm changes
-```
-
-```{r}
-write.csv(sigMeasuresCorrected, "2019-07-30-allTested-Table-of-Significance-Measures.csv", quote = FALSE, row.names = FALSE) #Save file
-```
-
-```{bash}
-head 2019-07-30-allTested-Table-of-Significance-Measures.csv #Confirm formatting is good. It is.
-```
-
 # Gene enrichment with GO-MWU
 
 These commands were copied from the GO-MWU.R file in the GO-MWU Github repository.
-
-## Signed log p-values
 
 ### Biological processes
 
 #### Edit input variables
 
 ```{r}
-input="2019-07-30-allTested-Table-of-Significance-Measures.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+input="2019-07-30-allTested-Table-of-Significance-Measures-Uncorrected.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
 goAnnotations="2019-07-30-allTested-GO-Annotations-Table.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon.
 goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
 goDivision="BP" # BP for biological processes
@@ -436,80 +384,6 @@ legend("bottomleft",
 #dev.off()
 ```
 
-###### Hypermethylated loci
-
-The division between hypermethylated and hypomethylated biological processes may be interesting too.
-
-```{r}
-condensedDMLHyper <- subset(DMLGenbank, subset = meth.diff > 0) #Subset hypermethylated loci
-range(condensedDMLHyper$meth.diff) #Confirm subset
-```
-
-```{r}
-parentGOBPCondensedHyper <- unique(merge(x = condensedDMLHyper, y = parentGOBP, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOBP
-head(parentGOBPCondensedHyper) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOBPCondensedHyper$name))
-```
-
-```{r}
-parentGOBPCondensedHyperGOslim <- subset(x = parentGOBPDMLGOslim, subset = parentGOBPDMLGOslim$meth.diff > 0) #Subset hypermethylated loci
-head(parentGOBPCondensedHyperGOslim) #Confirm subset
-```
-
-```{r}
-sum(is.na(parentGOBPCondensedHyperGOslim$GOslim)) #Count how many entries do not have GOslim terms. 164/1016 do not have GO-MWU entries.
-```
-
-```{r}
-parentGOBPCondensedHyperGOslimCounts <- as.data.frame(table(parentGOBPCondensedHyperGOslim$GOslim)) #Count the frequency of each GOslim term
-colnames(parentGOBPCondensedHyperGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
-parentGOBPCondensedHyperGOslimCounts <- subset(parentGOBPCondensedHyperGOslimCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOBPCondensedHyperGOslimCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPCondensedHyperGOslimCounts, "2019-07-30-condensedDMLHyper-CVGOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
-###### Hypomethylated loci
-
-```{r}
-condensedDMLHypo <- subset(DMLGenbank, subset = meth.diff < 0) #Subset hypermethylated loci
-range(condensedDMLHypo$meth.diff) #Confirm subset
-```
-
-```{r}
-parentGOBPCondensedHypo <- unique(merge(x = condensedDMLHypo, y = parentGOBP, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOBP
-head(parentGOBPCondensedHypo) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOBPCondensedHypo$name)) #Count genes with DML that do not have GO-MWU terms associated with them
-```
-
-```{r}
-parentGOBPCondensedHypoGOslim <- subset(x = parentGOBPDMLGOslim, subset = parentGOBPDMLGOslim$meth.diff < 0) #Subset hypermethylated loci
-head(parentGOBPCondensedHypoGOslim) #Confirm subset
-```
-
-```{r}
-sum(is.na(parentGOBPCondensedHypoGOslim$GOslim)) #Count how many entries do not have GOslim terms. 192/3169 do not have GO-MWU entries.
-```
-
-```{r}
-parentGOBPCondensedHypoGOslimCounts <- as.data.frame(table(parentGOBPCondensedHypoGOslim$GOslim)) #Count the frequency of each GOslim term
-colnames(parentGOBPCondensedHypoGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
-parentGOBPCondensedHypoGOslimCounts <- subset(parentGOBPCondensedHypoGOslimCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOBPCondensedHypoGOslimCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOBPCondensedHypoGOslimCounts, "2019-07-30-condensedDMLHypo-CVGOSlim-Frequency-BP.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
 ##### Figure to compare all tested and DML distributions
 
 ```{r}
@@ -521,10 +395,8 @@ barsGOSlim <- barplot(-1*(parentGOBPGOslimCounts$percentage),
                       horiz = TRUE,
                       axes = FALSE,
                       xlim = c(-18,0),
-                      col = c(rep(plotColors[2], times = 5),
-                              rep(plotColors[4], times = 3),
-                              rep(plotColors[5], times = 1),
-                              rep(plotColors[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+                      col = plotColors[5]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+
 
 axis(side = 2, at = barsGOSlim, labels = parentGOBPGOslimCounts$GOSlim, tick = FALSE, las = 2, col = "grey80", cex.axis = 1.5) #Add y-axis with GOSlim terms from BPGOSlimCounts. Place labels at specific barplot values from barsGOSlim. Remove tick marks (tick) and change orientation of labels (las)
 
@@ -535,10 +407,7 @@ barsGOSlimDML <- barplot(parentGOBPDMLGOslimCounts$percentage,
                          horiz = TRUE,
                          axes = FALSE,
                          xlim = c(0,18),
-                         col = c(rep(plotColors[2], times = 5),
-                                 rep(plotColors[4], times = 3),
-                                 rep(plotColors[5], times = 1),
-                                 rep(plotColors[1], times = 4))) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
+                         col = plotColors[2]) #Create a barplot that is horizontal (horiz = TRUE). Use axes = FALSE to remove all axes. Set xlim based on maximum percentage value. Colors correspond to broader GOSlim groupings. Save plot as a new object.
 
 axis(side = 1, at = seq(from = 0, to = 18, by = 2), cex = 1.2, col = "grey80") #Add x-axis
 mtext(side = 1, "% Genes with DML", line = 3, cex = 1.5) #Add x-axis label
@@ -546,188 +415,4 @@ mtext(side = 1, "% Genes with DML", line = 3, cex = 1.5) #Add x-axis label
 #dev.off()
 ```
 
-### Cellular components
 
-#### Edit input variables
-
-```{r}
-goDivision="CC" # CC for cellular components. All other inputs are the same.
-```
-
-#### Run GO-MWU
-
-```{r}
-# Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
-gomwuStats(input, goDatabase, goAnnotations, goDivision,
-	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
-	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
-	smallest=5,   # a GO category should contain at least this many genes to be considered
-	clusterCutHeight=0.25) # threshold for merging similar (gene-sharing) terms. See README for details.
-# There are no GO terms pass 10% FDR.
-```
-
-#### Describe parent GOslim terms
-
-##### All tested loci
-
-```{r}
-parentGOCC <- read.delim("CC_2019-07-30-allTested-Table-of-Significance-Measures.csv", header = TRUE) #Import GO-MWU output file with individual genes and associated GOslim term. Even though it is a .csv extension, it is a tab-delimited file
-colnames(parentGOCC) <- c("name", "term", "lev", "Genbank", "value") #Rename gene ID column to match previous naming conventions
-head(parentGOCC) #Confirm import
-```
-
-##### Differentially methylated loci
-
-```{r}
-parentGOCCCondensed <- unique(merge(x = DMLGenbank, y = parentGOCC, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOCC
-head(parentGOCCCondensed) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOCCCondensed$name)) #Count how many genes with DML do not have GO-MWU characterizations
-```
-
-###### Hypermethylated loci
-
-```{r}
-parentGOCCCondensedHyper <- unique(merge(x = condensedDMLHyper, y = parentGOCC, by = "Genbank")) #Merge condensed DML with parentGOCC
-head(parentGOCCCondensedHyper) #Confirm merge
-```
-
-###### Hypomethylated loci
-
-```{r}
-parentGOCCCondensedHypo <- unique(merge(x = condensedDMLHypo, y = parentGOCC, by = "Genbank")) #Merge condensed DML with parentGOCC
-head(parentGOCCCondensedHypo) #Confirm merge
-```
-
-### Molecular function
-
-#### Edit input variables
-
-```{r}
-goDivision="MF" # MF for molecular function. All other inputs are the same.
-```
-
-#### Run GO-MWU
-
-```{r}
-# Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
-gomwuStats(input, goDatabase, goAnnotations, goDivision,
-	perlPath="perl", # replace with full path to perl executable if it is not in your system's PATH already
-	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
-	smallest=5,   # a GO category should contain at least this many genes to be considered
-	clusterCutHeight=0.25) # threshold for merging similar (gene-sharing) terms. See README for details.
-# There are no GO terms pass 10% FDR.
-```
-
-#### Describe parent GOslim terms
-
-##### All tested loci
-
-```{r}
-parentGOMF <- read.delim("MF_2019-07-30-allTested-Table-of-Significance-Measures.csv", header = TRUE) #Import GO-MWU output file with individual genes and associated GOslim term. Even though it is a .csv extension, it is a tab-delimited file
-colnames(parentGOMF) <- c("name", "term", "lev", "Genbank", "value") #Rename gene ID column to match previous naming conventions
-head(parentGOMF) #Confirm import
-```
-
-##### Differentially methylated loci
-
-```{r}
-parentGOMFCondensed <- unique(merge(x = DMLGenbank, y = parentGOMF, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOMF
-head(parentGOMFCondensed) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOMFCondensed$name)) #Count how many genes with DML do not have GO-MWU characterizations
-```
-
-###### Map to GOslim terms
-
-```{r}
-CVGOslimMF <- read.delim("../2018-12-02-Gene-Enrichment-Analysis/Blastquery-GOslim-MF.sorted", sep = "\t", header = FALSE) #Import GOslim information
-colnames(CVGOslimMF) <- c("Genbank", "GOslim") #Add column names
-head(CVGOslimMF) #Confirm import
-```
-
-```{r}
-parentGOMFDMLGOslim <- unique(merge(x = parentGOMFCondensed, y = CVGOslimMF, by = "Genbank", all.x = TRUE)) #Merge GO-MWU with GOslim information, retaining all GO-MWU entries. Remove any merging artifacts
-head(parentGOMFDMLGOslim) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOMFDMLGOslim$GOslim)) #Count how many entries do not have GOslim terms. 412/3190 do not have GO-MWU entries.
-```
-
-```{r}
-parentGOMFDMLGOslimCounts <- as.data.frame(table(parentGOMFDMLGOslim$GOslim)) #Count the frequency of each GOslim term
-colnames(parentGOMFDMLGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
-parentGOMFDMLGOslimCounts <- subset(parentGOMFDMLGOslimCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFDMLGOslimCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFDMLGOslimCounts, "2019-07-30-condensedDML-CVGOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
-###### Hypermethylated loci
-
-```{r}
-parentGOMFCondensedHyper <- unique(merge(x = condensedDMLHyper, y = parentGOMF, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOMF
-head(parentGOMFCondensedHyper) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOMFCondensedHyper$name)) #Count DML without GO-MWU parent GOterms for corresponding genes.
-```
-
-```{r}
-parentGOMFCondensedHyperGOslim <- subset(x = parentGOMFDMLGOslim, subset = parentGOMFDMLGOslim$meth.diff > 0) #Subset hypermethylated loci
-head(parentGOMFCondensedHyperGOslim) #Confirm subset
-```
-
-```{r}
-sum(is.na(parentGOMFCondensedHyperGOslim$GOslim)) #Count how many entries do not have GOslim terms. 193/1495 do not have GO-MWU entries.
-```
-
-```{r}
-parentGOMFCondensedHyperGOslimCounts <- as.data.frame(table(parentGOMFCondensedHyperGOslim$GOslim)) #Count the frequency of each GOslim term
-colnames(parentGOMFCondensedHyperGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
-parentGOMFCondensedHyperGOslimCounts <- subset(parentGOMFCondensedHyperGOslimCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFCondensedHyperGOslimCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCondensedHyperGOslimCounts, "2019-07-30-condensedDMLHyper-CVGOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
-```
-
-###### Hypomethylated loci
-
-```{r}
-parentGOMFCondensedHypo <- unique(merge(x = condensedDMLHypo, y = parentGOMF, by = "Genbank", all.x = TRUE)) #Merge condensed DML with parentGOMF
-head(parentGOMFCondensedHypo) #Confirm merge
-```
-
-```{r}
-sum(is.na(parentGOMFCondensedHypo$name)) #Count DML without parent GOterms from GO-MWU for corresponding genes. 973/
-```
-
-```{r}
-parentGOMFCondensedHypoGOslim <- subset(x = parentGOMFDMLGOslim, subset = parentGOMFDMLGOslim$meth.diff < 0) #Subset hypomethylated loci
-head(parentGOMFCondensedHypoGOslim) #Confirm subset
-```
-
-```{r}
-sum(is.na(parentGOMFCondensedHypoGOslim$GOslim)) #Count how many entries do not have GOslim terms. 219/1695 do not have GO-MWU entries.
-```
-
-```{r}
-parentGOMFCondensedHypoGOslimCounts <- as.data.frame(table(parentGOMFCondensedHypoGOslim$GOslim)) #Count the frequency of each GOslim term
-colnames(parentGOMFCondensedHypoGOslimCounts) <- c("CVGOslim", "frequency") #Rename columns
-parentGOMFCondensedHypoGOslimCounts <- subset(parentGOMFCondensedHypoGOslimCounts, subset = frequency > 0) #Remove residual factors
-head(parentGOMFCondensedHypoGOslimCounts) #Confirm counts
-```
-
-```{r}
-write.csv(parentGOMFCondensedHypoGOslimCounts, "2019-07-30-condensedDMLHypo-CVGOSlim-Frequency-MF.csv", row.names = FALSE, quote = FALSE) #Save file
-```
