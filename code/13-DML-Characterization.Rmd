@@ -634,6 +634,92 @@ combDMLCounts <- combDMLCounts[-6,] #Remove row with totals
 head(combDMLCounts) #Confirm changes
 ```
 
+```{r}
+genes1DMLBreakdownReduced <- genes1DMLBreakdown #Create a new dataframe with reduced information
+genes1DMLBreakdownReduced[3,] <- c("", 0, 1) #Add new row with information on mixed hyper/hypo DML types
+genes1DMLBreakdownReduced$reducedType <- c("hyper", "hypo", "mixed") #Add new column with DML type
+genes1DMLBreakdownReduced <- genes1DMLBreakdownReduced[,-1] #Remove original type column
+head(genes1DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+genes2DMLBreakdownReduced <- genes2DMLBreakdown #Create a new dataframe with reduced information
+genes2DMLBreakdownReduced$reducedType <- c("hyper", "mixed", "hypo") #Add new column with DML type
+genes2DMLBreakdownReduced <- genes2DMLBreakdownReduced[,-1] #Remove original type column
+head(genes2DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+genes3DMLBreakdownReduced <- data.frame("DMLcount" = c(3, sum(genes3DMLBreakdown$DMLcount[2:3]), 5),
+                                        "totalDML" = rep(3, times = 3),
+                                        "reducedType" = c("hyper", "mixed", "hypo")) #Create new dataframe with reduced information
+head(genes3DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+genes3DMLBreakdownReduced <- data.frame("DMLcount" = c(3, sum(genes3DMLBreakdown$DMLcount[2:3]), 5),
+                                        "totalDML" = rep(3, times = 3),
+                                        "reducedType" = c("hyper", "mixed", "hypo")) #Create new dataframe with reduced information
+head(genes3DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+genes4DMLBreakdownReduced <- data.frame("DMLcount" = c(0, sum(genes4DMLBreakdown$DMLcount[2:4]), 3),
+                                        "totalDML" = rep(4, times = 3),
+                                        "reducedType" = c("hyper", "mixed", "hypo")) #Create new dataframe with reduced information
+head(genes4DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+genes5DMLBreakdownReduced <- data.frame("DMLcount" = c(0, 1, 0),
+                                        "totalDML" = rep(5, times = 3),
+                                        reducedType = c("hyper", "mixed", "hypo")) #Create new dataframe with reduced information
+head(genes5DMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+combDMLBreakdownReduced <- rbind(genes1DMLBreakdownReduced,
+                                 genes2DMLBreakdownReduced,
+                                 genes3DMLBreakdownReduced,
+                                 genes4DMLBreakdownReduced,
+                                 genes5DMLBreakdownReduced) #Create new dataframe with reduced counts
+head(combDMLBreakdownReduced) #Confirm formatting
+```
+
+```{r}
+combDMLCountsReduced <- dcast(combDMLBreakdownReduced, reducedType ~ totalDML, value.var = "DMLcount") #Convert long dataframe to wide
+row.names(combDMLCountsReduced) <- combDMLCountsReduced$reducedType #Save type of DML as rownames
+combDMLCountsReduced <- combDMLCountsReduced[,-1] #Remove first column
+head(combDMLCountsReduced) #Confirm formatting
+```
+
+```{r}
+#Make sure all entries are numeric
+combDMLCountsReduced$`1` <- as.numeric(combDMLCountsReduced$`1`)
+combDMLCountsReduced$`2` <- as.numeric(combDMLCountsReduced$`2`)
+combDMLCountsReduced$`3` <- as.numeric(combDMLCountsReduced$`3`)
+combDMLCountsReduced$`4` <- as.numeric(combDMLCountsReduced$`4`)
+combDMLCountsReduced$`5` <- as.numeric(combDMLCountsReduced$`5`)
+```
+
+```{r}
+combDMLCountsReduced[4,] <- c(sum(combDMLCountsReduced$`1`),
+                              sum(combDMLCountsReduced$`2`),
+                              sum(combDMLCountsReduced$`3`),
+                              sum(combDMLCountsReduced$`4`),
+                              sum(combDMLCountsReduced$`5`)) #Create a new row with total # DML per category
+```
+
+```{r}
+nLength <- length(combDMLCountsReduced$`2`) #Count the number of rows
+for (i in 1:nLength) {
+    combDMLCountsReduced[i,] <- (combDMLCountsReduced[i,] / combDMLCountsReduced[4,]) * 100 #Divide all entries by the total number of DML in each category and multiply by 100
+}
+combDMLCountsReduced <- combDMLCountsReduced[-4,] #Remove row with totals
+combDMLCountsReduced <- combDMLCountsReduced[c(1,3,2),] #Rearrange rows
+head(combDMLCountsReduced) #Confirm changes
+```
+
 ##### Create individual figures
 
 I'm going to create a multipanel plot with a breakdown of the number hyper- and hypomethylated in genes. I will start by creating each figure separately.
@@ -726,6 +812,31 @@ legend("top",
        cex = 1.5) #Place a legend in the top right of the figure with no box
 ```
 
+```{r}
+#Stacked barplots with hyper, mixed, or hypo DML
+barplot(t(t(combDMLCountsReduced)),
+        axes = FALSE, 
+        names.arg = c("1", "2", "3", "4", "5"),
+        cex.names = 1.5,
+        ylim = c(0,100),
+        col = plotColors[c(1, 3, 5)]) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
+mtext(side = 1, "Total DML in a Gene", line = 3, cex = 1.5) #Add x-axis label
+axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis
+mtext(side = 2, "Proportion DML (%)", line = 3, cex = 1.5) #Add y-axis label
+
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
+plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
+legend("top",
+       legend = c("Hypermethylated", "Mixed", "Hypomethylated"),
+       xpd = TRUE,
+       horiz = TRUE,
+       pch = 22, 
+        col = "black", 
+        pt.bg = plotColors[c(1, 3, 5)],
+       bty = "n",
+       cex = 1.5) #Place a legend in the top right of the figure with no box
+```
+
 #### Create multipanel figure
 
 ```{r}
@@ -746,7 +857,7 @@ plotMatrix <- matrix(c(1,
                        2,
                        3),
                      nrow = 3, ncol = 1, byrow = TRUE) #Create a matrix with plot location information. Fill matrix by row.
-par(mar = c(0, 0, 6, 2.5), oma = c(6, 8, 0, 7)) #Specify inner and outer margins
+par(mar = c(0, 0, 6, 2.5), oma = c(6, 8, 0, 11)) #Specify inner and outer margins
 layout(mat = plotMatrix) #Create a layout based on plotMatrix. The first and second plots (first column) should be wider.
 #layout.show(n = 3) #Confirm layout looks good
 
@@ -760,7 +871,7 @@ DMLbarplot <- barplot(as.matrix(t(DMLchrCounts$DMLbyChrCpG)),
                       col = plotColors[6]) #Create a barplot and save as a new object. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis. The object contains x coordinates for bars, so xlim is set at 12 to compensate for maximum value of 11.5
 mtext(side = 1, "Chromosome", line = 3, cex = 1.3) #Add x-axis label
 axis(side = 2, line = 1.5, at = seq(0, 7e-05, by = 1e-05), labels = seq(0, 7, by = 1), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis for DML counts
-mtext(side = 2, "Number DML per 100,000 CpGs", line = 5, cex = 1.3) #Add y-axis label for DML counts
+mtext(side = 2, expression(paste("Number DML per 10"^"5"*" CpGs")), line = 5, cex = 1.3) #Add y-axis label for DML counts
 mtext(side = 3, line = -1, adj = 0, text = "a.") #Add figure label
 
 #Add gene number infomration
@@ -787,26 +898,26 @@ mtext(side = 3, line = -1, at = c(0.15, 440), text = "b.") #Add figure label
 
 #Hyper/hypo breakdown
 #Combined hyper/hypo plot
-barplot(t(t(combDMLCounts)),
+barplot(t(t(combDMLCountsReduced)),
         axes = FALSE, 
         names.arg = c("1", "2", "3", "4", "5"),
         cex.names = 1.5,
         ylim = c(0,100),
-        col = plotColors[1:5]) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
+        col = plotColors[c(1, 3, 5)]) #Create a stacked barplot. Use axes = FALSE to remove the y-axis and names.arg to set labels on the x-axis.
 mtext(side = 1, "Total DML in a Gene", line = 3, cex = 1.3) #Add x-axis label
 axis(side = 2, at = seq(0, 100, by = 10), las = 2, col = "grey80", cex.axis = 1.2) #Add y-axis
-mtext(side = 2, "Genes with DML (%)", line = 4, cex = 1.3) #Add y-axis label
+mtext(side = 2, "Proportion DML (%)", line = 4, cex = 1.3) #Add y-axis label
 mtext(side = 3, line = 1, adj = 0, text = "  c.") #Add figure label
 
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE) #Create new plot
 plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n") #Add new plot on top of current plot
-legend(x = 0.8, y = -0.4,
-       legend = c("0", "1", "2", "3", "4"),
+legend(x = 0.6, y = -0.4,
+       legend = c("Hypermethylated", "Mixed", "Hypomethylated"),
        pch = 22, 
         col = "black", 
-        pt.bg = plotColors[1:5],
+        pt.bg = plotColors[c(1, 3, 5)],
        bty = "n",
-       cex = 2) #Place a legend in the top right of the figure with no box
+       cex = 1.8) #Place a legend in the top right of the figure with no box
 
 #dev.off()
 ```
